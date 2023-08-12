@@ -74,7 +74,7 @@ const App = () => {
       id: 4,
       content: (
         <div className="flex flex-col items-center justify-center h-full bg-white bg-common">
-          <div className='w-full mb-10 bg-btnPurple p-5'>
+          <div className='w-full mb-5 bg-btnPurple p-5'>
             <div style={{ maxWidth: '400px', margin: '0 auto' }}>
               <Carousel />
             </div>
@@ -166,7 +166,7 @@ const App = () => {
       {/* {imagesLoaded && ( */}
       <React.Fragment>
         {/* Render dot indicators */}
-        <div className="absolute top-0 left-0 right-0 flex justify-center mt-10">
+        <div className="absolute top-0 left-0 right-0 flex justify-center mt-10 mb-2">
           {slides.map((slide, index) => (
             <div
               key={slide.id}
