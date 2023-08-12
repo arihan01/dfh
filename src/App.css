@@ -1,0 +1,23 @@
+.bg-common {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+
+.bg-img-1 {
+    background-image: url('./img/s1-bg.png');
+}
+
+.bg-img-2 {
+    background-image: url('./img/s2-bg.png');
+}
+
+.bg-img-3 {
+    background-image: url('./img/s3-bg.png');
+}
+
+.bg-img-5 {
+    background-image: url('./img/s5-bg.png');
+}
