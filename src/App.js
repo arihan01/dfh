@@ -7,6 +7,16 @@ import * as svgs from './svgs.js';
 import Carousel from './Carousel';
 
 const App = () => {
+  // const [showImage, setShowImage] = useState(true);
+
+  const [imageStates, setImageStates] = useState([true, true, true, true]);
+
+  const toggleImage = (index) => {
+    const newImageStates = [...imageStates];
+    newImageStates[index] = !newImageStates[index];
+    setImageStates(newImageStates);
+  };
+
   const slides = [
     {
       id: 1,
@@ -104,11 +114,11 @@ const App = () => {
       id: 6,
       content: (
         <div className="flex flex-col items-center justify-center h-full bg-white bg-common">
-          <div className='w-3/4 mb-5'>
+          <motion.div className='w-3/4 mb-5' {...animate.fadeIn}>
             <svgs.s6Top className='w-full h-auto' />
-          </div>
-          <img src={require('./img/s6-img.png')} className='w-4/5 rounded-lg mt-5 mb-5' />
-          <img src={require('./img/s6-text.png')} className='w-full mt-5 px-5' />
+          </motion.div>
+          <motion.img src={require('./img/s6-img.png')} className='w-4/5 rounded-lg mt-5 mb-5' {...animate.fadeIn} />
+          <motion.img src={require('./img/s6-text.png')} className='w-full mt-5 px-5' {...animate.fadeIn} />
         </div>
       )
     },
@@ -116,6 +126,79 @@ const App = () => {
       id: 7,
       content: (
         <div className="flex flex-col items-center justify-center h-full bg-white bg-common">
+          <motion.img src={require('./img/s7-top.png')} className='w-3/4 mb-10 absolute top-[90px]' {...animate.fadeIn} />
+          <motion.div className='w-3/4 mt-40' {...animate.upToDown} transition={{ ...animate.upToDown.transition, delay: 0 }}>
+            {imageStates[0] ? (
+              <motion.img
+                src={require('./img/s7-2023.png')}
+                className='w-2/5 mx-auto mb-1 image-button'
+                onClick={() => toggleImage(0)}
+                {...animate.fadeIn}
+              />
+            ) : (
+              <motion.div
+                className='w-full'
+                onClick={() => toggleImage(0)}
+                {...animate.fadeIn}
+              >
+                <svgs.s7Text1 className='w-full h-auto my-1' />
+              </motion.div>
+            )}
+          </motion.div>
+          <motion.div className='w-3/4 mt-1' {...animate.upToDown} transition={{ ...animate.upToDown.transition, delay: 0.6 }}>
+            {imageStates[1] ? (
+              <motion.img
+                src={require('./img/s7-2024.png')}
+                className='w-2/5 mx-auto mb-1'
+                onClick={() => toggleImage(1)}
+                {...animate.fadeIn}
+              />
+            ) : (
+              <motion.div
+                className='w-full'
+                onClick={() => toggleImage(1)}
+                {...animate.fadeIn}
+              >
+                <svgs.s7Text2 className='w-full h-auto my-1' />
+              </motion.div>
+            )}
+          </motion.div>
+          <motion.div className='w-3/4 mt-1' {...animate.upToDown} transition={{ ...animate.upToDown.transition, delay: 1.2 }}>
+            {imageStates[2] ? (
+              <motion.img
+                src={require('./img/s7-2025.png')}
+                className='w-2/5 mx-auto mb-1'
+                onClick={() => toggleImage(2)}
+                {...animate.fadeIn}
+              />
+            ) : (
+              <motion.div
+                className='w-full'
+                onClick={() => toggleImage(2)}
+                {...animate.fadeIn}
+              >
+                <svgs.s7Text3 className='w-full h-auto my-1' />
+              </motion.div>
+            )}
+          </motion.div>
+          <motion.div className='w-3/4 mt-1' {...animate.upToDown} transition={{ ...animate.upToDown.transition, delay: 1.8 }}>
+            {imageStates[3] ? (
+              <motion.img
+                src={require('./img/s7-2026.png')}
+                className='w-2/5 mx-auto mb-1'
+                onClick={() => toggleImage(3)}
+                {...animate.fadeIn}
+              />
+            ) : (
+              <motion.div
+                className='w-full'
+                onClick={() => toggleImage(3)}
+                {...animate.fadeIn}
+              >
+                <svgs.s7Text4 className='w-full h-auto my-1' />
+              </motion.div>
+            )}
+          </motion.div>
         </div>
       )
     },
@@ -129,24 +212,6 @@ const App = () => {
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  // const [imagesLoaded, setImagesLoaded] = useState(false);
-
-  // useEffect(() => {
-  //   const imagePromises = slides.map(slide =>
-  //     Array.from(slide.content.props.children)
-  //       .filter((child) => child.props && child.props.src)
-  //       .map(img => new Promise(resolve => {
-  //         const imageElement = new Image();
-  //         imageElement.onload = resolve;
-  //         imageElement.src = img.props.src;
-  //       }))
-  //   );
-
-  //   Promise.all(imagePromises.flat())
-  //     .then(() => setImagesLoaded(true))
-  //     .catch(() => setImagesLoaded(true)); // Handle errors, e.g., if an image fails to load
-  // }, [slides]);
-
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
@@ -202,9 +267,6 @@ const App = () => {
   return (
     <div className="relative h-screen lg:w-1/4 md:w-1/2 mx-auto overflow-hidden">
       {!imagesLoaded && (
-        // <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-purple-500">
-        //   viamagus
-        // </div>
         <div className="flex items-center justify-center h-full">
           <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-purple-500"></div>
         </div>

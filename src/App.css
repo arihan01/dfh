@@ -21,3 +21,11 @@
 .bg-img-5 {
     background-image: url('./img/s5-bg.png');
 }
+
+.image-button {
+    transition: transform 0.2s; /* Add a smooth transition effect */
+  }
+  
+  .image-button:active {
+    transform: translateY(2px); /* Apply a press down effect on click */
+  }

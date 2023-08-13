@@ -18,7 +18,7 @@ export const rectList = {
     opacity: 1,
     transition: {
       delayChildren: 0, // Delay children animations
-      staggerChildren: 1, // Stagger the animation between children
+      staggerChildren: 0.6, // Stagger the animation between children
     },
   },
 };
@@ -62,7 +62,7 @@ export const fadeIn = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
   transition: {
-    duration: 1,
+    duration: 0.6,
     ease: [0.3, 0.5, 0.6, 1],
     type: "tween",
   },
