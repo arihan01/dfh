@@ -7,8 +7,6 @@ import * as svgs from './svgs.js';
 import Carousel from './Carousel';
 
 const App = () => {
-  // const [showImage, setShowImage] = useState(true);
-
   const [imageStates, setImageStates] = useState([true, true, true, true]);
 
   const toggleImage = (index) => {
@@ -127,7 +125,7 @@ const App = () => {
       content: (
         <div className="flex flex-col items-center justify-center h-full bg-white bg-common">
           <motion.img src={require('./img/s7-top.png')} className='w-3/4 mb-10 absolute top-[90px]' {...animate.fadeIn} />
-          <motion.div className='w-3/4 mt-40' {...animate.upToDown} transition={{ ...animate.upToDown.transition, delay: 0 }}>
+          <motion.div className='w-3/4 mt-44' {...animate.upToDown} transition={{ ...animate.upToDown.transition, delay: 0 }}>
             {imageStates[0] ? (
               <motion.img
                 src={require('./img/s7-2023.png')}
@@ -149,7 +147,7 @@ const App = () => {
             {imageStates[1] ? (
               <motion.img
                 src={require('./img/s7-2024.png')}
-                className='w-2/5 mx-auto mb-1'
+                className='w-2/5 mx-auto mb-1 z-10'
                 onClick={() => toggleImage(1)}
                 {...animate.fadeIn}
               />
@@ -167,7 +165,7 @@ const App = () => {
             {imageStates[2] ? (
               <motion.img
                 src={require('./img/s7-2025.png')}
-                className='w-2/5 mx-auto mb-1'
+                className='w-2/5 mx-auto mb-1 image-button'
                 onClick={() => toggleImage(2)}
                 {...animate.fadeIn}
               />
@@ -185,7 +183,7 @@ const App = () => {
             {imageStates[3] ? (
               <motion.img
                 src={require('./img/s7-2026.png')}
-                className='w-2/5 mx-auto mb-1'
+                className='w-2/5 mx-auto mb-1 image-button'
                 onClick={() => toggleImage(3)}
                 {...animate.fadeIn}
               />
@@ -286,11 +284,11 @@ const App = () => {
 
 
           {/* Render navigation buttons */}
-          <div className="absolute top-1/2 left-0 right-0 flex justify-between">
-            <button className="mx-2 px-2" onClick={goToPreviousSlide}>
+          <div className="absolute top-1/2 left-0 right-0 flex justify-between" style={{ pointerEvents: 'none' }}>
+            <button className="mx-2 px-2" onClick={goToPreviousSlide} style={{ pointerEvents: 'auto' }}>
               <img src={require('./img/nav left.png')} style={{ width: '13.61px', height: '35px' }} alt='btnPrev' />
             </button>
-            <button className="mx-2 px-2" onClick={goToNextSlide}>
+            <button className="mx-2 px-2" onClick={goToNextSlide} style={{ pointerEvents: 'auto' }}>
               <img src={require('./img/nav right.png')} style={{ width: '13.61px', height: '35px' }} alt='btnNext' />
             </button>
           </div>
