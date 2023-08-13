@@ -104,6 +104,11 @@ const App = () => {
       id: 6,
       content: (
         <div className="flex flex-col items-center justify-center h-full bg-white bg-common">
+          <div className='w-3/4 mb-5'>
+            <svgs.s6Top className='w-full h-auto' />
+          </div>
+          <img src={require('./img/s6-img.png')} className='w-4/5 rounded-lg mt-5 mb-5' />
+          <img src={require('./img/s6-text.png')} className='w-full mt-5 px-5' />
         </div>
       )
     },
@@ -142,6 +147,48 @@ const App = () => {
   //     .catch(() => setImagesLoaded(true)); // Handle errors, e.g., if an image fails to load
   // }, [slides]);
 
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    const findImages = (element) => {
+      if (!element || !element.props) {
+        return [];
+      }
+
+      if (element.type === 'img' && element.props.src) {
+        return [element];
+      }
+
+      if (Array.isArray(element.props.children)) {
+        return element.props.children.flatMap(findImages);
+      }
+
+      return findImages(element.props.children);
+    };
+
+    const imageElements = slides.flatMap(slide => findImages(slide.content));
+
+    if (imageElements.length === 0) {
+      // No images to load, so we're done
+      setImagesLoaded(true);
+      return;
+    }
+
+    const imagePromises = imageElements.map(img => new Promise((resolve, reject) => {
+      const imageElement = new Image();
+      imageElement.onload = resolve;
+      imageElement.onerror = reject;
+      imageElement.src = img.props.src;
+    }));
+
+    Promise.all(imagePromises)
+      .then(() => setImagesLoaded(true))
+      .catch((error) => {
+        console.error('Failed to load image', error);
+        setImagesLoaded(true); // We're done, even though an image failed to load
+      });
+  }, [slides]);
+
   const goToNextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
   };
@@ -154,46 +201,46 @@ const App = () => {
 
   return (
     <div className="relative h-screen lg:w-1/4 md:w-1/2 mx-auto overflow-hidden">
-      {/* {!imagesLoaded && (
+      {!imagesLoaded && (
         // <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-purple-500">
         //   viamagus
         // </div>
         <div className="flex items-center justify-center h-full">
           <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-purple-500"></div>
         </div>
-      )} */}
+      )}
 
-      {/* {imagesLoaded && ( */}
-      <React.Fragment>
-        {/* Render dot indicators */}
-        <div className="absolute top-0 left-0 right-0 flex justify-center mt-10 mb-2">
-          {slides.map((slide, index) => (
-            <div
-              key={slide.id}
-              className={`w-2.5 h-2.5 mx-1.5 rounded-full ${index <= currentSlide ? 'bg-darkG' : 'bg-lightG'}`}
-            ></div>
-          ))}
-        </div>
+      {imagesLoaded && (
+        <React.Fragment>
+          {/* Render dot indicators */}
+          <div className="absolute top-0 left-0 right-0 flex justify-center mt-10 mb-2">
+            {slides.map((slide, index) => (
+              <div
+                key={slide.id}
+                className={`w-2.5 h-2.5 mx-1.5 rounded-full ${index <= currentSlide ? 'bg-darkG' : 'bg-lightG'}`}
+              ></div>
+            ))}
+          </div>
 
 
-        {/* Render navigation buttons */}
-        <div className="absolute top-1/2 left-0 right-0 flex justify-between">
-          <button className="mx-2 px-2" onClick={goToPreviousSlide}>
-            <img src={require('./img/nav left.png')} style={{ width: '13.61px', height: '35px' }} alt='btnPrev' />
-          </button>
-          <button className="mx-2 px-2" onClick={goToNextSlide}>
-            <img src={require('./img/nav right.png')} style={{ width: '13.61px', height: '35px' }} alt='btnNext' />
-          </button>
-        </div>
+          {/* Render navigation buttons */}
+          <div className="absolute top-1/2 left-0 right-0 flex justify-between">
+            <button className="mx-2 px-2" onClick={goToPreviousSlide}>
+              <img src={require('./img/nav left.png')} style={{ width: '13.61px', height: '35px' }} alt='btnPrev' />
+            </button>
+            <button className="mx-2 px-2" onClick={goToNextSlide}>
+              <img src={require('./img/nav right.png')} style={{ width: '13.61px', height: '35px' }} alt='btnNext' />
+            </button>
+          </div>
 
-        <div className="flex items-center justify-center h-full">
-          <Slide
-            key={slides[currentSlide].id}
-            content={slides[currentSlide].content}
-          />
-        </div>
-      </React.Fragment>
-      {/* )} */}
+          <div className="flex items-center justify-center h-full">
+            <Slide
+              key={slides[currentSlide].id}
+              content={slides[currentSlide].content}
+            />
+          </div>
+        </React.Fragment>
+      )}
     </div>
   );
 };
