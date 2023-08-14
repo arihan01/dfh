@@ -18,8 +18,28 @@
     background-image: url('./img/s3-bg.png');
 }
 
+.bg-img-4 {
+  background-image: url('./img/s4-bg.png');
+}
+
 .bg-img-5 {
     background-image: url('./img/s5-bg.png');
+}
+
+.bg-img-7 {
+  background-image: url('./img/s7-bg.png');
+}
+
+.bg-img-8 {
+  background-image: url('./img/s8-bg.png');
+}
+
+.bg-img-10 {
+  background-image: url('./img/s10-bg.png');
+}
+
+.bg-img-11 {
+  background-image: url('./img/s11-bg.png');
 }
 
 .image-button {
@@ -27,5 +47,5 @@
   }
   
   .image-button:active {
-    transform: translateY(2px); /* Apply a press down effect on click */
+    transform: translateY(5px); /* Apply a press down effect on click */
   }

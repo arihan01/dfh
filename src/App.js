@@ -81,7 +81,7 @@ const App = () => {
     {
       id: 4,
       content: (
-        <div className="flex flex-col items-center justify-center h-full bg-white bg-common">
+        <div className="flex flex-col items-center justify-center h-full bg-white bg-img-4 bg-common">
           <div className='w-full mb-5 bg-btnPurple p-5'>
             <div style={{ maxWidth: '400px', margin: '0 auto' }}>
               <Carousel />
@@ -123,7 +123,7 @@ const App = () => {
     {
       id: 7,
       content: (
-        <div className="flex flex-col items-center justify-center h-full bg-white bg-common">
+        <div className="flex flex-col items-center justify-center h-full bg-white bg-img-7 bg-common">
           <motion.img src={require('./img/s7-top.png')} className='w-3/4 mb-10 absolute top-[90px]' {...animate.fadeIn} />
           <motion.div className='w-3/4 mt-44' {...animate.upToDown} transition={{ ...animate.upToDown.transition, delay: 0 }}>
             {imageStates[0] ? (
@@ -147,7 +147,7 @@ const App = () => {
             {imageStates[1] ? (
               <motion.img
                 src={require('./img/s7-2024.png')}
-                className='w-2/5 mx-auto mb-1 z-10'
+                className='w-2/5 mx-auto mb-1 image-button'
                 onClick={() => toggleImage(1)}
                 {...animate.fadeIn}
               />
@@ -203,7 +203,55 @@ const App = () => {
     {
       id: 8,
       content: (
-        <div className="flex flex-col items-center justify-center h-full bg-white bg-common">
+        <div className="flex flex-col items-center justify-center h-full bg-white bg-img-8 bg-common">
+          <motion.img src={require('./img/s8-top.png')} className='w-4/5 mb-10 mt-2' {...animate.fadeIn} />
+          <motion.div className='w-4/5 mt-10 mb-10' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0 }}>
+            <svgs.s8Text1 className='w-full h-auto' />
+          </motion.div>
+          <motion.div className='w-4/5 mt-10 mb-10' {...animate.rightToLeft} transition={{ ...animate.rightToLeft.transition, delay: 0.6 }}>
+            <svgs.s8Text2 className='w-full h-auto' />
+          </motion.div>
+          <motion.div className='w-4/5 mt-10' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 1.2 }}>
+            <svgs.s8Text3 className='w-full h-auto' />
+          </motion.div>
+        </div>
+      )
+    },
+    {
+      id: 9,
+      content: (
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-common">
+          <motion.img src={require('./img/s9-top.png')} className='w-4/5 mb-5' {...animate.fadeIn} />
+          <motion.img src={require('./img/s9-img-1.png')} className='w-3/4 mt-5' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0 }} />
+          <motion.img src={require('./img/s9-img-2.png')} className='w-3/4' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0.6 }} />
+          <motion.img src={require('./img/s9-img-3.png')} className='w-3/4' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 1.2 }} />
+        </div>
+      )
+    },
+    {
+      id: 10,
+      content: (
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-img-10 bg-common">
+          <motion.div className='w-2/3 mb-25' {...animate.leftToRight}>
+            <svgs.s10Top className='w-full h-auto' />
+          </motion.div>
+          <motion.img src={require('./img/s10-img.png')} className='w-3/4 mt-20' {...animate.downToUp}/>
+        </div>
+      )
+    },
+    {
+      id: 11,
+      content: (
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-img-11 bg-common">
+          <motion.div className='w-4/5 mb-5 mt-20 mr-5' {...animate.rightToLeft}>
+            <svgs.s11Text1 className='w-full h-auto'/>
+          </motion.div>
+          <motion.a href="https://www.mycelium.today/" target="_blank" rel="noopener noreferrer" className='w-3/4 mt-5 mb-5 image-button' {...animate.fadeIn}>
+            <svgs.s11Btn className='w-full h-auto'/>
+          </motion.a>
+          <motion.div className='w-3/4 mt-5' {...animate.downToUp}>
+            <svgs.s11Text2 className='w-full h-auto'/>
+          </motion.div>
         </div>
       )
     }

@@ -13,7 +13,7 @@ module.exports = {
         'btnWhite' : '#F6F6F7',
         'darkG' : '#1F1F1F',
         'lightG' : '#CFD4D8',
-
+        'paperG' : '#F6F6F6',
       },
     },
   },
