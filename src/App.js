@@ -235,7 +235,7 @@ const App = () => {
           <motion.div className='w-2/3 mb-25' {...animate.leftToRight}>
             <svgs.s10Top className='w-full h-auto' />
           </motion.div>
-          <motion.img src={require('./img/s10-img.png')} className='w-3/4 mt-20' {...animate.downToUp}/>
+          <motion.img src={require('./img/s10-img.png')} className='w-4/5 mt-20' {...animate.downToUp}/>
         </div>
       )
     },
