@@ -19,7 +19,7 @@ const App = () => {
     {
       id: 1,
       content: (
-        <div className="flex flex-col items-center justify-center h-full bg-white bg-img-1 bg-common">
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-img-1 bg-common">
           <motion.img
             src={require('./img/s1-rect.png')}
             className='absolute bottom-0 h-2/3'
@@ -31,7 +31,7 @@ const App = () => {
     {
       id: 2,
       content: (
-        <div className="flex flex-col items-center justify-center h-full bg-white bg-img-2 bg-common">
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-img-2 bg-common">
           <motion.div
             className='mb-14 w-2/3'
             {...animate.leftToRight}
@@ -50,7 +50,7 @@ const App = () => {
     {
       id: 3,
       content: (
-        <div className="flex flex-col items-center justify-center h-full bg-white bg-img-3 bg-common">
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-img-3 bg-common">
           <motion.div
             className='w-full h-auto animate.rectList'
             variants={animate.rectList}
@@ -81,7 +81,7 @@ const App = () => {
     {
       id: 4,
       content: (
-        <div className="flex flex-col items-center justify-center h-full bg-white bg-img-4 bg-common">
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-img-4 bg-common">
           <div className='w-full mb-5 bg-btnPurple p-5'>
             <div style={{ maxWidth: '400px', margin: '0 auto' }}>
               <Carousel />
@@ -102,7 +102,7 @@ const App = () => {
     {
       id: 5,
       content: (
-        <div className="flex flex-col items-center justify-center h-full bg-white bg-img-5 bg-common">
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-img-5 bg-common">
           <motion.img src={require('./img/s5-img-1.png')} className='w-3/4 mb-20' {...animate.fadeIn} />
           <motion.img src={require('./img/s5-img-2.png')} className='w-3/4 mt-20' {...animate.fadeIn} />
         </div>
@@ -111,7 +111,7 @@ const App = () => {
     {
       id: 6,
       content: (
-        <div className="flex flex-col items-center justify-center h-full bg-white bg-common">
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-common">
           <motion.div className='w-3/4 mb-5' {...animate.fadeIn}>
             <svgs.s6Top className='w-full h-auto' />
           </motion.div>
@@ -203,7 +203,7 @@ const App = () => {
     {
       id: 8,
       content: (
-        <div className="flex flex-col items-center justify-center h-full bg-white bg-img-8 bg-common">
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-img-8 bg-common">
           <motion.img src={require('./img/s8-top.png')} className='w-4/5 mb-10 mt-2' {...animate.fadeIn} />
           <motion.div className='w-4/5 mt-10 mb-10' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0 }}>
             <svgs.s8Text1 className='w-full h-auto' />
@@ -252,6 +252,32 @@ const App = () => {
           <motion.div className='w-3/4 mt-5' {...animate.downToUp}>
             <svgs.s11Text2 className='w-full h-auto'/>
           </motion.div>
+        </div>
+      )
+    },
+    {
+      id: 12,
+      content: (
+        <div className="flex flex-col items-center justify-center h-full bg-paperG bg-common">
+          <motion.div className='w-4/5 mb-10' {...animate.fadeIn}>
+            <svgs.s12Top className='w-full h-auto'/>
+          </motion.div>
+          <motion.div className='w-4/5 mb-5' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0 }}>
+            <svgs.s12Text1 className='w-full h-auto'/>
+          </motion.div>
+          <motion.div className='w-4/5 mb-5' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0.2 }}>
+            <svgs.s12Text2 className='w-full h-auto'/>
+          </motion.div>
+          <motion.div className='w-4/5 mb-5' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0.4 }}>
+            <svgs.s12Text3 className='w-full h-auto'/>
+          </motion.div>
+          <motion.div className='w-4/5 mb-5' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0.6 }}>
+            <svgs.s12Text4 className='w-full h-auto'/>
+          </motion.div>
+          <motion.div className='w-4/5 mb-5' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0.8 }}>
+            <svgs.s12Text5 className='w-full h-auto'/>
+          </motion.div>
+          <motion.img src={require('./img/s12-img.png')} className='w-2/3' {...animate.downToUp}/>
         </div>
       )
     }

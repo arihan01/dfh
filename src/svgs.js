@@ -17,6 +17,12 @@ import { ReactComponent as s10Top } from './img/s10-top.svg';
 import { ReactComponent as s11Text1 } from './img/s11-text-1.svg';
 import { ReactComponent as s11Btn } from './img/s11-btn.svg';
 import { ReactComponent as s11Text2 } from './img/s11-text-2.svg';
+import { ReactComponent as s12Text1 } from './img/s12-text-1.svg';
+import { ReactComponent as s12Text2 } from './img/s12-text-2.svg';
+import { ReactComponent as s12Text3 } from './img/s12-text-3.svg';
+import { ReactComponent as s12Text4 } from './img/s12-text-4.svg';
+import { ReactComponent as s12Text5 } from './img/s12-text-5.svg';
+import { ReactComponent as s12Top } from './img/s12-top.svg';
 
 export { 
     s2Text1, 
@@ -37,5 +43,11 @@ export {
     s10Top, 
     s11Text1, 
     s11Btn, 
-    s11Text2
+    s11Text2,
+    s12Text1,
+    s12Text2,
+    s12Text3,
+    s12Text4,
+    s12Text5,
+    s12Top
 };
