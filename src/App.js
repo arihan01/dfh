@@ -235,7 +235,7 @@ const App = () => {
           <motion.div className='w-2/3 mb-25' {...animate.leftToRight}>
             <svgs.s10Top className='w-full h-auto' />
           </motion.div>
-          <motion.img src={require('./img/s10-img.png')} className='w-4/5 mt-20' {...animate.downToUp}/>
+          <motion.img src={require('./img/s10-img.png')} className='w-4/5 mt-20' {...animate.downToUp} />
         </div>
       )
     },
@@ -244,13 +244,13 @@ const App = () => {
       content: (
         <div className="flex flex-col items-center justify-center h-full bg-paperG bg-img-11 bg-common">
           <motion.div className='w-4/5 mb-5 mt-20 mr-5' {...animate.rightToLeft}>
-            <svgs.s11Text1 className='w-full h-auto'/>
+            <svgs.s11Text1 className='w-full h-auto' />
           </motion.div>
           <motion.a href="https://www.mycelium.today/" target="_blank" rel="noopener noreferrer" className='w-3/4 mt-5 mb-5 image-button' {...animate.fadeIn}>
-            <svgs.s11Btn className='w-full h-auto'/>
+            <svgs.s11Btn className='w-full h-auto' />
           </motion.a>
           <motion.div className='w-3/4 mt-5' {...animate.downToUp}>
-            <svgs.s11Text2 className='w-full h-auto'/>
+            <svgs.s11Text2 className='w-full h-auto' />
           </motion.div>
         </div>
       )
@@ -260,71 +260,92 @@ const App = () => {
       content: (
         <div className="flex flex-col items-center justify-center h-full bg-paperG bg-common">
           <motion.div className='w-4/5 mb-10' {...animate.fadeIn}>
-            <svgs.s12Top className='w-full h-auto'/>
+            <svgs.s12Top className='w-full h-auto' />
           </motion.div>
           <motion.div className='w-4/5 mb-5' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0 }}>
-            <svgs.s12Text1 className='w-full h-auto'/>
+            <svgs.s12Text1 className='w-full h-auto' />
           </motion.div>
           <motion.div className='w-4/5 mb-5' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0.2 }}>
-            <svgs.s12Text2 className='w-full h-auto'/>
+            <svgs.s12Text2 className='w-full h-auto' />
           </motion.div>
           <motion.div className='w-4/5 mb-5' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0.4 }}>
-            <svgs.s12Text3 className='w-full h-auto'/>
+            <svgs.s12Text3 className='w-full h-auto' />
           </motion.div>
           <motion.div className='w-4/5 mb-5' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0.6 }}>
-            <svgs.s12Text4 className='w-full h-auto'/>
+            <svgs.s12Text4 className='w-full h-auto' />
           </motion.div>
           <motion.div className='w-4/5 mb-5' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0.8 }}>
-            <svgs.s12Text5 className='w-full h-auto'/>
+            <svgs.s12Text5 className='w-full h-auto' />
           </motion.div>
-          <motion.img src={require('./img/s12-img.png')} className='w-2/3' {...animate.downToUp}/>
+          <motion.img src={require('./img/s12-img.png')} className='w-2/3' {...animate.downToUp} />
         </div>
       )
     }
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [imagesLoaded, setImagesLoaded] = useState(false);
+  // const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  // useEffect(() => {
+  //   const findImages = (element) => {
+  //     if (!element || !element.props) {
+  //       return [];
+  //     }
+
+  //     if (element.type === 'img' && element.props.src) {
+  //       return [element];
+  //     }
+
+  //     if (Array.isArray(element.props.children)) {
+  //       return element.props.children.flatMap(findImages);
+  //     }
+
+  //     return findImages(element.props.children);
+  //   };
+
+  //   const imageElements = slides.flatMap(slide => findImages(slide.content));
+
+  //   if (imageElements.length === 0) {
+  //     // No images to load, so we're done
+  //     setImagesLoaded(true);
+  //     return;
+  //   }
+
+  //   const imagePromises = imageElements.map(img => new Promise((resolve, reject) => {
+  //     const imageElement = new Image();
+  //     imageElement.onload = resolve;
+  //     imageElement.onerror = reject;
+  //     imageElement.src = img.props.src;
+  //   }));
+
+  //   Promise.all(imagePromises)
+  //     .then(() => setImagesLoaded(true))
+  //     .catch((error) => {
+  //       console.error('Failed to load image', error);
+  //       setImagesLoaded(true); // We're done, even though an image failed to load
+  //     });
+  // }, [slides]);
+
+  const [areAllImagesLoaded, setAreAllImagesLoaded] = useState(false);
 
   useEffect(() => {
-    const findImages = (element) => {
-      if (!element || !element.props) {
-        return [];
-      }
+    const imageElements = document.querySelectorAll('img');
+    const imageArray = Array.from(imageElements).map(img => img.src);
 
-      if (element.type === 'img' && element.props.src) {
-        return [element];
-      }
-
-      if (Array.isArray(element.props.children)) {
-        return element.props.children.flatMap(findImages);
-      }
-
-      return findImages(element.props.children);
-    };
-
-    const imageElements = slides.flatMap(slide => findImages(slide.content));
-
-    if (imageElements.length === 0) {
-      // No images to load, so we're done
-      setImagesLoaded(true);
-      return;
-    }
-
-    const imagePromises = imageElements.map(img => new Promise((resolve, reject) => {
-      const imageElement = new Image();
-      imageElement.onload = resolve;
-      imageElement.onerror = reject;
-      imageElement.src = img.props.src;
-    }));
-
-    Promise.all(imagePromises)
-      .then(() => setImagesLoaded(true))
-      .catch((error) => {
-        console.error('Failed to load image', error);
-        setImagesLoaded(true); // We're done, even though an image failed to load
+    const loadImages = imageArray.map(imagePath => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = resolve;
+        img.onerror = reject;
+        img.src = imagePath;
       });
-  }, [slides]);
+    });
+
+    Promise.all(loadImages)
+      .then(() => setAreAllImagesLoaded(true))
+      .catch(err => console.log('Some images failed to load', err));
+
+  }, [])
 
   const goToNextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
@@ -338,43 +359,49 @@ const App = () => {
 
   return (
     <div className="relative h-screen lg:w-1/4 md:w-1/2 mx-auto overflow-hidden">
-      {!imagesLoaded && (
+      {/* {!imagesLoaded && (
+        <div className="flex items-center justify-center h-full">
+          <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-purple-500"></div>
+        </div>
+      )}  */}
+      {!areAllImagesLoaded && (
         <div className="flex items-center justify-center h-full">
           <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-purple-500"></div>
         </div>
       )}
+      {/* {imagesLoaded && ( */}
+      {areAllImagesLoaded && (
+      <React.Fragment>
+        {/* Render dot indicators */}
+        <div className="absolute top-0 left-0 right-0 flex justify-center mt-10 mb-2">
+          {slides.map((slide, index) => (
+            <div
+              key={slide.id}
+              className={`w-2.5 h-2.5 mx-1.5 rounded-full ${index <= currentSlide ? 'bg-darkG' : 'bg-lightG'}`}
+            ></div>
+          ))}
+        </div>
 
-      {imagesLoaded && (
-        <React.Fragment>
-          {/* Render dot indicators */}
-          <div className="absolute top-0 left-0 right-0 flex justify-center mt-10 mb-2">
-            {slides.map((slide, index) => (
-              <div
-                key={slide.id}
-                className={`w-2.5 h-2.5 mx-1.5 rounded-full ${index <= currentSlide ? 'bg-darkG' : 'bg-lightG'}`}
-              ></div>
-            ))}
-          </div>
 
+        {/* Render navigation buttons */}
+        <div className="absolute top-1/2 left-0 right-0 flex justify-between" style={{ pointerEvents: 'none' }}>
+          <button className="mx-2 px-2" onClick={goToPreviousSlide} style={{ pointerEvents: 'auto' }}>
+            <img src={require('./img/nav left.png')} style={{ width: '13.61px', height: '35px' }} alt='btnPrev' />
+          </button>
+          <button className="mx-2 px-2" onClick={goToNextSlide} style={{ pointerEvents: 'auto' }}>
+            <img src={require('./img/nav right.png')} style={{ width: '13.61px', height: '35px' }} alt='btnNext' />
+          </button>
+        </div>
 
-          {/* Render navigation buttons */}
-          <div className="absolute top-1/2 left-0 right-0 flex justify-between" style={{ pointerEvents: 'none' }}>
-            <button className="mx-2 px-2" onClick={goToPreviousSlide} style={{ pointerEvents: 'auto' }}>
-              <img src={require('./img/nav left.png')} style={{ width: '13.61px', height: '35px' }} alt='btnPrev' />
-            </button>
-            <button className="mx-2 px-2" onClick={goToNextSlide} style={{ pointerEvents: 'auto' }}>
-              <img src={require('./img/nav right.png')} style={{ width: '13.61px', height: '35px' }} alt='btnNext' />
-            </button>
-          </div>
-
-          <div className="flex items-center justify-center h-full">
-            <Slide
-              key={slides[currentSlide].id}
-              content={slides[currentSlide].content}
-            />
-          </div>
-        </React.Fragment>
+        <div className="flex items-center justify-center h-full">
+          <Slide
+            key={slides[currentSlide].id}
+            content={slides[currentSlide].content}
+          />
+        </div>
+      </React.Fragment>
       )}
+      {/* )} */}
     </div>
   );
 };
