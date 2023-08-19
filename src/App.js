@@ -337,13 +337,13 @@ const App = () => {
           <motion.div className='w-4/5 mt-auto mr-5' {...animate.rightToLeft}>
             <svgs.s13Q className='w-full h-auto' />
           </motion.div>
-          <motion.a href="https://www.mycelium.today/" target="_blank" rel="noopener noreferrer" className='w-2/3 mt-auto mb- image-button' {...animate.fadeIn}>
+          <motion.a href="https://www.mycelium.today/" target="_blank" rel="noopener noreferrer" className='w-2/3 mt-auto image-button' {...animate.fadeIn}>
             <img src={require('./img/s13-btn.png')} />
           </motion.a>
           {/* <motion.div className='w-3/4 mt-5' {...animate.downToUp}>
             <svgs.s11Text2 className='w-full h-auto' />
           </motion.div> */}
-          <motion.div className='w-4/5 mt-auto mb-16' {...animate.rightToLeft}>
+          <motion.div className='w-4/5 mt-auto mb-24' {...animate.rightToLeft}>
             <svgs.s13C className='w-full h-auto' />
           </motion.div>
           <div className="flex justify-center space-x-16 pb-6 mb-5 mt-auto">
