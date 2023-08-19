@@ -346,7 +346,7 @@ const App = () => {
           <motion.div className='w-4/5 mt-auto mb-24' {...animate.rightToLeft}>
             <svgs.s13C className='w-full h-auto' />
           </motion.div>
-          <div className="flex justify-center space-x-16 pb-6 mb-5 mt-auto">
+          <div className="flex justify-center space-x-16 pb-16 mb-5 mt-auto">
             <a href="https://www.instagram.com/dancingfroghabitat/" target="_blank" rel="noopener noreferrer">
               <motion.div >
                 <svgs.s13Ig className="w-7 h-7" />
