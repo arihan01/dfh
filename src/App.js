@@ -161,7 +161,7 @@ const App = () => {
       content: (
         <div className="flex flex-col items-center justify-center h-full orange-bg bg-common">
           {/* <motion.img src={require('./img/s7-top.png')} className='w-3/4 mb-10 absolute top-[90px]' {...animate.fadeIn} /> */}
-          <motion.div className='w-5/6'>
+          <motion.div className='w-5/6 mt-10'>
             <svgs.s8Top className='w-full h-auto' />
           </motion.div>
           <motion.div className='w-3/4 mt-4' {...animate.upToDown} transition={{ ...animate.upToDown.transition, delay: 0 }}>
