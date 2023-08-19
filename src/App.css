@@ -6,9 +6,32 @@
     width: 100%;
   }
 
-.bg-img-1 {
-    background-image: url('./img/s1-bg.png');
+.white-bg {
+  background-image: url('./img/white-bg.png');
 }
+
+.blue-bg {
+  background-image: url('./img/blue-bg.png');
+}
+
+.black-bg {
+  background-image: url('./img/black\ bg.png');
+}
+
+.green-bg {
+  background-image: url('./img/green-bg.png');
+}
+
+.orange-bg {
+  background-image: url('./img/orange-bg.png');
+}
+
+.red-bg {
+  background-image: url('./img/red-bg.png');
+}
+/* .bg-img-1 {
+    background-image: url('./img/s1-bg.png');
+} */
 
 .bg-img-2 {
     background-image: url('./img/s2-bg.png');
@@ -40,6 +63,10 @@
 
 .bg-img-11 {
   background-image: url('./img/s11-bg.png');
+}
+
+.bg-img-13 {
+  background-image: url('./img/s13-bg.png');
 }
 
 .image-button {
