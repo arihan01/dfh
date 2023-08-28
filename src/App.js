@@ -264,13 +264,13 @@ const App = () => {
           <motion.div className='w-4/5 mt-5'>
             <svgs.s9Top className='w-full h-auto' />
           </motion.div>
-          <motion.div className='w-3/4 mt-10 mb-5' {...animate.fadeIn} >
+          <motion.div className='w-3/4 mt-10 mb-5' >
             <svgs.s9Text1 className='w-full h-auto' />
           </motion.div>
-          <motion.div className='w-3/4 mt-5 mb-5' {...animate.fadeIn} >
+          <motion.div className='w-3/4 mt-5 mb-5' >
             <svgs.s9Text2 className='w-full h-auto' />
           </motion.div>
-          <motion.div className='w-3/4 mt-5' {...animate.fadeIn} >
+          <motion.div className='w-3/4 mt-5' >
             <svgs.s9Text3 className='w-full h-auto' />
           </motion.div>
         </div>
