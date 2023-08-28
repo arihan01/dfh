@@ -5,11 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import './Carousel.css';
 
 const images = [
-  require('./img/s6-p0.png'),
-  require('./img/s6-p1.png'),
-  require('./img/s6-p2.png'),
-  require('./img/s6-p3.png'),
-  require('./img/s6-p4.png'),
+  require('../img/s6-p0.png'),
+  require('../img/s6-p1.png'),
+  require('../img/s6-p2.png'),
+  require('../img/s6-p3.png'),
+  require('../img/s6-p4.png'),
   // Add more images as needed
 ];
 

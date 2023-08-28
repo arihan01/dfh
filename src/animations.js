@@ -1,13 +1,13 @@
 export const leftToRight = {
   initial: { x: -50, opacity: 0 },
   animate: { x: 0, opacity: 1 },
-  transition: { duration: 1, ease: [0.3, 0.5, 0.6, 1], type: "tween", }
+  transition: { duration: 0.8, ease: [0.3, 0.5, 0.6, 1], type: "tween", }
 };
 
 export const rightToLeft = {
   initial: { x: 50, opacity: 0 },
   animate: { x: 0, opacity: 1 },
-  transition: { duration: 1, ease: [0.3, 0.5, 0.6, 1], type: "tween", }
+  transition: { duration: 0.8, ease: [0.3, 0.5, 0.6, 1], type: "tween", }
 };
 
 export const rectList = {
@@ -42,7 +42,7 @@ export const downToUp = {
   initial: { y: 50, opacity: 0 },
   animate: { y: 0, opacity: 1 },
   transition: {
-    duration: 1,
+    duration: 0.8,
     ease: [0.3, 0.5, 0.6, 1],
     type: "tween",
   },
@@ -52,7 +52,7 @@ export const upToDown = {
   initial: { y: -50, opacity: 0 },
   animate: { y: 0, opacity: 1 },
   transition: {
-    duration: 1,
+    duration: 0.8,
     ease: [0.3, 0.5, 0.6, 1],
     type: "tween",
   },
@@ -62,7 +62,7 @@ export const fadeIn = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
   transition: {
-    duration: 1,
+    duration: 0.8,
     ease: [0.3, 0.5, 0.6, 1],
     type: "tween",
   },

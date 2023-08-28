@@ -8,6 +8,8 @@ import { ReactComponent as s3Text2 } from './img/s3-text-2.svg';
 import { ReactComponent as s4Text1 } from './img/s4-text-1.svg';
 import { ReactComponent as s4Text2 } from './img/s4-text-2.svg';
 import { ReactComponent as s4Text3 } from './img/s4-text-3.svg';
+import { ReactComponent as s5Text1 } from './img/s5-img-1.svg';
+import { ReactComponent as s5Text2 } from './img/s5-img-2.svg';
 import { ReactComponent as s6Text } from './img/s6-text.svg';
 import { ReactComponent as s7Text1 } from './img/s7-2023-text.svg';
 import { ReactComponent as s7Text2 } from './img/s7-2024-text.svg';
@@ -38,6 +40,7 @@ import { ReactComponent as s12Text4 } from './img/s12-text-4.svg';
 import { ReactComponent as s12Text5 } from './img/s12-text-5.svg';
 import { ReactComponent as s12Top } from './img/s12-top.svg';
 import { ReactComponent as s13Q } from './img/s13-quote.svg';
+import { ReactComponent as s13Text } from './img/s13-text.svg';
 import { ReactComponent as s13C } from './img/s13-contact.svg';
 import { ReactComponent as s13Ig } from './img/s13-ig.svg';
 import { ReactComponent as s13In } from './img/s13-in.svg';
@@ -53,6 +56,8 @@ export {
     s4Text1,
     s4Text2,
     s4Text3,
+    s5Text1,
+    s5Text2,
     s6Text,
     s7Text1,
     s7Text2,
@@ -83,6 +88,7 @@ export {
     s12Text5,
     s12Top,
     s13Q,
+    s13Text,
     s13C,
     s13Ig,
     s13In
