@@ -15,7 +15,7 @@
 }
 
 .black-bg {
-  background-image: url('./img/black\ bg.png');
+  background-image: url('./img/black-bg.png');
 }
 
 .green-bg {
@@ -34,17 +34,13 @@
     background-image: url('./img/s1-bg.png');
 } */
 
-.bg-img-2 {
+/* .bg-img-2 {
   background-image: url('./img/s2-bg.png');
-}
+} */
 
-.bg-img-3 {
-  background-image: url('./img/s3-bg.png');
-}
-
-.bg-img-4 {
+/* .bg-img-4 {
   background-image: url('./img/s4-bg.png');
-}
+} */
 
 .bg-img-5 {
   background-image: url('./img/bg-5.png');
@@ -54,32 +50,32 @@
   background-image: url('./img/bg-6.png');
 }
 
-.bg-img-7 {
+/* .bg-img-7 {
   background-image: url('./img/s7-bg.png');
-}
+} */
 
-.bg-img-8 {
+/* .bg-img-8 {
   background-image: url('./img/s8-bg.png');
-}
+} */
 
-.bg-img-10 {
+/* .bg-img-10 {
   background-image: url('./img/s10-bg.png');
-}
+} */
 
 .bg-img-11 {
   background-image: url('./img/s11-bg.png');
 }
 
-.bg-img-13 {
+/* .bg-img-13 {
   background-image: url('./img/s13-bg.png');
-}
+} */
 
-.image-button {
-  transition: transform 0.2s;
+/* .image-button {
+  transition: transform 0.2s; */
   /* Add a smooth transition effect */
-}
+/* } */
 
-.image-button:active {
-  transform: translateY(5px);
+/* .image-button:active {
+  transform: translateY(5px); */
   /* Apply a press down effect on click */
-}
+/* } */
