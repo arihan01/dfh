@@ -7,27 +7,27 @@
 }
 
 .white-bg {
-  background-image: url('./img/white-bg.png');
+  background-image: url("./img/white-bg.png");
 }
 
 .blue-bg {
-  background-image: url('./img/blue-bg.png');
+  background-image: url("./img/blue-bg.png");
 }
 
 .black-bg {
-  background-image: url('./img/black-bg.png');
+  background-image: url("./img/black-bg.png");
 }
 
 .green-bg {
-  background-image: url('./img/green-bg.png');
+  background-image: url("./img/green-bg.png");
 }
 
 .orange-bg {
-  background-image: url('./img/orange-bg.png');
+  background-image: url("./img/orange-bg.png");
 }
 
 .red-bg {
-  background-image: url('./img/red-bg.png');
+  background-image: url("./img/red-bg.png");
 }
 
 /* .bg-img-1 {
@@ -43,11 +43,11 @@
 } */
 
 .bg-img-5 {
-  background-image: url('./img/bg-5.png');
+  background-image: url("./img/bg-5.png");
 }
 
 .bg-img-6 {
-  background-image: url('./img/bg-6.png');
+  background-image: url("./img/bg-6.png");
 }
 
 /* .bg-img-7 {
@@ -63,7 +63,7 @@
 } */
 
 .bg-img-11 {
-  background-image: url('./img/s11-bg.png');
+  background-image: url("./img/s11-bg.png");
 }
 
 /* .bg-img-13 {
@@ -72,10 +72,10 @@
 
 /* .image-button {
   transition: transform 0.2s; */
-  /* Add a smooth transition effect */
+/* Add a smooth transition effect */
 /* } */
 
 /* .image-button:active {
   transform: translateY(5px); */
-  /* Apply a press down effect on click */
+/* Apply a press down effect on click */
 /* } */
