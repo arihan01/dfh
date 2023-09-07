@@ -10,7 +10,7 @@ export default function Slide9() {
       {/* <motion.div className='w-4/5 mt-5'>
       <svgs.s9Top className='w-full h-auto' />
     </motion.div> */}
-      <motion.div className='font-bvb text-2xl lg:text-4xl mt-5' {...animate.fadeIn}>Collective Sustainability</motion.div>
+      <motion.div className='font-bvb text-3xl lg:text-4xl mt-5' {...animate.fadeIn}>Collective Sustainability</motion.div>
       <motion.div className='font-cf text-sm lg:text-base mb-12' {...animate.fadeIn}>Harmonious Coexistence</motion.div>
       {/* <motion.div className='w-3/4 mt-10 mb-5' >
       <svgs.s9Text1 className='w-full h-auto' />
