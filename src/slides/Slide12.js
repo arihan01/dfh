@@ -5,10 +5,11 @@ import * as svgs from "../svgs.js";
 
 export default function Slide12() {
   return (
-    <div className="flex flex-col items-center justify-center h-full bg-paperG bg-img-11 bg-common">
-      <motion.div className="w-2/3 mb-10" {...animate.fadeIn}>
+    <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
+      {/* <motion.div className="w-2/3 mb-10" {...animate.fadeIn}>
         <svgs.s12Top className="w-full h-auto" />
-      </motion.div>
+      </motion.div> */}
+      <motion.div className="font-bvb text-4xl lg:text-5xl mb-10" {...animate.fadeIn}>Our Partners</motion.div>
       <motion.div
         className="w-4/5 mb-5"
         {...animate.leftToRight}

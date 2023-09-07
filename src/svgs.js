@@ -30,6 +30,13 @@ import { ReactComponent as s13Text } from "./img/s13-text.svg";
 import { ReactComponent as s13C } from "./img/s13-contact.svg";
 import { ReactComponent as s13Ig } from "./img/s13-ig.svg";
 import { ReactComponent as s13In } from "./img/s13-in.svg";
+import { ReactComponent as Next } from "./img/Next.svg";
+import { ReactComponent as Prev } from "./img/Prev.svg";
+import { ReactComponent as Temp } from "./img/temp.svg";
+import { ReactComponent as Scroll } from "./img/scroll.svg";
+import { ReactComponent as Scroll2 } from "./img/scroll2.svg";
+import { ReactComponent as s13Yt } from "./img/s13-yt.svg";
+import { ReactComponent as s13W } from "./img/s13-w.svg";
 
 export {
   S1Logo,
@@ -64,4 +71,11 @@ export {
   s13C,
   s13Ig,
   s13In,
+  Next,
+  Prev,
+  Temp,
+  Scroll,
+  Scroll2,
+  s13Yt,
+  s13W
 };

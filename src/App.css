@@ -79,3 +79,51 @@
   transform: translateY(5px); */
 /* Apply a press down effect on click */
 /* } */
+
+.white-svg {
+  fill: white;
+}
+
+.black-svg {
+  fill: black;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-indicator {
+  animation: scrollAnimation 5s ease-in-out infinite, fadeOut 1s 4s linear both;
+  opacity: 1;
+}
+
+.scroll-indicator::before {
+  content: "";
+  transform: translateX(-50%);
+  font-size: 100%;
+  font-family: comfortaa;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

@@ -1,5 +1,10 @@
+.slide {
+  height: auto;
+  width: 100%;
+}
+
 .slide img {
-  object-fit: contain;
+  object-fit: cover;
   transform: scale(0.9);
   transition: transform 0.5s;
 }

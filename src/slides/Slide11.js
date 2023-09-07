@@ -5,11 +5,13 @@ import * as svgs from "../svgs.js";
 
 export default function Slide11() {
   return (
-    <div className="flex flex-col items-center justify-center h-full blue-bg bg-common">
-      <motion.div className="w-1/2 mb-10 mt-auto" {...animate.leftToRight}>
+    <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
+      {/* <motion.div className="w-1/2 mb-10 mt-auto" {...animate.leftToRight}>
         <svgs.s11Top className="w-full h-auto" />
-      </motion.div>
-      <motion.div className="w-3/4 mt-10 mb-auto" {...animate.downToUp}>
+      </motion.div> */}
+      <motion.div className="font-bvb text-4xl lg:text-5xl" {...animate.fadeIn}>Collective</motion.div>
+      <motion.div className="font-bvr text-4xl lg:text-5xl -mt-3 mb-16" {...animate.fadeIn}>Framework</motion.div>
+      <motion.div className="w-10/12" {...animate.downToUp}>
         <svgs.s11Img className="w-full h-auto" />
       </motion.div>
     </div>

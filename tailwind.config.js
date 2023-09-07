@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
+        cf: ["Comfortaa", "sans-serif"],
+        bvr: ["BonVivantRegular", "sans-serif"],
+        bvb: ["BonVivantBold", "sans-serif"],
+        bvs: ["BonVivantSerif", "sans-serif"],
       },
       colors: {
         btnPurple: "#F0DFFF",

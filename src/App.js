@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Slide from "./Slide";
 import "./App.css";
+import * as svgs from './svgs';
 import Slide1 from "./slides/Slide1";
 import Slide2 from "./slides/Slide2";
 import Slide3 from "./slides/Slide3";
@@ -103,26 +104,28 @@ const App = () => {
           style={{ pointerEvents: "none" }}
         >
           <button
-            className=""
+            className="ml-1"
             onClick={goToPreviousSlide}
             style={{ pointerEvents: "auto" }}
           >
-            <img
+            {/* <img
               src={require("./img/nav left.png")}
               className="w-8 h-auto"
               alt="btnPrev"
-            />
+            /> */}
+            <svgs.Prev className="w-8 h-auto"/>
           </button>
           <button
-            className=""
+            className="mr-1"
             onClick={goToNextSlide}
             style={{ pointerEvents: "auto" }}
           >
-            <img
+            {/* <img
               src={require("./img/nav right.png")}
               className="w-8 h-auto"
               alt="btnNext"
-            />
+            /> */}
+            <svgs.Next className="w-8 h-auto"/>
           </button>
         </div>
         <div className="flex items-center justify-center h-full">

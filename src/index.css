@@ -5,3 +5,23 @@
 /* Add any additional custom CSS styling here */
 
 @import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+
+@font-face{
+    font-family: "Comfortaa";
+    src: url("./fonts/Comfortaa-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: "BonVivantRegular";
+    src: url("./fonts/bonvivant_regular.otf");
+}
+
+@font-face{
+    font-family: "BonVivantBold";
+    src: url("./fonts/bonvivantserifbold.otf");
+}
+
+@font-face{
+    font-family: "BonVivantSerif";
+    src: url("./fonts/bonvivantserif.otf");
+}

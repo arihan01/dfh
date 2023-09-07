@@ -14,9 +14,11 @@ export default function Slide8() {
   return (
     <div className="flex flex-col items-center justify-center h-full orange-bg bg-common">
       {/* <motion.img src={require('./img/s7-top.png')} className='w-3/4 mb-10 absolute top-[90px]' {...animate.fadeIn} /> */}
-      <motion.div className="w-1/2 mt-16">
-        <svgs.s8Top className="w-full h-auto" /> {/* title */}
-      </motion.div>
+      {/* <motion.div className="w-1/2 mt-16">
+        <svgs.s8Top className="w-full h-auto" /> 
+      </motion.div> */}
+      <motion.div className="font-bvb text-3xl lg:text-4xl" {...animate.fadeIn}>Project Milestones</motion.div>
+      <motion.div className="font-cf mb-5" {...animate.fadeIn}>Tap Year To View</motion.div>
       <motion.div
         className="w-3/4"
         {...animate.upToDown}
