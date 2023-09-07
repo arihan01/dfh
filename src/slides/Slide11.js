@@ -9,8 +9,8 @@ export default function Slide11() {
       {/* <motion.div className="w-1/2 mb-10 mt-auto" {...animate.leftToRight}>
         <svgs.s11Top className="w-full h-auto" />
       </motion.div> */}
-      <motion.div className="font-bvb text-4xl lg:text-5xl" {...animate.fadeIn}>Collective</motion.div>
-      <motion.div className="font-bvr text-4xl lg:text-5xl -mt-3 mb-16" {...animate.fadeIn}>Framework</motion.div>
+      <motion.div className="font-bvb text-5xl lg:text-5xl" {...animate.fadeIn}>Collective</motion.div>
+      <motion.div className="font-bvr text-5xl lg:text-5xl -mt-3 mb-16" {...animate.fadeIn}>Framework</motion.div>
       <motion.div className="w-10/12" {...animate.downToUp}>
         <svgs.s11Img className="w-full h-auto" />
       </motion.div>

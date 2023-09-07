@@ -16,8 +16,8 @@ export default function Slide10() {
     {/* <motion.div className='w-2/3 mb-4' {...animate.fadeIn}>
       <svgs.s2UL className='w-full h-auto' />
     </motion.div> */}
-    <motion.div className='font-bvb text-3xl lg:text-4xl' {...animate.fadeIn}>The Habitat</motion.div>
-    <motion.div className='font-bvr text-4xl lg:text-5xl mb-12 -mt-3' {...animate.fadeIn}>Ecosystem</motion.div>
+    <motion.div className='font-bvb text-4xl lg:text-4xl' {...animate.fadeIn}>The Habitat</motion.div>
+    <motion.div className='font-bvr text-5xl lg:text-5xl mb-12 -mt-3' {...animate.fadeIn}>Ecosystem</motion.div>
     <motion.div className='flex items-center justify-center w-1/5 space-x-7 mb-12' {...animate.upToDown}>
       <img src={require('../img/s11-img1.png')}/>
       <img src={require('../img/s11-img2.png')}/>
