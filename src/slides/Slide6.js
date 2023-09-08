@@ -33,7 +33,7 @@ export default function Slide6() {
       dolor in reprehenderit in voluptate velit
     </motion.div>
     <div className='w-full h-auto bottom-0 absolute'>
-      <img src={require('../img/s11-img.png')}/>
+      <img src={require('../img/s11-img.webp')}/>
     </div>
     {/* <motion.img src={require('../img/s10-img-1.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0 }} className='mb-3' />
     <motion.img src={require('../img/s10-img-2.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0.6 }} className='mb-3' />

@@ -9,7 +9,7 @@ export default function Slide7() {
       {/* <motion.img src={require('./img/s7-img.png')}/> */}
       <TransformWrapper>
         <TransformComponent>
-          <motion.img src={require("../img/s7-img.png")} className="mt-10"/>
+          <motion.img src={require("../img/s7-img.webp")} className="mt-10"/>
         </TransformComponent>
       </TransformWrapper>
       <motion.img

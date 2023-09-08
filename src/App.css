@@ -7,7 +7,7 @@
 }
 
 .white-bg {
-  background-image: url("./img/white-bg.png");
+  background-image: url("./img/white-bg.webp");
 }
 
 .blue-bg {
@@ -15,7 +15,7 @@
 }
 
 .black-bg {
-  background-image: url("./img/black-bg.png");
+  background-image: url("./img/black-bg.webp");
 }
 
 .green-bg {
@@ -23,7 +23,7 @@
 }
 
 .orange-bg {
-  background-image: url("./img/orange-bg.png");
+  background-image: url("./img/orange-bg.webp");
 }
 
 .red-bg {
@@ -43,7 +43,7 @@
 } */
 
 .bg-img-5 {
-  background-image: url("./img/bg-5.png");
+  background-image: url("./img/bg-5.webp");
 }
 
 .bg-img-6 {

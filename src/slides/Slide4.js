@@ -23,7 +23,7 @@ export default function Slide4() {
       <div className="font-bvb text-4xl lg:text-5xl">Meet The</div>
       <div className="font-bvr text-4xl lg:text-5xl mb-5 -mt-2">Dancing Frog</div>
       <motion.img
-        src={require("../img/s3-img.png")}
+        src={require("../img/s3-img.webp")}
         className="mb-10 mx-auto w-2/3"
         // variants={animate.rectItem}
         {...animate.fadeIn}
