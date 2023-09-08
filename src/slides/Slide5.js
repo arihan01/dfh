@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-import * as svgs from "../svgs.js";
+// import * as svgs from "../svgs.js";
 
 export default function Slide5() {
   return (

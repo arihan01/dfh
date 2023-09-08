@@ -10,75 +10,17 @@
   background-image: url("./img/white-bg.webp");
 }
 
-.blue-bg {
-  background-image: url("./img/blue-bg.png");
-}
-
 .black-bg {
   background-image: url("./img/black-bg.webp");
-}
-
-.green-bg {
-  background-image: url("./img/green-bg.png");
 }
 
 .orange-bg {
   background-image: url("./img/orange-bg.webp");
 }
 
-.red-bg {
-  background-image: url("./img/red-bg.png");
-}
-
-/* .bg-img-1 {
-    background-image: url('./img/s1-bg.png');
-} */
-
-/* .bg-img-2 {
-  background-image: url('./img/s2-bg.png');
-} */
-
-/* .bg-img-4 {
-  background-image: url('./img/s4-bg.png');
-} */
-
 .bg-img-5 {
   background-image: url("./img/bg-5.webp");
 }
-
-.bg-img-6 {
-  background-image: url("./img/bg-6.png");
-}
-
-/* .bg-img-7 {
-  background-image: url('./img/s7-bg.png');
-} */
-
-/* .bg-img-8 {
-  background-image: url('./img/s8-bg.png');
-} */
-
-/* .bg-img-10 {
-  background-image: url('./img/s10-bg.png');
-} */
-
-.bg-img-11 {
-  background-image: url("./img/s11-bg.png");
-}
-
-/* .bg-img-13 {
-  background-image: url('./img/s13-bg.png');
-} */
-
-/* .image-button {
-  transition: transform 0.2s; */
-/* Add a smooth transition effect */
-/* } */
-
-/* .image-button:active {
-  transform: translateY(5px); */
-/* Apply a press down effect on click */
-/* } */
 
 .white-svg {
   fill: white;

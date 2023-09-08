@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-import * as svgs from "../svgs.js";
+// import * as svgs from "../svgs.js";
 
 export default function Slide6() {
   return (
@@ -29,9 +29,9 @@ export default function Slide6() {
         className="flex items-center justify-center w-1/5 space-x-7 mb-12"
         {...animate.upToDown}
       >
-        <img src={require("../img/s11-img1.png")} />
-        <img src={require("../img/s11-img2.png")} />
-        <img src={require("../img/s11-img3.png")} />
+        <img src={require("../img/s11-img1.png")} alt="s6-img-1"/>
+        <img src={require("../img/s11-img2.png")} alt="s6-img-2"/>
+        <img src={require("../img/s11-img3.png")} alt="s6-img-3"/>
       </motion.div>
       <motion.div
         className="font-cf text-xs lg:text-base mb-64 lg:mb-72"
@@ -52,7 +52,7 @@ export default function Slide6() {
         dolor in reprehenderit in voluptate velit
       </motion.div>
       <div className="w-full h-auto bottom-0 absolute">
-        <img src={require("../img/s11-img.webp")} />
+        <img src={require("../img/s11-img.webp")} alt="s6-img-4"/>
       </div>
       {/* <motion.img src={require('../img/s10-img-1.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0 }} className='mb-3' />
     <motion.img src={require('../img/s10-img-2.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0.6 }} className='mb-3' />

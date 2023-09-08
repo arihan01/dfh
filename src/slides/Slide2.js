@@ -1,9 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
-import * as animate from "../animations";
-import * as svgs from "../svgs";
-import "../App.css";
-import Carousel from "../carousels/Carousel";
+// import { motion } from "framer-motion";
+// import * as animate from "../animations";
+// import * as svgs from "../svgs";
+// import "../App.css";
+// import Carousel from "../carousels/Carousel";
 // import Carousel2 from "../carousels/Carousel2";
 // import Carousel3 from "../carousels/Carousel3";
 
