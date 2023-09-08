@@ -1,47 +1,43 @@
-import React from "react";
-import { motion } from "framer-motion";
-import * as animate from "../animations";
-// import * as svgs from "../svgs.js";
+import React from 'react';
+import { motion } from 'framer-motion';
+import * as animate from '../animations';
+import * as svgs from '../svgs.js';
 
 export default function Slide6() {
   return (
     <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
-      {/* <motion.div className='w-3/4 mb-5' {...animate.fadeIn}>
-  <svgs.s6Top className='w-full h-auto' />
-</motion.div>
-<motion.img src={require('./img/s6-img.png')} className='w-4/5 rounded-lg mt-5 mb-5' {...animate.fadeIn} />
-<motion.img src={require('./img/s6-text.png')} className='w-full mt-5 px-5' {...animate.fadeIn} /> */}
-      {/* <motion.div
-        className="w-1/2 absolute top-28 mr-32"
-        {...animate.leftToRight}
-      >
-        <svgs.s6Text className="w-full h-auto" />
-      </motion.div> */}
-      <motion.div className="font-bvb text-4xl lg:text-5xl" {...animate.fadeIn}>Habitat</motion.div>
-      <motion.div className="font-bvr text-4xl lg:text-5xl tracking-tight -mt-2" {...animate.fadeIn}>Residential Plan</motion.div>
-      <motion.div className="flex w-2/3 space-x-3 mt-7">
-        <motion.div {...animate.leftToRight}>
-          <img src={require('../img/s6-img-1.png')} alt="img-1"/>
-        </motion.div>
-        <motion.div {...animate.leftToRight} transition={{ ...animate.fadeIn.transition, delay: 0.6 }}>
-          <img src={require('../img/s6-img-2.png')} alt="img-2"/>
-        </motion.div>
-      </motion.div>
-      <motion.div className="font-cf mr-10 lg:text-xl -translate-x-1/5 mt-7 mb-12" {...animate.rightToLeft}>
-        •Functional<br />
-        •Weather Proof<br />
-        •Least Intrusive<br />
-        •Maintenance Friendly
-      </motion.div>
-      <motion.iframe className="w-full aspect-video"
-        src="https://www.youtube.com/embed/iNVkMcxJ5Sg?autoplay=1&mute=1&loop=1&playlist=iNVkMcxJ5Sg"
-        allow="autoplay; encrypted-media"
-        allowFullScreen
-        title="video"
-        {...animate.fadeIn}
-      >
-      </motion.iframe>
-
+    {/* <motion.img src={require('./img/s9-top.png')} className='w-4/5 mb-5' {...animate.fadeIn} /> */}
+    {/* <motion.img src={require('./img/s9-img-1.png')} className='w-3/4 mt-5' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0 }} />
+    <motion.img src={require('./img/s9-img-2.png')} className='w-3/4' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0.6 }} />
+    <motion.img src={require('./img/s9-img-3.png')} className='w-3/4' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 1.2 }} /> */}
+    {/* <motion.div className='w-2/3 mb-1 mt-5' {...animate.fadeIn}>
+      <svgs.s10Top className='w-full h-auto' />
+    </motion.div> */}
+    {/* <motion.div className='w-2/3 mb-4' {...animate.fadeIn}>
+      <svgs.s2UL className='w-full h-auto' />
+    </motion.div> */}
+    <motion.div className='font-bvb text-4xl lg:text-4xl' {...animate.fadeIn}>The Habitat</motion.div>
+    <motion.div className='font-bvr text-5xl lg:text-5xl mb-12 -mt-3' {...animate.fadeIn}>Ecosystem</motion.div>
+    <motion.div className='flex items-center justify-center w-1/5 space-x-7 mb-12' {...animate.upToDown}>
+      <img src={require('../img/s11-img1.png')}/>
+      <img src={require('../img/s11-img2.png')}/>
+      <img src={require('../img/s11-img3.png')}/>
+    </motion.div>
+    <motion.div className='font-cf text-xs lg:text-base mb-64 lg:mb-72' {...animate.rightToLeft}>
+      Lorem ipsum dolor sit amet, consectetur<br/>
+      adipiscing elit, sed do eiusmod tempor<br/>
+      incididunt ut labore et dolore magna aliqua.<br/>
+      Ut enim ad minim veniam, quis nostrud<br/>
+      exercitation ullamco laboris nisi ut aliquip<br/>
+      ex ea commodo consequat. Duis aute irure<br/>
+      dolor in reprehenderit in voluptate velit
+    </motion.div>
+    <div className='w-full h-auto bottom-0 absolute'>
+      <img src={require('../img/s11-img.png')}/>
     </div>
-  );
+    {/* <motion.img src={require('../img/s10-img-1.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0 }} className='mb-3' />
+    <motion.img src={require('../img/s10-img-2.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0.6 }} className='mb-3' />
+    <motion.img src={require('../img/s10-img-3.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 1.2 }} /> */}
+  </div>
+);
 }

@@ -6,38 +6,50 @@ import * as svgs from '../svgs.js';
 export default function Slide10() {
   return (
     <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
-    {/* <motion.img src={require('./img/s9-top.png')} className='w-4/5 mb-5' {...animate.fadeIn} /> */}
-    {/* <motion.img src={require('./img/s9-img-1.png')} className='w-3/4 mt-5' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0 }} />
-    <motion.img src={require('./img/s9-img-2.png')} className='w-3/4' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0.6 }} />
-    <motion.img src={require('./img/s9-img-3.png')} className='w-3/4' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 1.2 }} /> */}
-    {/* <motion.div className='w-2/3 mb-1 mt-5' {...animate.fadeIn}>
-      <svgs.s10Top className='w-full h-auto' />
+      {/* <motion.img src={require('./img/s9-top.png')} className='w-4/5 mb-10 mt-2' {...animate.fadeIn} /> */}
+      {/* <motion.div className='w-4/5 mt-5'>
+      <svgs.s9Top className='w-full h-auto' />
     </motion.div> */}
-    {/* <motion.div className='w-2/3 mb-4' {...animate.fadeIn}>
-      <svgs.s2UL className='w-full h-auto' />
+      <motion.div className='font-bvb text-3xl lg:text-4xl mt-5' {...animate.fadeIn}>Collective Sustainability</motion.div>
+      <motion.div className='font-cf text-sm lg:text-base mb-12' {...animate.fadeIn}>Harmonious Coexistence</motion.div>
+      {/* <motion.div className='w-3/4 mt-10 mb-5' >
+      <svgs.s9Text1 className='w-full h-auto' />
+    </motion.div>
+    <motion.div className='w-3/4 mt-5 mb-5' >
+      <svgs.s9Text2 className='w-full h-auto' />
+    </motion.div>
+    <motion.div className='w-3/4 mt-5' >
+      <svgs.s9Text3 className='w-full h-auto' />
     </motion.div> */}
-    <motion.div className='font-bvb text-4xl lg:text-4xl' {...animate.fadeIn}>The Habitat</motion.div>
-    <motion.div className='font-bvr text-5xl lg:text-5xl mb-12 -mt-3' {...animate.fadeIn}>Ecosystem</motion.div>
-    <motion.div className='flex items-center justify-center w-1/5 space-x-7 mb-12' {...animate.upToDown}>
-      <img src={require('../img/s11-img1.png')}/>
-      <img src={require('../img/s11-img2.png')}/>
-      <img src={require('../img/s11-img3.png')}/>
-    </motion.div>
-    <motion.div className='font-cf text-xs lg:text-base mb-64 lg:mb-72' {...animate.rightToLeft}>
-      Lorem ipsum dolor sit amet, consectetur<br/>
-      adipiscing elit, sed do eiusmod tempor<br/>
-      incididunt ut labore et dolore magna aliqua.<br/>
-      Ut enim ad minim veniam, quis nostrud<br/>
-      exercitation ullamco laboris nisi ut aliquip<br/>
-      ex ea commodo consequat. Duis aute irure<br/>
-      dolor in reprehenderit in voluptate velit
-    </motion.div>
-    <div className='w-full h-auto bottom-0 absolute'>
-      <img src={require('../img/s11-img.png')}/>
-    </div>
-    {/* <motion.img src={require('../img/s10-img-1.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0 }} className='mb-3' />
-    <motion.img src={require('../img/s10-img-2.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0.6 }} className='mb-3' />
-    <motion.img src={require('../img/s10-img-3.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 1.2 }} /> */}
+<motion.div className='left-align mb-10' {...animate.rightToLeft}>
+  <div className='font-bvs text-2xl lg:text-3xl'>CANOPY WALK AND<br />INTERPRETATION CENTRE</div>
+  <div className='font-cf text-sm lg:text-base'>
+    <span style={{color: '#E59617'}}>Camera traps</span> in strategic locations,<br />
+    designing a platform that allows access<br/>
+    to <span style={{color: '#E59617'}}>200+ years old canopy</span> 40 ft above the<br />
+    ground, coupled with an interpretation<br />
+    center, arena and a laboratory.
   </div>
-);
+</motion.div>
+<motion.div className='right-align mb-10 ml-2' {...animate.leftToRight}>
+  <div className='font-bvs text-right text-2xl lg:text-3xl'>NATIVE FOREST<br/>PRODUCE</div>
+  <div className='font-cf text-right text-sm lg:text-base'>Western Ghats hosts over <span style={{color: '#E59617'}}>9000 species</span><br/>
+    of plants. Our team at Dancing Frog<br/>
+    is in the process of cataloguing the<br/>
+    medicinal plants
+  </div>
+</motion.div>
+<motion.div className='left-align mr-3' {...animate.rightToLeft}>
+  <div className='font-bvs text-2xl lg:text-3xl'>EXPERIENCES</div>
+  <div className='font-cf text-sm lg:text-base'>Forest experiences or the viewing<br/>
+    of forest scenes contributes to<br/>
+    <span style={{color: '#E59617'}}>reducing stress, promoting positive</span><br/>
+    <span style={{color: '#E59617'}}>feelings</span> resulting in general wellness.<br/>
+    Hiking, camping, wildlife watching,<br/>
+    tree climbing, foraging or just<br/>
+    meditating are some examples.</div>
+</motion.div>
+
+    </div>
+  );
 }
