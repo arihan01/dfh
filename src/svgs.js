@@ -77,5 +77,5 @@ export {
   Scroll,
   Scroll2,
   s13Yt,
-  s13W
+  s13W,
 };

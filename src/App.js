@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Slide from "./Slide";
 import "./App.css";
-import * as svgs from './svgs';
+import * as svgs from "./svgs";
 import Slide1 from "./slides/Slide1";
 import Slide2 from "./slides/Slide2";
 import Slide3 from "./slides/Slide3";
@@ -113,7 +113,7 @@ const App = () => {
               className="w-8 h-auto"
               alt="btnPrev"
             /> */}
-            <svgs.Prev className="w-8 h-auto"/>
+            <svgs.Prev className="w-8 h-auto" />
           </button>
           <button
             className="mr-1"
@@ -125,7 +125,7 @@ const App = () => {
               className="w-8 h-auto"
               alt="btnNext"
             /> */}
-            <svgs.Next className="w-8 h-auto"/>
+            <svgs.Next className="w-8 h-auto" />
           </button>
         </div>
         <div className="flex items-center justify-center h-full">

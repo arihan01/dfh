@@ -1,111 +1,99 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
 import * as svgs from "../svgs.js";
 
 export default function Slide9() {
-  const [imageStates, setImageStates] = useState([true, true, true, true]);
-
-  const toggleImage = (index) => {
-    const newImageStates = [...imageStates];
-    newImageStates[index] = !newImageStates[index];
-    setImageStates(newImageStates);
-  };
   return (
-    <div className="flex flex-col items-center justify-center h-full orange-bg bg-common">
-      {/* <motion.img src={require('./img/s7-top.png')} className='w-3/4 mb-10 absolute top-[90px]' {...animate.fadeIn} /> */}
-      {/* <motion.div className="w-1/2 mt-16">
-        <svgs.s8Top className="w-full h-auto" /> 
-      </motion.div> */}
-      <motion.div className="font-bvb text-3xl lg:text-4xl" {...animate.fadeIn}>Project Milestones</motion.div>
-      <motion.div className="font-cf mb-5" {...animate.fadeIn}>Tap Year To View</motion.div>
+    <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
+      {/* <motion.img src={require('./img/s9-top.png')} className='w-4/5 mb-10 mt-2' {...animate.fadeIn} /> */}
+      {/* <motion.div className='w-4/5 mt-5'>
+      <svgs.s9Top className='w-full h-auto' />
+    </motion.div> */}
       <motion.div
-        className="w-2/3"
-        {...animate.upToDown}
-        transition={{ ...animate.upToDown.transition, delay: 0 }}
+        className="font-bvb text-3xl lg:text-4xl mt-3"
+        {...animate.fadeIn}
       >
-        {imageStates[0] ? (
-          <motion.img //year
-            src={require("../img/s8-2023.png")}
-            className="w-2/5 mx-auto mb-1 image-button"
-            onClick={() => toggleImage(0)}
-            {...animate.fadeIn}
-          />
-        ) : (
-          <motion.div
-            className="w-full mb-3 mt-5" //text
-            onClick={() => toggleImage(0)}
-            {...animate.fadeIn}
-          >
-            <svgs.s8Text1 className="w-full h-auto my-1" />
-          </motion.div>
-        )}
+        Collective
       </motion.div>
       <motion.div
-        className="w-2/3 mt-3"
-        {...animate.upToDown}
-        transition={{ ...animate.upToDown.transition, delay: 0.8 }}
+        className="font-bvr text-3xl lg:text-4xl -mt-3"
+        {...animate.fadeIn}
       >
-        {imageStates[1] ? (
-          <motion.img //year
-            src={require("../img/s8-2024.png")}
-            className="w-2/5 mx-auto mb-1 image-button"
-            onClick={() => toggleImage(1)}
-            {...animate.fadeIn}
-          />
-        ) : (
-          <motion.div
-            className="w-full mb-3" //text
-            onClick={() => toggleImage(1)}
-            {...animate.fadeIn}
-          >
-            <svgs.s8Text2 className="w-full h-auto my-1" />
-          </motion.div>
-        )}
+        Sustainability
       </motion.div>
       <motion.div
-        className="w-2/3 mt-3"
-        {...animate.upToDown}
-        transition={{ ...animate.upToDown.transition, delay: 1.6 }}
+        className="font-cf text-sm lg:text-base mb-5 lg:mb-10 "
+        {...animate.fadeIn}
       >
-        {imageStates[2] ? (
-          <motion.img //year
-            src={require("../img/s8-2025.png")}
-            className="w-2/5 mx-auto mb-1 image-button"
-            onClick={() => toggleImage(2)}
-            {...animate.fadeIn}
-          />
-        ) : (
-          <motion.div
-            className="w-full mb-3" //text
-            onClick={() => toggleImage(2)}
-            {...animate.fadeIn}
-          >
-            <svgs.s8Text3 className="w-full h-auto my-1" />
-          </motion.div>
-        )}
+        Harmonious Coexistence
       </motion.div>
-      <motion.div
-        className="w-2/3 mt-3"
-        {...animate.upToDown}
-        transition={{ ...animate.upToDown.transition, delay: 2.4 }}
-      >
-        {imageStates[3] ? (
-          <motion.img //year
-            src={require("../img/s8-2026.png")}
-            className="w-2/5 mx-auto mb-1 image-button"
-            onClick={() => toggleImage(3)}
-            {...animate.fadeIn}
-          />
-        ) : (
-          <motion.div
-            className="w-full" //text
-            onClick={() => toggleImage(3)}
-            {...animate.fadeIn}
-          >
-            <svgs.s8Text4 className="w-full h-auto my-1" />
-          </motion.div>
-        )}
+      {/* <motion.div className='w-3/4 mt-10 mb-5' >
+      <svgs.s9Text1 className='w-full h-auto' />
+    </motion.div>
+    <motion.div className='w-3/4 mt-5 mb-5' >
+      <svgs.s9Text2 className='w-full h-auto' />
+    </motion.div>
+    <motion.div className='w-3/4 mt-5' >
+      <svgs.s9Text3 className='w-full h-auto' />
+    </motion.div> */}
+      <motion.div className="left-align mb-10" {...animate.rightToLeft}>
+        <div className="font-bvs text-2xl lg:text-3xl">
+          CANOPY WALK AND
+          <br />
+          INTERPRETATION CENTRE
+        </div>
+        <div className="font-cf text-sm lg:text-base">
+          <span style={{ color: "#E59617" }}>Camera traps</span> in strategic
+          locations,
+          <br />
+          designing a platform that allows access
+          <br />
+          to <span style={{ color: "#E59617" }}>200+ years old canopy</span> 40
+          ft above the
+          <br />
+          ground, coupled with an interpretation
+          <br />
+          center, arena and a laboratory.
+        </div>
+      </motion.div>
+      <motion.div className="right-align mb-10 ml-2" {...animate.leftToRight}>
+        <div className="font-bvs text-right text-2xl lg:text-3xl">
+          NATIVE FOREST
+          <br />
+          PRODUCE
+        </div>
+        <div className="font-cf text-right text-sm lg:text-base">
+          Western Ghats hosts over{" "}
+          <span style={{ color: "#E59617" }}>9000 species</span>
+          <br />
+          of plants. Our team at Dancing Frog
+          <br />
+          is in the process of cataloguing the
+          <br />
+          medicinal plants
+        </div>
+      </motion.div>
+      <motion.div className="left-align mr-3" {...animate.rightToLeft}>
+        <div className="font-bvs text-2xl lg:text-3xl">EXPERIENCES</div>
+        <div className="font-cf text-sm lg:text-base">
+          Forest experiences or the viewing
+          <br />
+          of forest scenes contributes to
+          <br />
+          <span style={{ color: "#E59617" }}>
+            reducing stress, promoting positive
+          </span>
+          <br />
+          <span style={{ color: "#E59617" }}>feelings</span> resulting in
+          general wellness.
+          <br />
+          Hiking, camping, wildlife watching,
+          <br />
+          tree climbing, foraging or just
+          <br />
+          meditating are some examples.
+        </div>
       </motion.div>
     </div>
   );

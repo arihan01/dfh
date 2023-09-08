@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-import * as svgs from '../svgs';
-import '../App.css';
+import * as svgs from "../svgs";
+import "../App.css";
 import Carousel from "../carousels/Carousel";
 // import Carousel2 from "../carousels/Carousel2";
 // import Carousel3 from "../carousels/Carousel3";
@@ -10,8 +10,8 @@ import Carousel from "../carousels/Carousel";
 export default function Slide2() {
   return (
     <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
-      <div className="scroll-indicator  w-1/12 mt-10"><svgs.Scroll className="w-full h-auto" /></div>
-      <motion.div
+      {/* <div className="scroll-indicator  w-1/12 mt-10"><svgs.Scroll className="w-full h-auto" /></div> */}
+      {/* <motion.div
         className="w-full mb-1 p-2  "
         {...animate.fadeIn}
         transition={{ ...animate.fadeIn.transition, delay: 0 }}
@@ -19,7 +19,7 @@ export default function Slide2() {
         <div style={{ maxWidth: "35vh", margin: "0 auto" }}>
           <Carousel />
         </div>
-      </motion.div>
+      </motion.div> */}
       {/* <motion.div className='w-1/2 mb-20 ml-12' {...animate.leftToRight} transition={{ ...animate.leftToRight.transition, delay: 0 }}>
   <svgs.s4Text1 className='w-full h-auto' />
 </motion.div>
@@ -47,7 +47,7 @@ export default function Slide2() {
           <Carousel3 />
         </div>
       </motion.div> */}
-      <div className="flex-col space-y-1">
+      {/* <div className="flex-col space-y-1">
         <div className="flex justify-center">
           <div className="font-bvb text-2xl">text</div>
         </div>
@@ -57,7 +57,7 @@ export default function Slide2() {
             <svgs.s13Ig className="w-full h-auto" />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

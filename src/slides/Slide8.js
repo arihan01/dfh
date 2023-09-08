@@ -17,31 +17,46 @@ export default function Slide8() {
       >
         <svgs.s6Text className="w-full h-auto" />
       </motion.div> */}
-      <motion.div className="font-bvb text-4xl lg:text-5xl" {...animate.fadeIn}>Habitat</motion.div>
-      <motion.div className="font-bvr text-4xl lg:text-5xl tracking-tight -mt-2" {...animate.fadeIn}>Residential Plan</motion.div>
+      <motion.div className="font-bvb text-4xl lg:text-5xl" {...animate.fadeIn}>
+        Habitat
+      </motion.div>
+      <motion.div
+        className="font-bvr text-4xl lg:text-5xl tracking-tight -mt-2"
+        {...animate.fadeIn}
+      >
+        Residential Plan
+      </motion.div>
       <motion.div className="flex w-2/3 space-x-3 mt-7">
         <motion.div {...animate.leftToRight}>
-          <img src={require('../img/s6-img-1.png')} alt="img-1"/>
+          <img src={require("../img/s6-img-1.png")} alt="img-1" />
         </motion.div>
-        <motion.div {...animate.leftToRight} transition={{ ...animate.fadeIn.transition, delay: 0.6 }}>
-          <img src={require('../img/s6-img-2.png')} alt="img-2"/>
+        <motion.div
+          {...animate.leftToRight}
+          transition={{ ...animate.fadeIn.transition, delay: 0.6 }}
+        >
+          <img src={require("../img/s6-img-2.png")} alt="img-2" />
         </motion.div>
       </motion.div>
-      <motion.div className="font-cf mr-10 lg:text-xl -translate-x-1/5 mt-7 mb-12" {...animate.rightToLeft}>
-        •Functional<br />
-        •Weather Proof<br />
-        •Least Intrusive<br />
+      <motion.div
+        className="font-cf mr-10 lg:text-xl -translate-x-1/5 mt-7 mb-12"
+        {...animate.rightToLeft}
+      >
+        •Functional
+        <br />
+        •Weather Proof
+        <br />
+        •Least Intrusive
+        <br />
         •Maintenance Friendly
       </motion.div>
-      <motion.iframe className="w-full aspect-video"
+      <motion.iframe
+        className="w-full aspect-video"
         src="https://www.youtube.com/embed/iNVkMcxJ5Sg?autoplay=1&mute=1&loop=1&playlist=iNVkMcxJ5Sg"
         allow="autoplay; encrypted-media"
         allowFullScreen
         title="video"
         {...animate.fadeIn}
-      >
-      </motion.iframe>
-
+      ></motion.iframe>
     </div>
   );
 }

@@ -5,15 +5,14 @@ import * as svgs from "../svgs.js";
 
 export default function Slide3() {
   return (
-    <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
-      <motion.div className="mb-16 w-3/4" {...animate.leftToRight}>
-        <svgs.s2Text1 className="w-full h-auto" />
+    <div className="flex flex-col items-center justify-center h-full black-bg bg-img-5 bg-common">
+      {/* <motion.img src={require('./img/s5-img-1.png')} className='w-3/4 mb-20' {...animate.fadeIn} />
+<motion.img src={require('./img/s5-img-2.png')} className='w-3/4 mt-20' {...animate.fadeIn} /> */}
+      <motion.div className="w-4/5 mb-16" {...animate.leftToRight}>
+        <svgs.s5Text1 className="w-full h-auto" />
       </motion.div>
-      {/* <motion.div className='mb-20 w-1/3 mr-12' {...animate.leftToRight}>
-            <svgs.s2UL className='w-full h-auto' />
-          </motion.div> */}
-      <motion.div className="mt-16 w-3/5" {...animate.rightToLeft}>
-        <svgs.s2Text2 className="w-full h-auto" />
+      <motion.div className="w-4/5" {...animate.rightToLeft}>
+        <svgs.s5Text2 className="w-full h-auto" />
       </motion.div>
     </div>
   );
