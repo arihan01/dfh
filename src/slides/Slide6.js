@@ -26,15 +26,15 @@ export default function Slide6() {
         Ecosystem
       </motion.div>
       <motion.div
-        className="flex items-center justify-center w-1/5 space-x-7 mb-12"
+        className="flex items-center justify-center w-1/5 space-x-7 mb-10"
         {...animate.upToDown}
       >
-        <img src={require("../img/s11-img1.png")} alt="s6-img-1"/>
-        <img src={require("../img/s11-img2.png")} alt="s6-img-2"/>
-        <img src={require("../img/s11-img3.png")} alt="s6-img-3"/>
+        <img src={require("../img/s6-img-1.png")} alt="s6-img-1"/>
+        <img src={require("../img/s6-img-2.png")} alt="s6-img-2"/>
+        <img src={require("../img/s6-img-3.png")} alt="s6-img-3"/>
       </motion.div>
       <motion.div
-        className="font-cf text-xs lg:text-base mb-64 lg:mb-72"
+        className="font-cf text-xs lg:text-base mb-64 lg:mb-80 text-center"
         {...animate.rightToLeft}
       >
         Lorem ipsum dolor sit amet, consectetur

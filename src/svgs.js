@@ -1,4 +1,5 @@
 import { ReactComponent as S1Logo } from "./img/s1-logo.svg";
+import { ReactComponent as S1Mid } from "./img/s1-mid.svg";
 import { ReactComponent as S1Text } from "./img/s1-text.svg";
 import { ReactComponent as s2Text1 } from "./img/s2-text-1.svg";
 import { ReactComponent as s2Text2 } from "./img/s2-text-2.svg";
@@ -26,6 +27,7 @@ import { ReactComponent as s13W } from "./img/s13-w.svg";
 
 export {
   S1Logo,
+  S1Mid,
   S1Text,
   s2Text1,
   s2Text2,

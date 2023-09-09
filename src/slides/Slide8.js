@@ -26,28 +26,28 @@ export default function Slide8() {
       >
         Residential Plan
       </motion.div>
-      <motion.div className="flex w-2/3 space-x-3 mt-7">
+      <motion.div className="flex w-2/3 space-x-16 mt-7">
         <motion.div {...animate.leftToRight}>
-          <img src={require("../img/s6-img-1.png")} alt="img-1" />
+          <img src={require("../img/s8-img-1.png")} alt="img-1" />
         </motion.div>
         <motion.div
           {...animate.leftToRight}
           transition={{ ...animate.fadeIn.transition, delay: 0.6 }}
         >
-          <img src={require("../img/s6-img-2.png")} alt="img-2" />
+          <img src={require("../img/s8-img-2.png")} alt="img-2" />
         </motion.div>
       </motion.div>
       <motion.div
-        className="font-cf mr-10 lg:text-xl -translate-x-1/5 mt-7 mb-12"
+        className="font-cf lg:text-xl -translate-x-1/5 mt-7 mb-12 text-center"
         {...animate.rightToLeft}
       >
-        •Functional
+        Functional
         <br />
-        •Weather Proof
+        Weather Proof
         <br />
-        •Least Intrusive
+        Least Intrusive
         <br />
-        •Maintenance Friendly
+        Maintenance Friendly
       </motion.div>
       <motion.iframe
         className="w-full aspect-video"

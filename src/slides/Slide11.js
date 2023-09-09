@@ -17,10 +17,13 @@ export default function Slide11() {
       {/* <motion.div className="w-1/2 mt-16">
         <svgs.s8Top className="w-full h-auto" /> 
       </motion.div> */}
-      <motion.div className="font-bvb text-3xl lg:text-4xl" {...animate.fadeIn}>
-        Project Milestones
+      <motion.div className="font-bvb text-4xl lg:text-5xl" {...animate.fadeIn}>
+        Project
       </motion.div>
-      <motion.div className="font-cf mb-5" {...animate.fadeIn}>
+      <motion.div className="font-bvr text-3xl lg:text-4xl -mt-3" {...animate.fadeIn}>
+        Milestones
+      </motion.div>
+      <motion.div className="font-cf mb-5 text-sm lg:text-base" {...animate.fadeIn}>
         Tap Year To View
       </motion.div>
       <motion.div
