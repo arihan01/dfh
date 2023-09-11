@@ -24,7 +24,7 @@ export default function Slide11() {
         Milestones
       </motion.div>
       <motion.div className="font-cf mb-5 text-sm lg:text-base" {...animate.fadeIn}>
-        Tap Year To View
+        Tap Year To View 
       </motion.div>
       <motion.div
         className="w-2/3"
