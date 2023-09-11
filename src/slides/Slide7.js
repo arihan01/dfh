@@ -7,11 +7,19 @@ export default function Slide7() {
   return (
     <div className="flex flex-col items-center justify-center h-full black-bg bg-common">
       {/* <motion.img src={require('./img/s7-img.png')}/> */}
-      <TransformWrapper>
-        <TransformComponent>
-          <motion.img src={require("../img/s7-img.webp")} className="mt-10" />
-        </TransformComponent>
-      </TransformWrapper>
+      <div className="font-bvb text-white text-2xl lg:text-4xl mt-5">
+        Dancing Frog Habitat
+      </div>
+      <div className="font-bvr text-white text-3xl lg:text-5xl -mt-2">
+        Conceptual Layout
+      </div>
+      <div className="w-3/4 lg:w-4/5">
+        <TransformWrapper>
+          <TransformComponent>
+            <motion.img src={require("../img/s7-img.webp")} className="mt-10" />
+          </TransformComponent>
+        </TransformWrapper>
+      </div>
       <motion.img
         src={require("../img/s7-text.png")}
         className="w-1/3 mt-1"
@@ -22,12 +30,6 @@ export default function Slide7() {
         className="w-3/5 mt-5"
         {...animate.fadeIn}
       /> */}
-      <div className="font-bvb text-white text-2xl lg:text-4xl mt-5">
-        Dancing Frog Habitat
-      </div>
-      <div className="font-bvr text-white text-3xl lg:text-5xl -mt-2">
-        Conceptual Layout
-      </div>
       <motion.img
         src={require("../img/s7-lines.png")}
         className="w-4/5 mt-7 mb-5"
