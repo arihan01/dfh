@@ -16,6 +16,7 @@ module.exports = {
         darkG: "#1F1F1F",
         lightG: "#CFD4D8",
         paperG: "#F6F6F6",
+        Mgreen: "#2E663F",
       },
     },
   },
