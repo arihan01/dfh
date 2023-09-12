@@ -14,19 +14,29 @@ import loadable from "@loadable/component";
 // import Slide11 from "./slides/Slide11";
 // import Slide12 from "./slides/Slide12";
 // import Slide13 from "./slides/Slide13";
-const Slide1 = loadable(() => import("./slides/Slide1"));
-const Slide2 = loadable(() => import("./slides/Slide2"));
-const Slide3 = loadable(() => import("./slides/Slide3"));
-const Slide4 = loadable(() => import("./slides/Slide4"));
-const Slide5 = loadable(() => import("./slides/Slide5"));
-const Slide6 = loadable(() => import("./slides/Slide6"));
-const Slide7 = loadable(() => import("./slides/Slide7"));
-const Slide8 = loadable(() => import("./slides/Slide8"));
-const Slide9 = loadable(() => import("./slides/Slide9"));
-const Slide10 = loadable(() => import("./slides/Slide10"));
-const Slide11 = loadable(() => import("./slides/Slide11"));
-const Slide12 = loadable(() => import("./slides/Slide12"));
-const Slide13 = loadable(() => import("./slides/Slide13"));
+function loadableSlide(slideNumber) {
+  return loadable(() => import(`./slides/Slide${slideNumber}`), {
+    fallback: (
+      <div className="flex items-center justify-center h-full">
+        <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-purple-500"></div>
+      </div>
+    ),
+  });
+}
+
+const Slide1 = loadableSlide(1);
+const Slide2 = loadableSlide(2);
+const Slide3 = loadableSlide(3);
+const Slide4 = loadableSlide(4);
+const Slide5 = loadableSlide(5);
+const Slide6 = loadableSlide(6);
+const Slide7 = loadableSlide(7);
+const Slide8 = loadableSlide(8);
+const Slide9 = loadableSlide(9);
+const Slide10 = loadableSlide(10);
+const Slide11 = loadableSlide(11);
+const Slide12 = loadableSlide(12);
+const Slide13 = loadableSlide(13);
 
 const App = () => {
   const slides = [
