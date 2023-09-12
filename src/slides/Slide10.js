@@ -19,7 +19,7 @@ export default function Slide10() {
         Framework
       </motion.div>
       <motion.div className="w-10/12" {...animate.downToUp}>
-        <svgs.s11Img className="w-full h-auto" />
+        <svgs.s10Img className="w-full h-auto" />
       </motion.div>
     </div>
   );

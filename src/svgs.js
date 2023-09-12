@@ -9,7 +9,7 @@ import { ReactComponent as s8Text1 } from "./img/s8-text-1.svg";
 import { ReactComponent as s8Text2 } from "./img/s8-text-2.svg";
 import { ReactComponent as s8Text3 } from "./img/s8-text-3.svg";
 import { ReactComponent as s8Text4 } from "./img/s8-text-4.svg";
-import { ReactComponent as s11Img } from "./img/s11-img.svg";
+import { ReactComponent as s10Img } from "./img/s10-img.svg";
 import { ReactComponent as s12Text1 } from "./img/s12-text-1.svg";
 import { ReactComponent as s12Text2 } from "./img/s12-text-2.svg";
 import { ReactComponent as s12Text3 } from "./img/s12-text-3.svg";
@@ -37,7 +37,7 @@ export {
   s8Text2,
   s8Text3,
   s8Text4,
-  s11Img,
+  s10Img,
   s12Text1,
   s12Text2,
   s12Text3,
