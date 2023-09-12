@@ -71,19 +71,19 @@ export default function Slide12() {
         </div>
         <div className="flex justify-center space-x-2">
           <motion.img
-            src={require("../img/mm.png")}
+            src={require("../img/mm.webp")}
             className="w-24 h-24"
             {...animate.leftToRight}
             transition={{ ...animate.leftToRight.transition, delay: 1.2 }}
           />
           <motion.img
-            src={require("../img/ke.png")}
+            src={require("../img/ke.webp")}
             className="w-24 h-24"
             {...animate.leftToRight}
             transition={{ ...animate.leftToRight.transition, delay: 1.8 }}
           />
           <motion.img
-            src={require("../img/mu.png")}
+            src={require("../img/mu.webp")}
             className="w-24 h-24"
             {...animate.leftToRight}
             transition={{ ...animate.leftToRight.transition, delay: 2.4 }}
