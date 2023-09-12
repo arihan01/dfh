@@ -123,7 +123,7 @@ const App = () => {
         {/* Render navigation buttons */}
         <div
           className="absolute top-1/2 left-0 right-0 flex justify-between"
-          style={{ pointerEvents: "none" }}
+          style={{ pointerEvents: "none", zIndex: 10 }}
         >
           <button
             className="ml-1"
