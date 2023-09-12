@@ -17,7 +17,7 @@ import loadable from "@loadable/component";
 function loadableSlide(slideNumber) {
   return loadable(() => import(`./slides/Slide${slideNumber}`), {
     fallback: (
-      <div className="flex items-center justify-center h-full white-bg">
+      <div className="flex items-center justify-center w-full h-full object-cover white-bg">
         <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-Mgreen"></div>
       </div>
     ),
