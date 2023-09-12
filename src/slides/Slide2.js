@@ -1,4 +1,5 @@
 import React from "react";
+import backgroundVideo from "../img/Slide-2.mp4";
 // import { motion } from "framer-motion";
 // import * as animate from "../animations";
 // import * as svgs from "../svgs";
@@ -9,7 +10,7 @@ import React from "react";
 
 export default function Slide2() {
   return (
-    <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
+    <div className="flex flex-col items-center justify-center h-full ">
       {/* <div className="scroll-indicator  w-1/12 mt-10"><svgs.Scroll className="w-full h-auto" /></div> */}
       {/* <motion.div
         className="w-full mb-1 p-2  "
@@ -58,6 +59,18 @@ export default function Slide2() {
           </div>
         </div>
       </div> */}
+      <video
+        autoPlay
+        // loop
+        muted
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
     </div>
   );
 }
