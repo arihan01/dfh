@@ -38,7 +38,7 @@ export default function Slide8() {
         </motion.div>
       </motion.div>
       <motion.div
-        className="font-cf lg:text-xl -translate-x-1/5 mt-7 mb-12 text-center"
+        className="font-cf lg:text-xl -translate-x-1/5 mt-7 mb-20 text-center"
         {...animate.rightToLeft}
       >
         Functional

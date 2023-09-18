@@ -20,39 +20,47 @@ export default function Slide6() {
         The Habitat
       </motion.div>
       <motion.div
-        className="font-bvr text-5xl lg:text-5xl mb-12 -mt-3"
+        className="font-bvr text-5xl lg:text-5xl mb-5 -mt-3"
         {...animate.fadeIn}
       >
         Ecosystem
       </motion.div>
       <motion.div
-        className="flex items-center justify-center w-1/5 space-x-7 mb-10"
+        className="flex items-center justify-center w-1/5 space-x-7 mb-5"
         {...animate.upToDown}
       >
-        <img src={require("../img/s6-img-1.png")} alt="s6-img-1"/>
-        <img src={require("../img/s6-img-2.png")} alt="s6-img-2"/>
-        <img src={require("../img/s6-img-3.png")} alt="s6-img-3"/>
+        <img src={require("../img/s6-img-1.png")} alt="s6-img-1" />
+        <img src={require("../img/s6-img-2.png")} alt="s6-img-2" />
+        <img src={require("../img/s6-img-3.png")} alt="s6-img-3" />
       </motion.div>
       <motion.div
-        className="font-cf text-xs lg:text-base mb-64 lg:mb-80 text-center"
+        className="font-cf text-xs lg:text-base mb-52 lg:mb-60 text-center"
         {...animate.rightToLeft}
       >
-        Lorem ipsum dolor sit amet, consectetur
+        At Dancing Frog Habitat, experience the magic
         <br />
-        adipiscing elit, sed do eiusmod tempor
+        of our unique shola grasslands, home to
         <br />
-        incididunt ut labore et dolore magna aliqua.
+        seasonal Neela Kurunji flowers and framed by
         <br />
-        Ut enim ad minim veniam, quis nostrud
+        the majestic Kumara Parvatha. Trek through
         <br />
-        exercitation ullamco laboris nisi ut aliquip
+        our ancient forest, where 300-year-old trees
         <br />
-        ex ea commodo consequat. Duis aute irure
+        whisper tales, and a vibrant tapestry of
         <br />
-        dolor in reprehenderit in voluptate velit
+        endemic birds, orchids, butterflies, and rare
+        <br />
+        fungi await. Let the melody of our perennial
+        <br />
+        stream, teeming with life in its purest waters,
+        <br />
+        be your guide in this sensory-rich journey.
+        <br />
+        Dive into nature's embrace like never before.
       </motion.div>
-      <div className="w-full h-auto bottom-0 absolute">
-        <img src={require("../img/s11-img.webp")} alt="s6-img-4"/>
+      <div className="w-full h-1/3 bottom-0 absolute">
+        <img src={require("../img/s11-img.webp")} alt="s6-img-4" />
       </div>
       {/* <motion.img src={require('../img/s10-img-1.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0 }} className='mb-3' />
     <motion.img src={require('../img/s10-img-2.png')} {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0.6 }} className='mb-3' />

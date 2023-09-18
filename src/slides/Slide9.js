@@ -23,7 +23,7 @@ export default function Slide9() {
         Sustainability
       </motion.div>
       <motion.div
-        className="font-cf text-sm lg:text-base mb-5 lg:mb-10 "
+        className="font-cf text-sm lg:text-base mb-12 lg:mb-10 "
         {...animate.fadeIn}
       >
         Harmonious Coexistence
