@@ -34,7 +34,7 @@ export default function Slide6() {
         <img src={require("../img/s6-img-3.png")} alt="s6-img-3" />
       </motion.div>
       <motion.div
-        className="font-cf text-xs lg:text-[1.5vh] md:text-base mb-60 text-center leading-[2vh]"
+        className="font-cf text-xs lg:text-[1.5vh] md:text-[1.5vh]  mb-60 text-center leading-[1.8vh]"
         {...animate.rightToLeft}
       >
         At Dancing Frog Habitat, experience the magic
