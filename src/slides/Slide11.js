@@ -17,7 +17,7 @@ export default function Slide11() {
       {/* <motion.div className="w-1/2 mt-16">
         <svgs.s8Top className="w-full h-auto" /> 
       </motion.div> */}
-      <motion.div className="font-bvb text-4xl lg:text-[4.5vh] md:text-5xl leading-[5vh] lg:mt-10" {...animate.fadeIn}>
+      <motion.div className="font-bvb text-4xl lg:text-[4.5vh] md:text-5xl leading-[5vh] lg:mt-10 mt-12" {...animate.fadeIn}>
         Project
       </motion.div>
       <motion.div className="font-bvr text-3xl lg:text-[4.5vh] md:text-5xl leading-[5vh] -mt-3" {...animate.fadeIn}>
