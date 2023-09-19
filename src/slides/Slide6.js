@@ -5,7 +5,7 @@ import * as animate from "../animations";
 
 export default function Slide6() {
   return (
-    <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
+    <div className="flex flex-col items-center justify-center h-screen white-bg bg-common">
       {/* <motion.img src={require('./img/s9-top.png')} className='w-4/5 mb-5' {...animate.fadeIn} /> */}
       {/* <motion.img src={require('./img/s9-img-1.png')} className='w-3/4 mt-5' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0 }} />
     <motion.img src={require('./img/s9-img-2.png')} className='w-3/4' {...animate.downToUp} transition={{ ...animate.downToUp.transition, delay: 0.6 }} />
