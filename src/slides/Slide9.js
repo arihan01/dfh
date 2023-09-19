@@ -11,19 +11,19 @@ export default function Slide9() {
       <svgs.s9Top className='w-full h-auto' />
     </motion.div> */}
       <motion.div
-        className="font-bvb text-3xl lg:text-4xl mt-3"
+        className="font-bvb text-3xl lg:text-[4vh] md:text-5xl mt-8"
         {...animate.fadeIn}
       >
         Collective
       </motion.div>
       <motion.div
-        className="font-bvr text-3xl lg:text-4xl -mt-3"
+        className="font-bvr text-3xl lg:text-[4vh] md:text-5xl -mt-3"
         {...animate.fadeIn}
       >
         Sustainability
       </motion.div>
       <motion.div
-        className="font-cf text-sm lg:text-base mb-12 lg:mb-10 "
+        className="font-cf text-sm lg:text-[1.7vh] md:text-xl mb-12 mt-3 lg:mb-10 "
         {...animate.fadeIn}
       >
         Harmonious Coexistence
@@ -38,12 +38,12 @@ export default function Slide9() {
       <svgs.s9Text3 className='w-full h-auto' />
     </motion.div> */}
       <motion.div className="left-align mb-10" {...animate.rightToLeft}>
-        <div className="font-bvs text-2xl lg:text-3xl">
+        <div className="font-bvs text-2xl lg:text-[3vh]">
           CANOPY WALK AND
           <br />
           INTERPRETATION CENTRE
         </div>
-        <div className="font-cf text-sm lg:text-base">
+        <div className="font-cf text-sm lg:text-[1.8vh] leading-[2.25vh]">
           <span style={{ color: "#E59617" }}>Camera traps</span> in strategic
           locations,
           <br />
@@ -58,12 +58,12 @@ export default function Slide9() {
         </div>
       </motion.div>
       <motion.div className="right-align mb-10 ml-2" {...animate.leftToRight}>
-        <div className="font-bvs text-right text-2xl lg:text-3xl">
+        <div className="font-bvs text-right text-2xl lg:text-[3vh]">
           NATIVE FOREST
           <br />
           PRODUCE
         </div>
-        <div className="font-cf text-right text-sm lg:text-base">
+        <div className="font-cf text-right text-sm lg:text-[1.8vh] leading-[2.25vh]">
           Western Ghats hosts over{" "}
           <span style={{ color: "#E59617" }}>9000 species</span>
           <br />
@@ -75,8 +75,8 @@ export default function Slide9() {
         </div>
       </motion.div>
       <motion.div className="left-align mr-3" {...animate.rightToLeft}>
-        <div className="font-bvs text-2xl lg:text-3xl">EXPERIENCES</div>
-        <div className="font-cf text-sm lg:text-base">
+        <div className="font-bvs text-2xl lg:text-[3vh]">EXPERIENCES</div>
+        <div className="font-cf text-sm lg:text-[1.8vh] leading-[2.25vh]">
           Forest experiences or the viewing
           <br />
           of forest scenes contributes to

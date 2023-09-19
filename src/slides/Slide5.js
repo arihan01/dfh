@@ -20,8 +20,8 @@ export default function Slide5() {
       >
         <svgs.s3Text1 className="w-full h-auto" />
       </motion.div> */}
-      <div className="font-bvb text-4xl lg:text-5xl">Meet The</div>
-      <div className="font-bvr text-4xl lg:text-5xl mb-5 -mt-2">
+      <div className="font-bvb text-4xl lg:text-[5vh] md:text-5xl">Meet The</div>
+      <div className="font-bvr text-4xl lg:text-[5vh] md:text-5xl mb-5 -mt-2">
         Dancing Frog
       </div>
       <motion.img
@@ -41,18 +41,18 @@ export default function Slide5() {
         {/* <div className="pb-2">
           <svgs.Temp className="w-full h-auto" />
         </div> */}
-        <div className="text-center font-bvb text-3xl lg:text-4xl">
+        <div className="text-center font-bvb text-3xl lg:text-[4vh] md:text-4xl">
           What’s In A Name?
         </div>
         <div
-          className="text-center font-bvb text-xl lg:text-2xl"
-          style={{ color: "#E59617" }}
+          className="text-center font-bvb text-xl lg:text-[2.5vh] md:text-2xl"
+          style={{ color: "#E59617", lineHeight: '2vh'}}
         >
           Micrixalus Kottigeharensis
         </div>
         <div class="flex items-center justify-center h-full">
-          <div class="font-cf text-xs lg:text-base tracking-tight leading-5 w-auto text-center">
-            <div>Also called torrent frogs & they belong to the</div>
+          <div class="font-cf text-sm lg:text-[1.7vh] md:text-lg tracking-tight leading-5 w-auto text-center" style={{lineHeight: '2.5vh'}}>
+            <div >Also called torrent frogs & they belong to the</div>
             <div>genus ‘Micrixalus’. Endemic to the Western</div>
             <div>Ghats of India, these tiny frogs, measuring just</div>
             <div>about three centimeters, are found in and</div>

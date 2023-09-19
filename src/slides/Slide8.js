@@ -17,11 +17,11 @@ export default function Slide8() {
       >
         <svgs.s6Text className="w-full h-auto" />
       </motion.div> */}
-      <motion.div className="font-bvb text-4xl lg:text-5xl" {...animate.fadeIn}>
+      <motion.div className="font-bvb text-4xl lg:text-[5vh] md:text-5xl" {...animate.fadeIn}>
         Habitat
       </motion.div>
       <motion.div
-        className="font-bvr text-4xl lg:text-5xl tracking-tight -mt-2"
+        className="font-bvr text-4xl lg:text-[5vh] md:text-5xl tracking-tight -mt-2"
         {...animate.fadeIn}
       >
         Residential Plan
@@ -38,7 +38,7 @@ export default function Slide8() {
         </motion.div>
       </motion.div>
       <motion.div
-        className="font-cf lg:text-xl -translate-x-1/5 mt-7 mb-20 text-center"
+        className="font-cf lg:text-[2vh] md:text-xl -translate-x-1/5 mt-7 mb-20 text-center"
         {...animate.rightToLeft}
       >
         Functional

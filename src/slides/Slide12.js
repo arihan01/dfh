@@ -9,11 +9,11 @@ export default function Slide12() {
       {/* <motion.div className="w-2/3 mb-10" {...animate.fadeIn}>
         <svgs.s12Top className="w-full h-auto" />
       </motion.div> */}
-      <motion.div className="font-bvb text-4xl lg:text-5xl" {...animate.fadeIn}>
+      <motion.div className="font-bvb text-4xl lg:text-[5vh] md:text-5xl" {...animate.fadeIn}>
         Our
       </motion.div>
       <motion.div
-        className="font-bvr text-4xl lg:text-5xl mb-10 -mt-3"
+        className="font-bvr text-4xl lg:text-[5vh] md:text-5xl mb-10 -mt-3"
         {...animate.fadeIn}
       >
         Partners
@@ -55,36 +55,32 @@ export default function Slide12() {
       </motion.div>
       {/* <motion.img src={require('./img/s12-img.png')} className='w-2/3' {...animate.downToUp} /> */}
       <div className="flex flex-col items-center space-y-2">
-        <div className="flex justify-center space-x-2">
+        <div className="flex justify-center space-x-2 w-[10vh] h-[10vh]">
           <motion.img
             src={require("../img/hh.png")}
-            className="w-24 h-24"
+            
             {...animate.leftToRight}
             transition={{ ...animate.leftToRight.transition, delay: 0 }}
           />
           <motion.img
             src={require("../img/ap.png")}
-            className="w-24 h-24"
             {...animate.leftToRight}
             transition={{ ...animate.leftToRight.transition, delay: 0.6 }}
           />
         </div>
-        <div className="flex justify-center space-x-2">
+        <div className="flex justify-center space-x-2 w-[10vh] h-[10vh]">
           <motion.img
             src={require("../img/mm.webp")}
-            className="w-24 h-24"
             {...animate.leftToRight}
             transition={{ ...animate.leftToRight.transition, delay: 1.2 }}
           />
           <motion.img
             src={require("../img/ke.webp")}
-            className="w-24 h-24"
             {...animate.leftToRight}
             transition={{ ...animate.leftToRight.transition, delay: 1.8 }}
           />
           <motion.img
             src={require("../img/mu.webp")}
-            className="w-24 h-24"
             {...animate.leftToRight}
             transition={{ ...animate.leftToRight.transition, delay: 2.4 }}
           />

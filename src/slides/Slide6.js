@@ -16,11 +16,11 @@ export default function Slide6() {
       {/* <motion.div className='w-2/3 mb-4' {...animate.fadeIn}>
       <svgs.s2UL className='w-full h-auto' />
     </motion.div> */}
-      <motion.div className="font-bvb text-4xl lg:text-4xl" {...animate.fadeIn}>
+      <motion.div className="font-bvb text-4xl lg:text-[4vh] md:text-5xl" {...animate.fadeIn}>
         The Habitat
       </motion.div>
       <motion.div
-        className="font-bvr text-5xl lg:text-5xl mb-5 -mt-3"
+        className="font-bvr text-5xl lg:text-[5vh] md:text-6xl mb-5 -mt-3"
         {...animate.fadeIn}
       >
         Ecosystem
@@ -34,7 +34,7 @@ export default function Slide6() {
         <img src={require("../img/s6-img-3.png")} alt="s6-img-3" />
       </motion.div>
       <motion.div
-        className="font-cf text-xs lg:text-base mb-52 lg:mb-60 text-center"
+        className="font-cf text-xs lg:text-[1.5vh] md:text-base mb-60 text-center leading-[2vh]"
         {...animate.rightToLeft}
       >
         At Dancing Frog Habitat, experience the magic

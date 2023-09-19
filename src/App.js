@@ -107,15 +107,15 @@ const App = () => {
   };
 
   return (
-    <div className="relative h-screen lg:w-1/4 md:w-1/2 mx-auto overflow-hidden">
+    <div className="relative h-screen lg:w-1/4 md:w-3/4 mx-auto overflow-hidden">
       <React.Fragment>
         {/* Render dot indicators */}
         <div className="absolute top-0 left-0 right-0 flex justify-center mt-10 mb-2">
           {slides.map((slide, index) => (
             <div
               key={slide.id}
-              className={`w-3 h-3 mx-1.5 rounded-full ${
-                index <= currentSlide ? "bg-darkG border-2" : "bg-lightG"
+              className={`w-[1.3vh] h-[1.3vh] mx-1.5 rounded-full ${
+                index <= currentSlide ? "bg-darkG border-[0.2vh]" : "bg-lightG"
               }`}
             ></div>
           ))}
