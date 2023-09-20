@@ -6,7 +6,7 @@ import * as svgs from "../svgs.js";
 export default function Slide13() {
   return (
     <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
-      <motion.div className="w-4/5 mt-20" {...animate.rightToLeft}>
+      <motion.div className="w-4/5 mt-28" {...animate.rightToLeft}>
         <svgs.s13Q className="w-full h-auto" />
       </motion.div>
       {/* <motion.a href="https://www.mycelium.today/" target="_blank" rel="noopener noreferrer" className='w-2/3 mt-auto image-button' {...animate.fadeIn}>

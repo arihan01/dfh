@@ -23,7 +23,7 @@ export default function Slide9() {
         Sustainability
       </motion.div>
       <motion.div
-        className="font-cf text-sm lg:text-[1.7vh] md:text-xl mb-12 mt-3 lg:mb-10 "
+        className="font-cf text-sm lg:text-[1.7vh] md:text-xl mb-8 lg:mb-10 "
         {...animate.fadeIn}
       >
         Harmonious Coexistence
@@ -37,7 +37,7 @@ export default function Slide9() {
     <motion.div className='w-3/4 mt-5' >
       <svgs.s9Text3 className='w-full h-auto' />
     </motion.div> */}
-      <motion.div className="left-align mb-10" {...animate.rightToLeft}>
+      <motion.div className="left-align mb-8" {...animate.rightToLeft}>
         <div className="font-bvs text-2xl lg:text-[3vh]">
           CANOPY WALK AND
           <br />
@@ -57,7 +57,7 @@ export default function Slide9() {
           center, arena and a laboratory.
         </div>
       </motion.div>
-      <motion.div className="right-align mb-10 ml-2" {...animate.leftToRight}>
+      <motion.div className="right-align mb-8 ml-2" {...animate.leftToRight}>
         <div className="font-bvs text-right text-2xl lg:text-[3vh]">
           NATIVE FOREST
           <br />
