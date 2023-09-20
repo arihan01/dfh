@@ -3,17 +3,6 @@ import Slide from "./Slide";
 import "./App.css";
 import * as svgs from "./svgs";
 import loadable from "@loadable/component";
-// import Slide3 from "./slides/Slide3";
-// import Slide4 from "./slides/Slide4";
-// import Slide5 from "./slides/Slide5";
-// import Slide6 from "./slides/Slide6";
-// import Slide7 from "./slides/Slide7";
-// import Slide8 from "./slides/Slide8";
-// import Slide9 from "./slides/Slide9";
-// import Slide10 from "./slides/Slide10";
-// import Slide11 from "./slides/Slide11";
-// import Slide12 from "./slides/Slide12";
-// import Slide13 from "./slides/Slide13";
 function loadableSlide(slideNumber) {
   return loadable(() => import(`./slides/Slide${slideNumber}`), {
     fallback: (
