@@ -107,7 +107,9 @@ const App = () => {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 100);
+    setTimeout(() => {
+      document.body.scrollTo(0, 1);
+    }, 1000);
   }, []);
 
   return (
