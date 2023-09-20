@@ -109,7 +109,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       document.body.scrollTo(0, 1);
-    }, 1000);
+    }, 2000);
   }, []);
 
   return (
