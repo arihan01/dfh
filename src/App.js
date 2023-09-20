@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slide from "./Slide";
 import "./App.css";
 import * as svgs from "./svgs";
@@ -105,6 +105,10 @@ const App = () => {
       prevSlide === 0 ? slides.length - 1 : prevSlide - 1
     );
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 1);
+  }, []);
 
   return (
     <div className="relative h-[100dvh] lg:w-1/4 md:w-3/4 mx-auto overflow-hidden">
