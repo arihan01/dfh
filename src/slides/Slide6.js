@@ -16,11 +16,14 @@ export default function Slide6() {
       {/* <motion.div className='w-2/3 mb-4' {...animate.fadeIn}>
       <svgs.s2UL className='w-full h-auto' />
     </motion.div> */}
-      <motion.div className="font-bvb text-4xl lg:text-[4vh] md:text-5xl" {...animate.fadeIn}>
+      <motion.div
+        className="font-bvb text-4xl lg:text-[4vh] md:text-5xl mt-10"
+        {...animate.fadeIn}
+      >
         The Habitat
       </motion.div>
       <motion.div
-        className="font-bvr text-5xl lg:text-[5vh] md:text-6xl mb-5 -mt-3"
+        className="font-bvr text-4xl lg:text-[5vh] md:text-6xl mb-5 -mt-3"
         {...animate.fadeIn}
       >
         Ecosystem

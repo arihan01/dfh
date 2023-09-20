@@ -9,11 +9,14 @@ export default function Slide12() {
       {/* <motion.div className="w-2/3 mb-10" {...animate.fadeIn}>
         <svgs.s12Top className="w-full h-auto" />
       </motion.div> */}
-      <motion.div className="font-bvb text-4xl lg:text-[5vh] md:text-5xl" {...animate.fadeIn}>
+      <motion.div
+        className="font-bvb text-4xl lg:text-[4vh] md:text-5xl"
+        {...animate.fadeIn}
+      >
         Our
       </motion.div>
       <motion.div
-        className="font-bvr text-4xl lg:text-[5vh] md:text-5xl mb-10 -mt-3"
+        className="font-bvr text-4xl lg:text-[4vh] md:text-5xl mb-10 -mt-3"
         {...animate.fadeIn}
       >
         Partners
@@ -58,7 +61,6 @@ export default function Slide12() {
         <div className="flex justify-center space-x-2 w-[10vh] h-[10vh]">
           <motion.img
             src={require("../img/hh.png")}
-            
             {...animate.leftToRight}
             transition={{ ...animate.leftToRight.transition, delay: 0 }}
           />

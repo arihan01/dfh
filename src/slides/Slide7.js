@@ -7,10 +7,10 @@ export default function Slide7() {
   return (
     <div className="flex flex-col items-center justify-center h-full black-bg bg-common">
       {/* <motion.img src={require('./img/s7-img.png')}/> */}
-      <div className="font-bvb text-white text-2xl lg:text-[4vh] md:text-4xl mt-5">
+      <div className="font-bvb text-white text-4xl lg:text-[4vh] md:text-4xl mt-5">
         Dancing Frog Habitat
       </div>
-      <div className="font-bvr text-white text-3xl lg:text-[5vh] md:text-5xl -mt-2">
+      <div className="font-bvr text-white text-4xl lg:text-[4vh] md:text-5xl -mt-2">
         Conceptual Layout
       </div>
       <div className="w-3/4 lg:w-4/5">

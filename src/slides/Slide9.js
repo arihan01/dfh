@@ -11,13 +11,13 @@ export default function Slide9() {
       <svgs.s9Top className='w-full h-auto' />
     </motion.div> */}
       <motion.div
-        className="font-bvb text-3xl lg:text-[4vh] md:text-5xl mt-8"
+        className="font-bvb text-4xl lg:text-[4vh] md:text-5xl mt-8"
         {...animate.fadeIn}
       >
         Collective
       </motion.div>
       <motion.div
-        className="font-bvr text-3xl lg:text-[4vh] md:text-5xl -mt-3"
+        className="font-bvr text-4xl lg:text-[4vh] md:text-5xl -mt-3"
         {...animate.fadeIn}
       >
         Sustainability
