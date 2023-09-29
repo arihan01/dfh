@@ -10,7 +10,7 @@ export default function Slide10() {
         <svgs.s11Top className="w-full h-auto" />
       </motion.div> */}
       <motion.div
-        className="font-bvb text-4xl lg:text-[4vh]"
+        className="font-bvb text-4xl lg:text-[4vh] md:text-5xl"
         {...animate.fadeIn}
       >
         Collective
