@@ -6,7 +6,7 @@ export default function Slide6() {
   return (
     <div className="white-bg bg-common flex h-screen flex-col items-center justify-center">
       <motion.div
-        className="font-bvb text-4xl md:text-5xl lg:mt-5"
+        className="mt-10 font-bvb text-4xl md:text-5xl lg:mt-5"
         {...animate.fadeIn}
       >
         The Habitat
@@ -38,8 +38,8 @@ export default function Slide6() {
         in this sensory-rich journey. Dive into nature's embrace like never
         before.
       </motion.div>
-      <div className="absolute bottom-0 h-1/3 w-full">
-        <img src={require("../img/s6-img.webp")} alt="s6-img-4" />
+      <div className="absolute bottom-0">
+        <img src={require("../img/s6-img.webp")} alt="s6-img-4" className="w-full aspect-[17/9]"/>
       </div>
     </div>
   );
