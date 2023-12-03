@@ -13,7 +13,7 @@ export default function Slide10() {
         className="-mt-3 mb-16 font-bvr text-4xl text-[#E59617] md:text-5xl"
         {...animate.fadeIn}
       >
-        Collaboration
+        Advantages
       </motion.div>
       <motion.div className="w-10/12" {...animate.downToUp}>
         <S10Img className="h-auto w-full" /> {/* 3 by 3 grid of icons */}

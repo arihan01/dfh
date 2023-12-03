@@ -3,16 +3,14 @@ import { motion } from "framer-motion";
 import * as animate from "../animations";
 import { ReactComponent as S13Q } from "../img/s13-quote.svg";
 import { ReactComponent as S13Text } from "../img/s13-text.svg";
-import { ReactComponent as S13C } from "../img/s13-contact.svg";
 import { ReactComponent as S13Ig } from "../img/s13-ig.svg";
 import { ReactComponent as S13In } from "../img/s13-in.svg";
 import { ReactComponent as S13Yt } from "../img/s13-yt.svg";
-import { ReactComponent as S13W } from "../img/s13-w.svg";
 
 export default function Slide13() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <motion.div className="mt-28 w-4/5" {...animate.rightToLeft}>
+      <motion.div className="mb-5 mt-20 w-4/5" {...animate.rightToLeft}>
         <S13Q className="h-auto w-full" /> {/* quote at the top */}
       </motion.div>
       <motion.img
@@ -23,8 +21,33 @@ export default function Slide13() {
       <motion.div className="mt-5 w-2/3" {...animate.fadeIn}>
         <S13Text className="h-auto w-full" /> {/* join the collective */}
       </motion.div>
-      <motion.div className="mt-auto w-1/2" {...animate.downToUp}>
-        <S13C className="h-auto w-full" /> {/* all contact information */}
+      <motion.div className="mt-auto w-4/5 text-center text-base md:text-lg tracking-widest" {...animate.downToUp}>
+        {" "}
+        {/* all contact information */}
+        {/* <S13C className="h-auto w-full" />  */}
+        <p className="font-bvb text-[#E59617]">
+          Nishanth Prasannan
+          <br />
+          <span className="font-cf text-black">
+            <a href="mailto:nishanth@mycelium.today">nishanth@mycelium.today</a>
+            <br />
+            +91 99002 63882
+          </span>
+        </p>
+        <p className="font-bvb text-[#E59617] mt-3">
+          Vinod Chandramouli
+          <br />
+          <span className="font-cf text-black">
+          <a href="mailto:vcm@mycelium.today">vcm@mycelium.today</a>
+            <br />
+            +91 81058 00996
+          </span>
+        </p>
+        <p className="font-bvs text-black mt-3">
+          Reach Out To Us
+          <br />
+          <span className="font-cf text-[#E59617]"><a href="mailto:life@mycelium.today">life@mycelium.today</a></span>
+        </p>
       </motion.div>
       <div className="mt-auto flex items-center justify-center space-x-5 pb-10">
         {" "}
@@ -62,7 +85,7 @@ export default function Slide13() {
           rel="noopener noreferrer"
         >
           <motion.div>
-            <S13W className="h-5 w-5" />
+            <img src={require('../img/s13-w.png')} alt="website icon" className="h-5 w-5"/>
           </motion.div>
         </a>
       </div>
