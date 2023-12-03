@@ -1,39 +1,39 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-import * as svgs from "../svgs.js";
+import { ReactComponent as S13Q } from "../img/s13-quote.svg";
+import { ReactComponent as S13Text } from "../img/s13-text.svg";
+import { ReactComponent as S13C } from "../img/s13-contact.svg";
+import { ReactComponent as S13Ig } from "../img/s13-ig.svg";
+import { ReactComponent as S13In } from "../img/s13-in.svg";
+import { ReactComponent as S13Yt } from "../img/s13-yt.svg";
+import { ReactComponent as S13W } from "../img/s13-w.svg";
 
 export default function Slide13() {
   return (
-    <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
-      <motion.div className="w-4/5 mt-28" {...animate.rightToLeft}>
-        <svgs.s13Q className="w-full h-auto" />
+    <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
+      <motion.div className="mt-28 w-4/5" {...animate.rightToLeft}>
+        <S13Q className="h-auto w-full" />
       </motion.div>
-      {/* <motion.a href="https://www.mycelium.today/" target="_blank" rel="noopener noreferrer" className='w-2/3 mt-auto image-button' {...animate.fadeIn}>
-      <img src={require('./img/s13-btn.png')} />
-    </motion.a> */}
-      {/* <motion.div className='w-3/4 mt-5' {...animate.downToUp}>
-      <svgs.s11Text2 className='w-full h-auto' />
-    </motion.div> */}
       <motion.img
         src={require("../img/s13-img.png")}
         className="w-1/2"
         {...animate.fadeIn}
       />
-      <motion.div className="w-2/3 mt-5" {...animate.fadeIn}>
-        <svgs.s13Text className="w-full h-auto" />
+      <motion.div className="mt-5 w-2/3" {...animate.fadeIn}>
+        <S13Text className="h-auto w-full" />
       </motion.div>
-      <motion.div className="w-1/2 mt-auto" {...animate.downToUp}>
-        <svgs.s13C className="w-full h-auto" />
+      <motion.div className="mt-auto w-1/2" {...animate.downToUp}>
+        <S13C className="h-auto w-full" />
       </motion.div>
-      <div className="flex justify-center items-center space-x-5 pb-10 mt-auto">
+      <div className="mt-auto flex items-center justify-center space-x-5 pb-10">
         <a
           href="https://www.instagram.com/dancingfroghabitat/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <motion.div>
-            <svgs.s13Ig className="w-5 h-5" />
+            <S13Ig className="h-5 w-5" />
           </motion.div>
         </a>
         <a
@@ -42,7 +42,7 @@ export default function Slide13() {
           rel="noopener noreferrer"
         >
           <motion.div>
-            <svgs.s13In className="w-5 h-5" />
+            <S13In className="h-5 w-5" />
           </motion.div>
         </a>
         <a
@@ -51,7 +51,7 @@ export default function Slide13() {
           rel="noopener noreferrer"
         >
           <motion.div>
-            <svgs.s13Yt className="w-7 h-7" />
+            <S13Yt className="h-7 w-7" />
           </motion.div>
         </a>
         <a
@@ -60,7 +60,7 @@ export default function Slide13() {
           rel="noopener noreferrer"
         >
           <motion.div>
-            <svgs.s13W className="w-5 h-5" />
+            <S13W className="h-5 w-5" />
           </motion.div>
         </a>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Slide = ({ content }) => {
   return (
-    <div className=" h-screen flex items-center justify-center flex-grow inset-0 ">
+    <div className=" inset-0 flex h-screen flex-grow items-center justify-center ">
       {content}
     </div>
   );

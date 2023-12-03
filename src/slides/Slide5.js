@@ -1,74 +1,46 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-// import * as svgs from "../svgs.js";
 
 export default function Slide5() {
   return (
-    <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
-      {/* <motion.div
-  className='w-full h-auto animate.rectList'
-  variants={animate.rectList}
-  initial="initial"
-  animate="animate"
-> */}
-      {/* <motion.div
-        className="mb-10 mt-5 w-1/2 mx-auto"
-        // variants={animate.rectItem}
-        {...animate.fadeIn}
-        transition={{ ...animate.fadeIn.transition, delay: 0 }}
-      >
-        <svgs.s3Text1 className="w-full h-auto" />
-      </motion.div> */}
-      <div className="font-bvb text-4xl lg:text-[4vh] md:text-5xl mt-10">
-        Meet The
-      </div>
-      <div className="font-bvr text-4xl lg:text-[4vh] md:text-5xl mb-5 -mt-2">
+    <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
+      <div className="lg:mt-5 font-bvb text-4xl md:text-5xl">Meet The</div>
+      <div className="-mt-2 mb-5 font-bvr text-4xl text-[#E59617] md:text-5xl">
         Dancing Frog
       </div>
       <motion.img
-        src={require("../img/s3-img.webp")}
-        className="mb-10 mx-auto w-2/3"
-        // variants={animate.rectItem}
+        src={require("../img/s5-img.webp")}
+        className="mx-auto mb-10 w-1/2 md:w-2/3"
         {...animate.fadeIn}
         transition={{ ...animate.fadeIn.transition, delay: 0.8 }}
       />
       <motion.div
         className=" w-4/5"
-        // variants={animate.rectItem}
         {...animate.fadeIn}
         transition={{ ...animate.fadeIn.transition, delay: 1.6 }}
       >
-        {/* <svgs.s3Text2 className="w-full h-auto" /> */}
-        {/* <div className="pb-2">
-          <svgs.Temp className="w-full h-auto" />
-        </div> */}
-        <div className="text-center font-bvb text-3xl lg:text-[4vh] md:text-4xl">
+        <div className="text-center font-bvb text-3xl md:text-4xl">
           What’s In A Name?
         </div>
         <div
-          className="text-center font-bvb text-xl lg:text-[2.5vh] md:text-2xl"
-          style={{ color: "#E59617", lineHeight: "2vh" }}
+          className="text-center font-cf text-xl md:text-2xl text-[#E59617] leading-relaxed"
         >
           Micrixalus Kottigeharensis
         </div>
-        <div class="flex items-center justify-center h-full">
-          <div
-            class="font-cf text-sm lg:text-[1.7vh] md:text-lg tracking-tight leading-5 w-auto text-center"
-            style={{ lineHeight: "2.5vh" }}
-          >
-            <div>Also called torrent frogs & they belong to the</div>
-            <div>genus ‘Micrixalus’. Endemic to the Western</div>
-            <div>Ghats of India, these tiny frogs, measuring just</div>
-            <div>about three centimeters, are found in and</div>
-            <div>around perennial streams. Of the 24, 14 species</div>
-            <div>have been discovered as recently as 2014.</div>
-            <div>These are critically endangered, due to loss</div>
-            <div>and fragmentation of habitat to agriculture.</div>
+        <div class="flex h-full items-center justify-center">
+          <div class="w-auto text-center font-cf text-sm md:text-base leading-relaxed tracking-tight">
+            <div>
+              Also called torrent frogs & they belong to the genus ‘Micrixalus’.
+              Endemic to the Western Ghats of India, these tiny frogs, measuring
+              just about three centimeters, are found in and around perennial
+              streams.<br/><br/>Of the 24, 14 species have been discovered as recently as
+              2014. These are critically endangered, due to loss and
+              fragmentation of habitat to agriculture.
+            </div>
           </div>
         </div>
       </motion.div>
-      {/* </motion.div> */}
     </div>
   );
 }

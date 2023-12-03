@@ -5,12 +5,11 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 export default function Slide7() {
   return (
-    <div className="flex flex-col items-center justify-center h-full black-bg bg-common">
-      {/* <motion.img src={require('./img/s7-img.png')}/> */}
-      <div className="font-bvb text-white text-4xl lg:text-[4vh] md:text-4xl mt-10">
+    <div className="black-bg bg-common flex h-full flex-col items-center justify-center">
+      <div className="font-bvb text-4xl text-white md:text-5xl lg:mt-5">
         Dancing Frog Habitat
       </div>
-      <div className="font-bvr text-white text-4xl lg:text-[4vh] md:text-5xl -mt-2">
+      <div className="-mt-2 font-bvr text-4xl text-[#E59617] md:text-5xl">
         Conceptual Layout
       </div>
       <div className="w-3/4 lg:w-4/5">
@@ -22,17 +21,12 @@ export default function Slide7() {
       </div>
       <motion.img
         src={require("../img/s7-text.png")}
-        className="w-1/3 mt-1"
+        className="mt-3 w-1/4"
         {...animate.fadeIn}
       />
-      {/* <motion.img
-        src={require("../img/s7-text-2.png")}
-        className="w-3/5 mt-5"
-        {...animate.fadeIn}
-      /> */}
       <motion.img
         src={require("../img/s7-lines.png")}
-        className="w-4/5 mt-7 mb-5"
+        className="mb-5 mt-7 w-4/5"
         {...animate.downToUp}
       />
       <motion.img

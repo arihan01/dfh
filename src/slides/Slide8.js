@@ -1,35 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-// import * as svgs from "../svgs.js";
 
 export default function Slide8() {
   return (
-    <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
-      {/* <motion.div className='w-3/4 mb-5' {...animate.fadeIn}>
-  <svgs.s6Top className='w-full h-auto' />
-</motion.div>
-<motion.img src={require('./img/s6-img.png')} className='w-4/5 rounded-lg mt-5 mb-5' {...animate.fadeIn} />
-<motion.img src={require('./img/s6-text.png')} className='w-full mt-5 px-5' {...animate.fadeIn} /> */}
-      {/* <motion.div
-        className="w-1/2 absolute top-28 mr-32"
-        {...animate.leftToRight}
-      >
-        <svgs.s6Text className="w-full h-auto" />
-      </motion.div> */}
+    <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
       <motion.div
-        className="font-bvb text-4xl lg:text-[4vh] md:text-5xl"
+        className="font-bvb text-4xl md:text-5xl"
         {...animate.fadeIn}
       >
         Habitat
       </motion.div>
       <motion.div
-        className="font-bvr text-4xl lg:text-[4vh] md:text-5xl tracking-tight -mt-2"
-        {...animate.fadeIn}
+        className="-mt-2 font-bvr text-4xl tracking-tight md:text-5xl text-[#E59617]"
       >
         Residential Plan
       </motion.div>
-      <motion.div className="flex w-2/3 space-x-16 mt-7">
+      <motion.div className="mt-7 flex w-2/3 space-x-16">
         <motion.div {...animate.leftToRight}>
           <img src={require("../img/s8-img-1.png")} alt="img-1" />
         </motion.div>
@@ -41,7 +28,7 @@ export default function Slide8() {
         </motion.div>
       </motion.div>
       <motion.div
-        className="font-cf lg:text-[2vh] md:text-[2vh] -translate-x-1/5 mt-5 mb-12 text-center"
+        className="-translate-x-1/5 mb-12 mt-5 text-center font-cf md:text-[2vh] lg:text-[2vh]"
         {...animate.rightToLeft}
       >
         Functional
@@ -53,7 +40,7 @@ export default function Slide8() {
         Maintenance Friendly
       </motion.div>
       <motion.iframe
-        className="w-full aspect-video"
+        className="aspect-video w-full"
         src="https://www.youtube.com/embed/iNVkMcxJ5Sg?autoplay=1&mute=1&loop=1&playlist=iNVkMcxJ5Sg"
         allow="autoplay; encrypted-media"
         allowFullScreen

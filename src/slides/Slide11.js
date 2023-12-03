@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-import * as svgs from "../svgs.js";
+import { ReactComponent as S11Text1 } from "../img/s11-text-1.svg";
+import { ReactComponent as S11Text2 } from "../img/s11-text-2.svg";
+import { ReactComponent as S11Text3 } from "../img/s11-text-3.svg";
+import { ReactComponent as S11Text4 } from "../img/s11-text-4.svg";
 
 export default function Slide11() {
   const [imageStates, setImageStates] = useState([true, true, true, true]);
@@ -12,29 +15,27 @@ export default function Slide11() {
     setImageStates(newImageStates);
   };
   return (
-    <div className="flex flex-col items-center justify-center h-full orange-bg bg-common">
-      {/* <motion.img src={require('./img/s7-top.png')} className='w-3/4 mb-10 absolute top-[90px]' {...animate.fadeIn} /> */}
-      {/* <motion.div className="w-1/2 mt-16">
-        <svgs.s8Top className="w-full h-auto" /> 
-      </motion.div> */}
+    <div className="orange-bg bg-common flex h-full flex-col items-center justify-center">
       <motion.div
-        className="font-bvb text-4xl lg:text-[4vh] md:text-5xl leading-[5vh] lg:mt-10 mt-12"
+        className="md:mt-16 font-bvb text-4xl leading-[5vh] md:text-5xl "
         {...animate.fadeIn}
       >
         Project
       </motion.div>
       <motion.div
-        className="font-bvr text-4xl lg:text-[4vh] md:text-5xl leading-[5vh] -mt-3"
+        className="-mt-3 font-bvr text-4xl leading-[5vh] md:text-5xl lg:text-[4vh] text-white"
         {...animate.fadeIn}
       >
         Milestones
       </motion.div>
+
       <motion.div
-        className="font-cf mb-5 text-sm lg:text-[2vh] md:text-base"
+        className="mb-5 mt-5 md:mt-0 font-cf text-sm md:text-lg"
         {...animate.fadeIn}
       >
-        Tap Year To View
+        Tap to Uncover Milestone Details
       </motion.div>
+
       <motion.div
         className="w-2/3"
         {...animate.upToDown}
@@ -42,74 +43,77 @@ export default function Slide11() {
       >
         {imageStates[0] ? (
           <motion.img //year
-            src={require("../img/s8-2023.png")}
-            className="w-2/5 mx-auto mb-1 image-button"
+            src={require("../img/s11-2023.png")}
+            className="image-button mx-auto mb-1 w-2/5"
             onClick={() => toggleImage(0)}
             {...animate.fadeIn}
           />
         ) : (
           <motion.div
-            className="w-full mb-3 mt-5" //text
+            className="mb-3 mt-5 w-full" //text
             onClick={() => toggleImage(0)}
             {...animate.fadeIn}
           >
-            <svgs.s8Text1 className="w-full h-auto my-1" />
+            <S11Text1 className="my-1 h-auto w-full" />
           </motion.div>
         )}
       </motion.div>
+
       <motion.div
-        className="w-2/3 mt-3"
+        className="mt-3 w-2/3"
         {...animate.upToDown}
         transition={{ ...animate.upToDown.transition, delay: 0.8 }}
       >
         {imageStates[1] ? (
           <motion.img //year
-            src={require("../img/s8-2024.png")}
-            className="w-2/5 mx-auto mb-1 image-button"
+            src={require("../img/s11-2024.png")}
+            className="image-button mx-auto mb-1 w-2/5"
             onClick={() => toggleImage(1)}
             {...animate.fadeIn}
           />
         ) : (
           <motion.div
-            className="w-full mb-3" //text
+            className="mb-3 w-full" //text
             onClick={() => toggleImage(1)}
             {...animate.fadeIn}
           >
-            <svgs.s8Text2 className="w-full h-auto my-1" />
+            <S11Text2 className="my-1 h-auto w-full" />
           </motion.div>
         )}
       </motion.div>
+
       <motion.div
-        className="w-2/3 mt-3"
+        className="mt-3 w-2/3"
         {...animate.upToDown}
         transition={{ ...animate.upToDown.transition, delay: 1.6 }}
       >
         {imageStates[2] ? (
           <motion.img //year
-            src={require("../img/s8-2025.png")}
-            className="w-2/5 mx-auto mb-1 image-button"
+            src={require("../img/s11-2025.png")}
+            className="image-button mx-auto mb-1 w-2/5"
             onClick={() => toggleImage(2)}
             {...animate.fadeIn}
           />
         ) : (
           <motion.div
-            className="w-full mb-3" //text
+            className="mb-3 w-full" //text
             onClick={() => toggleImage(2)}
             {...animate.fadeIn}
           >
-            <svgs.s8Text3 className="w-full h-auto my-1" />
+            <S11Text3 className="my-1 h-auto w-full" />
           </motion.div>
         )}
       </motion.div>
+
       <motion.div
-        className="w-2/3 mt-3"
+        className="mt-3 w-2/3"
         {...animate.upToDown}
         transition={{ ...animate.upToDown.transition, delay: 2.4 }}
       >
         {imageStates[3] ? (
           <motion.img //year
-            src={require("../img/s8-2026.png")}
-            className="w-2/5 mx-auto mb-1 image-button"
+            src={require("../img/s11-2026.png")}
+            className="image-button mx-auto mb-1 w-2/5"
             onClick={() => toggleImage(3)}
             {...animate.fadeIn}
           />
@@ -119,7 +123,7 @@ export default function Slide11() {
             onClick={() => toggleImage(3)}
             {...animate.fadeIn}
           >
-            <svgs.s8Text4 className="w-full h-auto my-1" />
+            <S11Text4 className="my-1 h-auto w-full" />
           </motion.div>
         )}
       </motion.div>

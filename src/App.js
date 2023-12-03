@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Slide from "./Slide";
 import "./App.css";
-import * as svgs from "./svgs";
+import { ReactComponent as Next } from "./img/Next.svg";
+import { ReactComponent as Prev } from "./img/Prev.svg";
+
 import loadable from "@loadable/component";
 function loadableSlide(slideNumber) {
   return loadable(() => import(`./slides/Slide${slideNumber}`), {
     fallback: (
-      <div className="flex items-center justify-center w-full h-full object-cover white-bg">
-        <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-Mgreen"></div>
+      <div className="white-bg flex h-full w-full items-center justify-center object-cover">
+        <div className="h-6 w-6 animate-spin rounded-full border-b-2 border-t-2 border-Mgreen"></div>
       </div>
     ),
   });
@@ -91,7 +93,7 @@ const App = () => {
 
   const goToPreviousSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? slides.length - 1 : prevSlide - 1
+      prevSlide === 0 ? slides.length - 1 : prevSlide - 1,
     );
   };
 
@@ -102,22 +104,22 @@ const App = () => {
   }, []);
 
   return (
-    <div className="relative h-[100dvh] lg:w-1/4 md:w-3/4 mx-auto overflow-hidden">
+    <div className="relative mx-auto h-[100dvh] overflow-hidden md:w-3/4 lg:w-1/4">
       <React.Fragment>
         {/* Render dot indicators */}
-        <div className="absolute top-0 left-0 right-0 flex justify-center mt-10 mb-2">
+        <div className="absolute left-0 right-0 top-0 mb-2 mt-10 flex justify-center">
           {slides.map((slide, index) => (
             <div
               key={slide.id}
-              className={`w-[1.3vh] h-[1.3vh] mx-1.5 rounded-full ${
-                index <= currentSlide ? "bg-darkG border-[0.2vh]" : "bg-lightG"
+              className={`mx-1.5 h-[1.3vh] w-[1.3vh] rounded-full ${
+                index <= currentSlide ? "border-[0.2vh] bg-darkG" : "bg-lightG"
               }`}
             ></div>
           ))}
         </div>
         {/* Render navigation buttons */}
         <div
-          className="absolute top-1/2 left-0 right-0 flex justify-between"
+          className="absolute left-0 right-0 top-1/2 flex justify-between"
           style={{ pointerEvents: "none", zIndex: 10 }}
         >
           <button
@@ -125,27 +127,17 @@ const App = () => {
             onClick={goToPreviousSlide}
             style={{ pointerEvents: "auto" }}
           >
-            {/* <img
-              src={require("./img/nav left.png")}
-              className="w-8 h-auto"
-              alt="btnPrev"
-            /> */}
-            <svgs.Prev className="w-8 h-auto" />
+            <Prev className="h-auto w-8" />
           </button>
           <button
             className="mr-1"
             onClick={goToNextSlide}
             style={{ pointerEvents: "auto" }}
           >
-            {/* <img
-              src={require("./img/nav right.png")}
-              className="w-8 h-auto"
-              alt="btnNext"
-            /> */}
-            <svgs.Next className="w-8 h-auto" />
+            <Next className="h-auto w-8" />
           </button>
         </div>
-        <div className="flex items-center justify-center h-full">
+        <div className="flex h-full items-center justify-center">
           <Slide
             key={slides[currentSlide].id}
             content={slides[currentSlide].content}

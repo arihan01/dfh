@@ -1,64 +1,64 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-import * as svgs from "../svgs.js";
+import { ReactComponent as S12Text1 } from "../img/s12-text-1.svg";
+import { ReactComponent as S12Text2 } from "../img/s12-text-2.svg";
+import { ReactComponent as S12Text3 } from "../img/s12-text-3.svg";
+import { ReactComponent as S12Text4 } from "../img/s12-text-4.svg";
+import { ReactComponent as S12Text5 } from "../img/s12-text-5.svg";
 
 export default function Slide12() {
   return (
-    <div className="flex flex-col items-center justify-center h-full white-bg bg-common">
-      {/* <motion.div className="w-2/3 mb-10" {...animate.fadeIn}>
-        <svgs.s12Top className="w-full h-auto" />
-      </motion.div> */}
+    <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
       <motion.div
-        className="font-bvb text-4xl lg:text-[4vh] md:text-5xl"
+        className="font-bvb text-4xl md:text-5xl"
         {...animate.fadeIn}
       >
         Our
       </motion.div>
       <motion.div
-        className="font-bvr text-4xl lg:text-[4vh] md:text-5xl mb-10 -mt-3"
+        className="-mt-3 mb-10 font-bvr text-4xl md:text-5xl text-[#E59617]"
         {...animate.fadeIn}
       >
         Partners
       </motion.div>
       <motion.div
-        className="w-4/5 mb-5"
+        className="mb-5 w-4/5"
         {...animate.leftToRight}
         transition={{ ...animate.leftToRight.transition, delay: 0 }}
       >
-        <svgs.s12Text1 className="w-full h-auto" />
+        <S12Text1 className="h-auto w-full" />
       </motion.div>
       <motion.div
-        className="w-4/5 mb-5"
+        className="mb-5 w-4/5"
         {...animate.leftToRight}
         transition={{ ...animate.leftToRight.transition, delay: 0.6 }}
       >
-        <svgs.s12Text2 className="w-full h-auto" />
+        <S12Text2 className="h-auto w-full" />
       </motion.div>
       <motion.div
-        className="w-4/5 mb-5"
+        className="mb-5 w-4/5"
         {...animate.leftToRight}
         transition={{ ...animate.leftToRight.transition, delay: 1.2 }}
       >
-        <svgs.s12Text3 className="w-full h-auto" />
+        <S12Text3 className="h-auto w-full" />
       </motion.div>
       <motion.div
-        className="w-4/5 mb-5"
+        className="mb-5 w-4/5"
         {...animate.leftToRight}
         transition={{ ...animate.leftToRight.transition, delay: 1.8 }}
       >
-        <svgs.s12Text4 className="w-full h-auto" />
+        <S12Text4 className="h-auto w-full" />
       </motion.div>
       <motion.div
-        className="w-4/5 mb-5"
+        className="mb-5 w-4/5"
         {...animate.leftToRight}
         transition={{ ...animate.leftToRight.transition, delay: 2.4 }}
       >
-        <svgs.s12Text5 className="w-full h-auto" />
+        <S12Text5 className="h-auto w-full" />
       </motion.div>
-      {/* <motion.img src={require('./img/s12-img.png')} className='w-2/3' {...animate.downToUp} /> */}
       <div className="flex flex-col items-center space-y-2">
-        <div className="flex justify-center space-x-2 w-[10vh] h-[10vh]">
+        <div className="flex h-[10vh] w-[10vh] justify-center space-x-2">
           <motion.img
             src={require("../img/hh.png")}
             {...animate.leftToRight}
@@ -70,7 +70,7 @@ export default function Slide12() {
             transition={{ ...animate.leftToRight.transition, delay: 0.6 }}
           />
         </div>
-        <div className="flex justify-center space-x-2 w-[10vh] h-[10vh]">
+        <div className="flex h-[10vh] w-[10vh] justify-center space-x-2">
           <motion.img
             src={require("../img/mm.webp")}
             {...animate.leftToRight}
