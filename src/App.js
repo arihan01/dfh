@@ -5,9 +5,12 @@ import { ReactComponent as Next } from "./img/Next.svg";
 import { ReactComponent as Prev } from "./img/Prev.svg";
 
 import loadable from "@loadable/component";
+
+// Function to dynamically load slides
 function loadableSlide(slideNumber) {
   return loadable(() => import(`./slides/Slide${slideNumber}`), {
     fallback: (
+      // Fallback component while slide is loading
       <div className="white-bg flex h-full w-full items-center justify-center object-cover">
         <div className="h-6 w-6 animate-spin rounded-full border-b-2 border-t-2 border-Mgreen"></div>
       </div>
@@ -15,6 +18,7 @@ function loadableSlide(slideNumber) {
   });
 }
 
+// Dynamically load each slide component
 const Slide1 = loadableSlide(1);
 const Slide2 = loadableSlide(2);
 const Slide3 = loadableSlide(3);
@@ -31,6 +35,7 @@ const Slide13 = loadableSlide(13);
 
 const App = () => {
   const slides = [
+    // Array of slide objects with id and content
     {
       id: 1,
       content: <Slide1 />,
@@ -87,10 +92,12 @@ const App = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Function to go to the next slide
   const goToNextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
   };
 
+  // Function to go to the previous slide
   const goToPreviousSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === 0 ? slides.length - 1 : prevSlide - 1,
@@ -98,6 +105,7 @@ const App = () => {
   };
 
   useEffect(() => {
+    // Scroll to the top of the page after 2 seconds
     setTimeout(() => {
       document.body.scrollTo(0, 1);
     }, 2000);
@@ -109,6 +117,7 @@ const App = () => {
         {/* Render dot indicators */}
         <div className="absolute left-0 right-0 top-0 mb-2 mt-10 flex justify-center">
           {slides.map((slide, index) => (
+            // Dot indicator for each slide
             <div
               key={slide.id}
               className={`mx-1.5 h-[1.3vh] w-[1.3vh] rounded-full ${
@@ -127,6 +136,7 @@ const App = () => {
             onClick={goToPreviousSlide}
             style={{ pointerEvents: "auto" }}
           >
+            {/* Previous slide button */}
             <Prev className="h-auto w-8" />
           </button>
           <button
@@ -134,10 +144,12 @@ const App = () => {
             onClick={goToNextSlide}
             style={{ pointerEvents: "auto" }}
           >
+            {/* Next slide button */}
             <Next className="h-auto w-8" />
           </button>
         </div>
         <div className="flex h-full items-center justify-center">
+          {/* Render current slide */}
           <Slide
             key={slides[currentSlide].id}
             content={slides[currentSlide].content}

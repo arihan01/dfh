@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundVideo from "../img/Slide-2.mp4";
+import backgroundVideo from "../img/Slide-2.mp4"; // importing the video
 
 export default function Slide2() {
   return (
@@ -13,7 +13,8 @@ export default function Slide2() {
           objectFit: "cover",
         }}
       >
-        <source src={backgroundVideo} type="video/mp4" />
+        <source src={backgroundVideo} type="video/mp4" />{" "}
+        {/* Video used here */}
       </video>
     </div>
   );

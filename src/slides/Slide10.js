@@ -6,20 +6,17 @@ import { ReactComponent as S10Img } from "../img/s10-img.svg";
 export default function Slide10() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <motion.div
-        className="font-bvb text-4xl md:text-5xl"
-        {...animate.fadeIn}
-      >
+      <motion.div className="font-bvb text-4xl md:text-5xl" {...animate.fadeIn}>
         Collective
       </motion.div>
       <motion.div
-        className="-mt-3 mb-16 font-bvr text-4xl md:text-5xl text-[#E59617]"
+        className="-mt-3 mb-16 font-bvr text-4xl text-[#E59617] md:text-5xl"
         {...animate.fadeIn}
       >
         Collaboration
       </motion.div>
       <motion.div className="w-10/12" {...animate.downToUp}>
-        <S10Img className="h-auto w-full" />
+        <S10Img className="h-auto w-full" /> {/* 3 by 3 grid of icons */}
       </motion.div>
     </div>
   );
