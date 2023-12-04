@@ -22,6 +22,10 @@
   background-image: url("./img/bg-5.webp");
 }
 
+.bg-img-1 {
+  background-image: url("./img/bg-1.webp");
+}
+
 .white-svg {
   fill: white;
 }
