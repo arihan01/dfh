@@ -43,10 +43,10 @@ export default function Slide13() {
             +91 81058 00996
           </span>
         </p>
-        <p className="font-bvb text-black mt-3">
+        <p className="font-cf text-black mt-3">
           Reach Out To Us
           <br />
-          <span className="font-cf text-[#E59617]"><a href="mailto:life@mycelium.today">life@mycelium.today</a></span>
+          <span className="font-bvb text-[#E59617]"><a href="mailto:life@mycelium.today">life@mycelium.today</a></span>
         </p>
       </motion.div>
       <div className="mt-auto flex items-center justify-center space-x-5 pb-10">
