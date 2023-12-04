@@ -22,7 +22,7 @@ export default function Slide13() {
         <S13Text className="h-auto w-full" /> {/* join the collective */}
       </motion.div>
       <motion.div className="mt-auto w-4/5 text-center text-base md:text-lg tracking-widest" {...animate.downToUp}>
-        {" "}
+
         {/* all contact information */}
         {/* <S13C className="h-auto w-full" />  */}
         <p className="font-bvb text-[#E59617]">
