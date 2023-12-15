@@ -14,7 +14,7 @@ export default function Slide11() {
   return (
     <div className="white-bg bg-common flex h-full items-center justify-center">
       
-      {/* <motion.div
+      <motion.div
         className="font-bvb text-4xl leading-[5vh] md:mt-16 md:text-5xl "
         {...animate.fadeIn}
       >
@@ -124,9 +124,9 @@ export default function Slide11() {
             <S11Text4 className="my-1 h-auto w-full" />
           </motion.div>
         )}
-      </motion.div> */}
+      </motion.div>
 
-      <div className="flex h-4/5 flex-col justify-center md:gap-10">
+      {/* <div className="flex h-4/5 flex-col justify-center md:gap-10">
         <motion.div {...animate.fadeIn}>
           <p className="text-center font-bvb text-4xl md:text-5xl">
             Collective
@@ -216,7 +216,7 @@ export default function Slide11() {
             </div>
           </div>
         </motion.div>
-      </div>
+      </div> */}
     </div>
   );
 }
