@@ -11,21 +11,16 @@ export default function Slide8() {
       <motion.div className="-mt-2 font-bvr text-4xl tracking-tight text-[#E59617] md:text-5xl">
         Residential Plan
       </motion.div>
-      <motion.div className="mt-7 flex w-2/3 space-x-16">
-        <motion.div {...animate.leftToRight}>
-          <img src={require("../img/s8-img-1.png")} alt="img-1" />{" "}
-          {/* circle image 1 */}
-        </motion.div>
-        <motion.div
-          {...animate.leftToRight}
-          transition={{ ...animate.fadeIn.transition, delay: 0.6 }}
-        >
-          <img src={require("../img/s8-img-2.png")} alt="img-2" />{" "}
-          {/* circle image 2 */}
-        </motion.div>
+      <motion.div className="mt-7 flex w-4/5">
+        <p className="text-center font-cf text-sm md:text-base">
+          The architectural brilliance within dancing frog habitat is a perfect
+          blend of vernacular design and contemporary elements. Each dwelling is
+          built on stilts to keep the actual footprint on the ground, less than
+          3% and also to ensure safety of the residents.
+        </p>
       </motion.div>
       <motion.div
-        className="-translate-x-1/5 mb-12 mt-5 text-center font-cf md:text-[2vh] lg:text-[2vh]"
+        className="mb-12 mt-5 text-center font-cf text-base font-bold md:text-lg"
         {...animate.rightToLeft}
       >
         Functional
@@ -37,7 +32,7 @@ export default function Slide8() {
         Maintenance Friendly
       </motion.div>
       <motion.iframe
-        className="aspect-video w-full"
+        className="aspect-video w-full "
         src="https://www.youtube.com/embed/iNVkMcxJ5Sg?autoplay=1&mute=1&loop=1&playlist=iNVkMcxJ5Sg" // youtube video
         allow="autoplay; encrypted-media"
         allowFullScreen

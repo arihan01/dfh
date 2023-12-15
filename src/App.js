@@ -105,9 +105,9 @@ const App = () => {
   };
 
   useEffect(() => {
-    // Scroll to the top of the page after 2 seconds
+    // Scroll to the bottom of the page after 2 seconds
     setTimeout(() => {
-      document.body.scrollTo(0, 1);
+      window.scrollTo(0, document.body.scrollHeight);
     }, 2000);
   }, []);
 
@@ -115,13 +115,13 @@ const App = () => {
     <div className="relative mx-auto h-[100lvh] overflow-hidden md:w-3/4 lg:w-1/4">
       <React.Fragment>
         {/* Render dot indicators */}
-        <div className="absolute left-0 right-0 top-0 mb-2 mt-10 flex justify-center">
+        <div className="absolute left-0 right-0 top-0 mt-5 flex justify-center">
           {slides.map((slide, index) => (
             // Dot indicator for each slide
             <div
               key={slide.id}
               className={`mx-1.5 h-[1.3vh] w-[1.3vh] rounded-full ${
-                index <= currentSlide ? "border-[0.2vh] bg-darkG" : "bg-lightG"
+                index <= currentSlide ? "border-2 bg-darkG" : "bg-lightG"
               }`}
             ></div>
           ))}
@@ -148,7 +148,7 @@ const App = () => {
             <Next className="h-auto w-8" />
           </button>
         </div>
-        <div className="flex h-full items-center justify-center">
+        <div className="flex h-full w-full">
           {/* Render current slide */}
           <Slide
             key={slides[currentSlide].id}

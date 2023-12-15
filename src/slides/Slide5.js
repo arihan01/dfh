@@ -5,14 +5,15 @@ import * as animate from "../animations";
 export default function Slide5() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <div className="font-bvb text-4xl md:text-5xl lg:mt-5">Meet The</div> {/* Header */}
-      <div className="-mt-2 mb-5 font-bvr text-4xl text-[#E59617] md:text-5xl">  
+      <div className="font-bvb text-4xl md:text-5xl lg:mt-5">Meet The</div>{" "}
+      {/* Header */}
+      <div className="-mt-2 mb-5 font-bvr text-4xl text-[#E59617] md:text-5xl">
         Dancing Frog {/* Header */}
       </div>
       <motion.img
-        src={require("../img/s5-img.webp")}  // circle image
-        className="mx-auto mb-10 w-1/2 md:w-2/3"  
-        {...animate.fadeIn} 
+        src={require("../img/s5-img.webp")} // circle image
+        className="mx-auto mb-10 w-1/2 md:w-2/3"
+        {...animate.fadeIn}
         transition={{ ...animate.fadeIn.transition, delay: 0.8 }}
       />
       <motion.div
