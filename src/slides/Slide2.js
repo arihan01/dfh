@@ -1,6 +1,5 @@
 import React from "react";
 import backgroundVideo from "../img/Slide-2.mp4"; // importing the video
-import BGposter from "../img/bg-1.webp";
 
 export default function Slide2() {
   return (
@@ -8,7 +7,6 @@ export default function Slide2() {
       <video
         autoPlay
         playsInline
-        poster={BGposter}
         muted
         style={{
           width: "100%",

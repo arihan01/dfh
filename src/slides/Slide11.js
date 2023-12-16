@@ -13,7 +13,6 @@ export default function Slide11() {
   // };
   return (
     <div className="white-bg bg-common flex h-full items-center justify-center">
-      
       {/* <motion.div
         className="font-bvb text-4xl leading-[5vh] md:mt-16 md:text-5xl "
         {...animate.fadeIn}
@@ -146,9 +145,9 @@ export default function Slide11() {
             <div className="flex w-4/5 flex-col justify-center">
               <p className="font-bvb text-xl md:text-3xl">Deepthi Tanikella</p>
               <p className="font-cf text-xs">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud
+                Hear Deepthi Tanikella share her reasons for joining our
+                collective and delve into its essence. See her whole story on
+                our youtube channel.
               </p>
               <div className="mt-2 flex items-center gap-2">
                 <S11Arrow className="h-4 w-4" />
@@ -168,9 +167,11 @@ export default function Slide11() {
             <div className="flex w-4/5 flex-col justify-center">
               <p className="font-bvb text-xl md:text-3xl">Vinod Chandramouli</p>
               <p className="font-cf text-xs">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud
+                As the pioneering member of our collective, Vinod Chandramouli's
+                desire to find a natural sanctuary for his family has been our
+                guiding inspiration since the beginning. Listen to him share his
+                transformative journey from city life to embracing a lifestyle
+                where coexistence with nature is central.
               </p>
               <div className="mt-2 flex items-center gap-2">
                 <S11Arrow className="h-4 w-4" />
