@@ -138,7 +138,7 @@ export default function Slide11() {
         <motion.div {...animate.leftToRight}>
           <div className="mx-auto mt-5 flex w-4/5 items-center justify-center gap-2">
             <img
-              src={require("../img/s11-img-1.png")}
+              src={require("../img/s11-img-1.webp")}
               alt="s11 img 1"
               className="h-2/5 w-2/5"
             />
@@ -184,7 +184,7 @@ export default function Slide11() {
               </div>
             </div>
             <img
-              src={require("../img/s11-img-2.png")}
+              src={require("../img/s11-img-2.webp")}
               alt="s11 img 1"
               className="h-2/5 w-2/5"
             />

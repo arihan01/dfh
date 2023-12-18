@@ -10,6 +10,10 @@
   background-image: url("./img/white-bg.webp");
 }
 
+.white-bg-2 {
+  background-image: url("./img/white-bg-2.webp");
+}
+
 .black-bg {
   background-image: url("./img/black-bg.webp");
 }
