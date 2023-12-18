@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 import * as animate from "../animations";
 import { ReactComponent as S13Q } from "../img/s13-quote.svg";
 import { ReactComponent as S13Text } from "../img/s13-text.svg";
-import { ReactComponent as S13Ig } from "../img/s13-ig.svg";
-import { ReactComponent as S13In } from "../img/s13-in.svg";
-import { ReactComponent as S13Yt } from "../img/s13-yt.svg";
 
 export default function Slide13() {
   return (
