@@ -3,23 +3,8 @@ import Slide from "./Slide";
 import "./App.css";
 import { ReactComponent as Next } from "./img/Next.svg";
 import { ReactComponent as Prev } from "./img/Prev.svg";
+
 import loadable from "@loadable/component";
-
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyA_w8VqKY7fUIjYVfkc5sriaQmVaPuYidM",
-  authDomain: "dfh-reels-6b9dd.firebaseapp.com",
-  projectId: "dfh-reels-6b9dd",
-  storageBucket: "dfh-reels-6b9dd.appspot.com",
-  messagingSenderId: "465012890599",
-  appId: "1:465012890599:web:425484c7dd172f23ea7b42",
-  measurementId: "G-0145TBPTV9",
-};
-
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 // Function to dynamically load slides
 function loadableSlide(slideNumber) {
