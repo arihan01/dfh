@@ -3,7 +3,7 @@ import Slide from "./Slide";
 import "./App.css";
 import { ReactComponent as Next } from "./img/Next.svg";
 import { ReactComponent as Prev } from "./img/Prev.svg";
-
+import { app, analytics } from './firebase';
 import loadable from "@loadable/component";
 
 // Function to dynamically load slides
