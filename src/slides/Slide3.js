@@ -6,11 +6,11 @@ import { ReactComponent as S4Text2 } from "../img/s4-text-2.svg"; // importing t
 
 export default function Slide3() {
   return (
-    <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <motion.div className="mb-16 w-3/4" {...animate.leftToRight}>
+    <div className="white-bg bg-common flex h-full flex-col items-center justify-center gap-32">
+      <motion.div className="w-3/4" {...animate.leftToRight}>
         <S4Text1 className="h-auto w-full" /> {/* Header */}
       </motion.div>
-      <motion.div className="mt-16 w-3/5" {...animate.rightToLeft}>
+      <motion.div className="w-3/5" {...animate.rightToLeft}>
         <S4Text2 className="h-auto w-full" /> {/* Text */}
       </motion.div>
     </div>

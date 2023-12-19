@@ -6,13 +6,13 @@ export default function Slide8() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
       <motion.div
-        className="mt-8 font-bvb text-4xl md:text-5xl"
+        className="mt-8 font-bvb text-3xl md:text-4xl"
         {...animate.fadeIn}
       >
         Collective
       </motion.div>
       <motion.div
-        className="-mt-3 mb-8 font-bvr text-4xl text-[#E59617] md:text-5xl"
+        className="-mt-3 mb-8 font-bvr text-3xl text-[#E59617] md:text-4xl"
         {...animate.fadeIn}
       >
         Sustainability
@@ -23,13 +23,13 @@ export default function Slide8() {
       >
         Harmonious Coexistence
       </motion.div> */}
-      <motion.div className="left-align mb-8" {...animate.rightToLeft}>
-        <div className="font-bvs text-2xl lg:text-[3vh]">
+      <motion.div className="mb-8 w-4/5" {...animate.rightToLeft}>
+        <div className="font-bvs text-xl md:text-3xl">
           CANOPY WALK AND
           <br />
           INTERPRETATION CENTRE
         </div>
-        <div className="font-cf text-sm leading-[2.25vh] lg:text-[1.8vh]">
+        <div className="font-cf text-sm leading-[2.25vh] lg:text-base">
           <span style={{ color: "#E59617" }}>Camera traps</span> in strategic
           locations,
           <br />
@@ -43,13 +43,16 @@ export default function Slide8() {
           center, arena and a laboratory.
         </div>
       </motion.div>
-      <motion.div className="right-align mb-8 ml-2" {...animate.leftToRight}>
-        <div className="text-right font-bvs text-2xl lg:text-[3vh]">
+      <motion.div
+        className="right-align mb-8 ml-2 w-4/5"
+        {...animate.leftToRight}
+      >
+        <div className="text-right font-bvs text-xl md:text-3xl">
           NATIVE FOREST
           <br />
           PRODUCE
         </div>
-        <div className="text-right font-cf text-sm leading-[2.25vh] lg:text-[1.8vh]">
+        <div className="text-right font-cf text-sm leading-[2.25vh] lg:text-base">
           Western Ghats hosts over{" "}
           <span style={{ color: "#E59617" }}>9000 species</span>
           <br />
@@ -60,9 +63,9 @@ export default function Slide8() {
           medicinal plants
         </div>
       </motion.div>
-      <motion.div className="left-align mr-3" {...animate.rightToLeft}>
-        <div className="font-bvs text-2xl lg:text-[3vh]">EXPERIENCES</div>
-        <div className="font-cf text-sm leading-[2.25vh] lg:text-[1.8vh]">
+      <motion.div className="left-align mr-3 w-4/5" {...animate.rightToLeft}>
+        <div className="font-bvs text-xl md:text-3xl">EXPERIENCES</div>
+        <div className="font-cf text-sm leading-[2.25vh] lg:text-base">
           Forest experiences or the viewing
           <br />
           of forest scenes contributes to

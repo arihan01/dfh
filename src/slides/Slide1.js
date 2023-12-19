@@ -7,7 +7,7 @@ import { ReactComponent as S1Text } from "../img/s1-text.svg";
 export default function Slide1() {
   return (
     <div className="bg-img-1 bg-common flex items-center justify-center">
-      <div className="flex h-4/5 w-full flex-col items-center justify-between">
+      <div className="flex h-[80vh] w-full flex-col items-center justify-between">
         <motion.div className="w-full" {...animate.downToUp}>
           <S1Logo className="h-auto w-full" /> {/* Logo Image */}
         </motion.div>

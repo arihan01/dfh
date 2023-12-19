@@ -7,7 +7,7 @@ import { ReactComponent as S13Text } from "../img/s13-text.svg";
 export default function Slide12() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <div className="flex h-4/5 w-full flex-col items-center justify-center">
+      <div className="flex h-[80vh] w-full flex-col items-center justify-center">
         <motion.div className="mb-5 w-4/5" {...animate.rightToLeft}>
           <S13Q className="h-auto w-full" /> {/* quote at the top */}
         </motion.div>
@@ -20,7 +20,7 @@ export default function Slide12() {
           <S13Text className="h-auto w-full" /> {/* join the collective */}
         </motion.div>
         <motion.div
-          className="mt-auto w-4/5 text-center text-base tracking-widest md:text-lg"
+          className="mt-10 w-4/5 text-center text-base tracking-widest md:text-lg"
           {...animate.downToUp}
         >
           {/* all contact information */}

@@ -10,11 +10,11 @@ import { ReactComponent as S12Text5 } from "../img/s12-text-5.svg";
 export default function Slide11() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <motion.div className="font-bvb text-4xl md:text-5xl" {...animate.fadeIn}>
+      <motion.div className="font-bvb text-3xl md:text-4xl" {...animate.fadeIn}>
         Our
       </motion.div>
       <motion.div
-        className="-mt-3 mb-10 font-bvr text-4xl text-[#E59617] md:text-5xl"
+        className="-mt-3 mb-10 font-bvr text-3xl text-[#E59617] md:text-4xl"
         {...animate.fadeIn}
       >
         Partners

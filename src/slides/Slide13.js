@@ -32,28 +32,28 @@ export default function Slide13() {
             target="_blank"
             rel="noreferrer"
           >
-            <S13W className="h-auto w-6" />
+            <S13W className="h-auto w-8" />
           </a>
           <a
             href="https://www.instagram.com/mycelium.ecology/"
             target="_blank"
             rel="noreferrer"
           >
-            <S13Ig className="h-auto w-6" />
+            <S13Ig className="h-auto w-8" />
           </a>
           <a
             href="https://www.linkedin.com/company/mycelium-ecology/"
             target="_blank"
             rel="noreferrer"
           >
-            <S13In className="h-auto w-6" />
+            <S13In className="h-auto w-8" />
           </a>
           <a
             href="https://www.youtube.com/@myceliumlive"
             target="_blank"
             rel="noreferrer"
           >
-            <S13Yt className="h-auto w-7" />
+            <S13Yt className="h-auto w-9" />
           </a>
         </div>
         <p className="mt-5 text-center font-bvb text-3xl md:text-5xl">
@@ -72,21 +72,21 @@ export default function Slide13() {
             target="_blank"
             rel="noreferrer"
           >
-            <S13W className="h-auto w-6" />
+            <S13W className="h-auto w-8" />
           </a>
           <a
             href="https://www.instagram.com/dancingfroghabitat/"
             target="_blank"
             rel="noreferrer"
           >
-            <S13Ig className="h-auto w-6" />
+            <S13Ig className="h-auto w-8" />
           </a>
           <a
             href="https://www.youtube.com/playlist?list=PL5OpUZshh2nwKFOAtKzPEmrPGFLsCAldy"
             target="_blank"
             rel="noreferrer"
           >
-            <S13Yt className="h-auto w-7" />
+            <S13Yt className="h-auto w-9" />
           </a>
         </div>
         <CTD className="mx-auto mt-5 h-auto w-3/5 md:w-4/5" />
@@ -101,7 +101,7 @@ export default function Slide13() {
             target="_blank"
             rel="noreferrer"
           >
-            <Substack className="h-auto w-5" />
+            <Substack className="h-auto w-7" />
           </a>
         </div>
       </motion.div>

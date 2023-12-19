@@ -5,14 +5,14 @@ import * as animate from "../animations";
 export default function Slide4() {
   return (
     <div className="white-bg bg-common flex h-full items-center">
-      <div className="items-center justify-center flex flex-col h-4/5 w-4/5 mx-auto">
-        <div className="text-4xl md:text-5xl mb-5">
+      <div className="items-center justify-center flex flex-col h-[90vh] w-4/5 mx-auto">
+        <div className="text-3xl md:text-4xl mb-5">
           <p className="font-bvb text-center">Meet The</p>
           <p className="font-bvr text-[#E59617] -mt-2">Dancing Frog</p>
         </div>
         <motion.img
           src={require("../img/s5-img.webp")} // circle image
-          className="mx-auto mb-10 w-1/2 md:w-2/3"
+          className="mx-auto mb-10 w-1/2 "
           {...animate.fadeIn}
           transition={{ ...animate.fadeIn.transition, delay: 0.8 }}
         />
@@ -21,10 +21,10 @@ export default function Slide4() {
           {...animate.fadeIn}
           transition={{ ...animate.fadeIn.transition, delay: 1.6 }}
         >
-          <div className="text-center font-bvb text-3xl md:text-4xl">
+          <div className="text-center font-bvb text-2xl md:text-3xl">
             What’s In A Name?
           </div>
-          <div className="text-center font-cf text-xl leading-relaxed text-[#E59617] md:text-2xl">
+          <div className="text-center font-cf text-lg leading-relaxed text-[#E59617] md:text-xl">
             Micrixalus Kottigeharensis
           </div>
           <div class="flex h-full items-center justify-center">
