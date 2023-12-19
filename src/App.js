@@ -32,7 +32,6 @@ const Slide10 = loadableSlide(10);
 const Slide11 = loadableSlide(11);
 const Slide12 = loadableSlide(12);
 const Slide13 = loadableSlide(13);
-const Slide14 = loadableSlide(14);
 
 const App = () => {
   const slides = [
@@ -88,10 +87,6 @@ const App = () => {
     {
       id: 13,
       content: <Slide13 />,
-    },
-    {
-      id: 14,
-      content: <Slide14 />,
     },
   ];
 

@@ -1,39 +1,44 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 export default function Slide7() {
   return (
-    <div className="black-bg bg-common flex h-full flex-col items-center justify-center">
-      <div className="font-bvb text-4xl text-white md:text-5xl lg:mt-5">
-        Dancing Frog Habitat
-      </div>
-      <div className="-mt-2 font-bvr text-4xl text-[#E59617] md:text-5xl">
-        Conceptual Layout
-      </div>
-      <div className="w-3/4 lg:w-4/5">
-        <TransformWrapper>
-          <TransformComponent>
-            <motion.img src={require("../img/s7-img.webp")} className="mt-10" />{" "}
-            {/* Zoomable map */}
-          </TransformComponent>
-        </TransformWrapper>
-      </div>
-      <motion.img
-        src={require("../img/s7-text.png")} // Pinch to zoom Text
-        className="mt-3 w-1/4"
+    <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
+      <motion.div className="font-bvb text-4xl md:text-5xl" {...animate.fadeIn}>
+        Habitat
+      </motion.div>
+      <motion.div className="-mt-2 font-bvr text-4xl tracking-tight text-[#E59617] md:text-5xl">
+        Residential Plan
+      </motion.div>
+      <motion.div className="mt-7 flex w-4/5">
+        <p className="text-center font-cf text-sm md:text-base">
+          The architectural brilliance within dancing frog habitat is a perfect
+          blend of vernacular design and contemporary elements. Each dwelling is
+          built on stilts to keep the actual footprint on the ground, less than
+          3% and also to ensure safety of the residents.
+        </p>
+      </motion.div>
+      <motion.div
+        className="mb-12 mt-5 text-center font-cf text-base font-bold md:text-lg"
+        {...animate.rightToLeft}
+      >
+        Functional
+        <br />
+        Weather Proof
+        <br />
+        Least Intrusive
+        <br />
+        Maintenance Friendly
+      </motion.div>
+      <motion.iframe
+        className="aspect-video w-full "
+        src="https://www.youtube.com/embed/iNVkMcxJ5Sg?autoplay=1&mute=1&loop=1&playlist=iNVkMcxJ5Sg" // youtube video
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+        title="video"
         {...animate.fadeIn}
-      />
-      <motion.img
-        src={require("../img/s7-lines.png")} // route and boundary lines
-        className="mb-5 mt-7 w-4/5"
-        {...animate.downToUp}
-      />
-      <motion.img
-        src={require("../img/s7-icons.png")} // circle icons
-        {...animate.downToUp}
-      />
+      ></motion.iframe>
     </div>
   );
 }

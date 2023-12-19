@@ -5,40 +5,82 @@ import * as animate from "../animations";
 export default function Slide8() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <motion.div className="font-bvb text-4xl md:text-5xl" {...animate.fadeIn}>
-        Habitat
-      </motion.div>
-      <motion.div className="-mt-2 font-bvr text-4xl tracking-tight text-[#E59617] md:text-5xl">
-        Residential Plan
-      </motion.div>
-      <motion.div className="mt-7 flex w-4/5">
-        <p className="text-center font-cf text-sm md:text-base">
-          The architectural brilliance within dancing frog habitat is a perfect
-          blend of vernacular design and contemporary elements. Each dwelling is
-          built on stilts to keep the actual footprint on the ground, less than
-          3% and also to ensure safety of the residents.
-        </p>
+      <motion.div
+        className="mt-8 font-bvb text-4xl md:text-5xl"
+        {...animate.fadeIn}
+      >
+        Collective
       </motion.div>
       <motion.div
-        className="mb-12 mt-5 text-center font-cf text-base font-bold md:text-lg"
-        {...animate.rightToLeft}
-      >
-        Functional
-        <br />
-        Weather Proof
-        <br />
-        Least Intrusive
-        <br />
-        Maintenance Friendly
-      </motion.div>
-      <motion.iframe
-        className="aspect-video w-full "
-        src="https://www.youtube.com/embed/iNVkMcxJ5Sg?autoplay=1&mute=1&loop=1&playlist=iNVkMcxJ5Sg" // youtube video
-        allow="autoplay; encrypted-media"
-        allowFullScreen
-        title="video"
+        className="-mt-3 mb-8 font-bvr text-4xl text-[#E59617] md:text-5xl"
         {...animate.fadeIn}
-      ></motion.iframe>
+      >
+        Sustainability
+      </motion.div>
+      {/* <motion.div
+        className="font-cf text-sm lg:text-[1.7vh] md:text-xl mb-8 lg:mb-10 "
+        {...animate.fadeIn}
+      >
+        Harmonious Coexistence
+      </motion.div> */}
+      <motion.div className="left-align mb-8" {...animate.rightToLeft}>
+        <div className="font-bvs text-2xl lg:text-[3vh]">
+          CANOPY WALK AND
+          <br />
+          INTERPRETATION CENTRE
+        </div>
+        <div className="font-cf text-sm leading-[2.25vh] lg:text-[1.8vh]">
+          <span style={{ color: "#E59617" }}>Camera traps</span> in strategic
+          locations,
+          <br />
+          designing a platform that allows access
+          <br />
+          to <span style={{ color: "#E59617" }}>200+ years old canopy</span> 40
+          ft above the
+          <br />
+          ground, coupled with an interpretation
+          <br />
+          center, arena and a laboratory.
+        </div>
+      </motion.div>
+      <motion.div className="right-align mb-8 ml-2" {...animate.leftToRight}>
+        <div className="text-right font-bvs text-2xl lg:text-[3vh]">
+          NATIVE FOREST
+          <br />
+          PRODUCE
+        </div>
+        <div className="text-right font-cf text-sm leading-[2.25vh] lg:text-[1.8vh]">
+          Western Ghats hosts over{" "}
+          <span style={{ color: "#E59617" }}>9000 species</span>
+          <br />
+          of plants. Our team at Dancing Frog
+          <br />
+          is in the process of cataloguing the
+          <br />
+          medicinal plants
+        </div>
+      </motion.div>
+      <motion.div className="left-align mr-3" {...animate.rightToLeft}>
+        <div className="font-bvs text-2xl lg:text-[3vh]">EXPERIENCES</div>
+        <div className="font-cf text-sm leading-[2.25vh] lg:text-[1.8vh]">
+          Forest experiences or the viewing
+          <br />
+          of forest scenes contributes to
+          <br />
+          <span style={{ color: "#E59617" }}>
+            reducing stress, promoting positive
+          </span>
+          <br />
+          <span style={{ color: "#E59617" }}>feelings</span> resulting in
+          general wellness.
+          <br />
+          Hiking, camping, wildlife watching,
+          <br />
+          tree climbing, foraging or just
+          <br />
+          meditating are some examples.
+        </div>
+      </motion.div>
     </div>
   );
 }

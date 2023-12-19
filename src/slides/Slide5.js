@@ -4,45 +4,50 @@ import * as animate from "../animations";
 
 export default function Slide5() {
   return (
-    <div className="white-bg bg-common flex h-full items-center">
-      <div className="items-center justify-center flex flex-col h-4/5 w-4/5 mx-auto">
-        <div className="text-4xl md:text-5xl mb-5">
-          <p className="font-bvb text-center">Meet The</p>
-          <p className="font-bvr text-[#E59617] -mt-2">Dancing Frog</p>
-        </div>
-        <motion.img
-          src={require("../img/s5-img.webp")} // circle image
-          className="mx-auto mb-10 w-1/2 md:w-2/3"
-          {...animate.fadeIn}
-          transition={{ ...animate.fadeIn.transition, delay: 0.8 }}
+    <div className="white-bg bg-common flex h-screen flex-col items-center justify-center">
+      <motion.div
+        className="mt-10 font-bvb text-4xl md:text-5xl lg:mt-5"
+        {...animate.fadeIn}
+      >
+        The Habitat {/* Header */}
+      </motion.div>
+      <motion.div
+        className="-mt-3 mb-5 font-bvr text-4xl text-[#E59617] md:text-5xl"
+        {...animate.fadeIn}
+      >
+        Ecosystem
+      </motion.div>
+      <motion.div
+        className="mb-5 flex w-1/5 items-center justify-center space-x-7"
+        {...animate.upToDown}
+      >
+        <img src={require("../img/s6-img-1.png")} alt="s6-img-1" />{" "}
+        {/* circle icons */}
+        <img src={require("../img/s6-img-2.png")} alt="s6-img-2" />
+        <img src={require("../img/s6-img-3.png")} alt="s6-img-3" />
+      </motion.div>
+      <motion.div
+        className="mb-60 w-4/5 text-center font-cf text-xs md:text-sm"
+        {...animate.rightToLeft}
+      >
+        At Dancing Frog Habitat, experience the magic of our unique shola
+        grasslands, home to seasonal Neela Kurunji flowers and framed by the
+        majestic Kumara Parvatha.
+        <br />
+        <br /> Trek through our ancient forest, where 300-year-old trees whisper
+        tales, and a vibrant tapestry of endemic birds, orchids, butterflies,
+        and rare fungi await. <br />
+        <br />
+        Let the melody of our perennial stream, teeming with life in its purest
+        waters, be your guide in this sensory-rich journey. Dive into nature's
+        embrace like never before.
+      </motion.div>
+      <div className="absolute bottom-0">
+        <img
+          src={require("../img/s6-img.webp")} // bottom image
+          alt="s6-img-4"
+          className="aspect-[17/9] w-full"
         />
-        <motion.div
-          className=""
-          {...animate.fadeIn}
-          transition={{ ...animate.fadeIn.transition, delay: 1.6 }}
-        >
-          <div className="text-center font-bvb text-3xl md:text-4xl">
-            What’s In A Name?
-          </div>
-          <div className="text-center font-cf text-xl leading-relaxed text-[#E59617] md:text-2xl">
-            Micrixalus Kottigeharensis
-          </div>
-          <div class="flex h-full items-center justify-center">
-            <div class="w-auto text-center font-cf text-sm leading-relaxed tracking-tight md:text-base">
-              <div>
-                Also called torrent frogs & they belong to the genus
-                ‘Micrixalus’. Endemic to the Western Ghats of India, these tiny
-                frogs, measuring just about three centimeters, are found in and
-                around perennial streams.
-                <br />
-                <br />
-                Of the 24, 14 species have been discovered as recently as 2014.
-                These are critically endangered, due to loss and fragmentation
-                of habitat to agriculture.
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </div>
   );

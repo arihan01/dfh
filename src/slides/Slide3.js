@@ -1,20 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-import { ReactComponent as S3Text1 } from "../img/s3-img-1.svg";
-import { ReactComponent as S3Text2 } from "../img/s3-img-2.svg";
+import { ReactComponent as S4Text1 } from "../img/s4-text-1.svg"; // importing the header
+import { ReactComponent as S4Text2 } from "../img/s4-text-2.svg"; // importing the text
 
 export default function Slide3() {
   return (
-    <div className="bg-img-5 bg-common flex h-full items-center justify-center">
-      <div className="flex h-3/5 w-4/5 flex-col items-center justify-between">
-        <motion.div {...animate.leftToRight}>
-          <S3Text1 className="h-auto w-full" /> {/* First graphic */}
-        </motion.div>
-        <motion.div {...animate.rightToLeft}>
-          <S3Text2 className="h-auto w-full" /> {/* Second graphic */}
-        </motion.div>
-      </div>
+    <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
+      <motion.div className="mb-16 w-3/4" {...animate.leftToRight}>
+        <S4Text1 className="h-auto w-full" /> {/* Header */}
+      </motion.div>
+      <motion.div className="mt-16 w-3/5" {...animate.rightToLeft}>
+        <S4Text2 className="h-auto w-full" /> {/* Text */}
+      </motion.div>
     </div>
   );
 }

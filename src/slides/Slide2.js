@@ -1,22 +1,20 @@
 import React from "react";
-import backgroundVideo from "../img/Slide-2.mp4"; // importing the video
+import { motion } from "framer-motion";
+import * as animate from "../animations";
+import { ReactComponent as S3Text1 } from "../img/s3-img-1.svg";
+import { ReactComponent as S3Text2 } from "../img/s3-img-2.svg";
 
 export default function Slide2() {
   return (
-    <div className="flex h-full flex-col items-center justify-center ">
-      <video
-        autoPlay
-        playsInline
-        muted
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-        }}
-      >
-        <source src={backgroundVideo} type="video/mp4" />
-        {/* Video used here */}
-      </video>
+    <div className="bg-img-5 bg-common flex h-full items-center justify-center">
+      <div className="flex h-3/5 w-4/5 flex-col items-center justify-between">
+        <motion.div {...animate.leftToRight}>
+          <S3Text1 className="h-auto w-full" /> {/* First graphic */}
+        </motion.div>
+        <motion.div {...animate.rightToLeft}>
+          <S3Text2 className="h-auto w-full" /> {/* Second graphic */}
+        </motion.div>
+      </div>
     </div>
   );
 }

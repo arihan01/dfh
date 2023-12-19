@@ -1,18 +1,49 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-import { ReactComponent as S4Text1 } from "../img/s4-text-1.svg"; // importing the header
-import { ReactComponent as S4Text2 } from "../img/s4-text-2.svg"; // importing the text
 
 export default function Slide4() {
   return (
-    <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <motion.div className="mb-16 w-3/4" {...animate.leftToRight}>
-        <S4Text1 className="h-auto w-full" /> {/* Header */}
-      </motion.div>
-      <motion.div className="mt-16 w-3/5" {...animate.rightToLeft}>
-        <S4Text2 className="h-auto w-full" /> {/* Text */}
-      </motion.div>
+    <div className="white-bg bg-common flex h-full items-center">
+      <div className="items-center justify-center flex flex-col h-4/5 w-4/5 mx-auto">
+        <div className="text-4xl md:text-5xl mb-5">
+          <p className="font-bvb text-center">Meet The</p>
+          <p className="font-bvr text-[#E59617] -mt-2">Dancing Frog</p>
+        </div>
+        <motion.img
+          src={require("../img/s5-img.webp")} // circle image
+          className="mx-auto mb-10 w-1/2 md:w-2/3"
+          {...animate.fadeIn}
+          transition={{ ...animate.fadeIn.transition, delay: 0.8 }}
+        />
+        <motion.div
+          className=""
+          {...animate.fadeIn}
+          transition={{ ...animate.fadeIn.transition, delay: 1.6 }}
+        >
+          <div className="text-center font-bvb text-3xl md:text-4xl">
+            What’s In A Name?
+          </div>
+          <div className="text-center font-cf text-xl leading-relaxed text-[#E59617] md:text-2xl">
+            Micrixalus Kottigeharensis
+          </div>
+          <div class="flex h-full items-center justify-center">
+            <div class="w-auto text-center font-cf text-sm leading-relaxed tracking-tight md:text-base">
+              <div>
+                Also called torrent frogs & they belong to the genus
+                ‘Micrixalus’. Endemic to the Western Ghats of India, these tiny
+                frogs, measuring just about three centimeters, are found in and
+                around perennial streams.
+                <br />
+                <br />
+                Of the 24, 14 species have been discovered as recently as 2014.
+                These are critically endangered, due to loss and fragmentation
+                of habitat to agriculture.
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 }
