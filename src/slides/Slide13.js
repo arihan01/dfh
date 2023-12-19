@@ -27,16 +27,32 @@ export default function Slide13() {
           veniam tempor incididunt ut labore et dolore magna aliqua.
         </p> */}
         <div className="mt-2 flex items-center gap-10">
-          <a href="https://www.mycelium.today/">
+          <a
+            href="https://www.mycelium.today/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <S13W className="h-auto w-6" />
           </a>
-          <a href="https://www.instagram.com/mycelium.ecology/">
+          <a
+            href="https://www.instagram.com/mycelium.ecology/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <S13Ig className="h-auto w-6" />
           </a>
-          <a href="https://www.linkedin.com/company/mycelium-ecology/">
+          <a
+            href="https://www.linkedin.com/company/mycelium-ecology/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <S13In className="h-auto w-6" />
           </a>
-          <a href="https://www.youtube.com/@myceliumlive">
+          <a
+            href="https://www.youtube.com/@myceliumlive"
+            target="_blank"
+            rel="noreferrer"
+          >
             <S13Yt className="h-auto w-7" />
           </a>
         </div>
@@ -51,13 +67,25 @@ export default function Slide13() {
           veniam tempor incididunt ut labore et dolore magna aliqua.
         </p> */}
         <div className="mt-2 flex items-center gap-10">
-          <a href="https://www.mycelium.today/dancingfroghabitat">
+          <a
+            href="https://www.mycelium.today/dancingfroghabitat"
+            target="_blank"
+            rel="noreferrer"
+          >
             <S13W className="h-auto w-6" />
           </a>
-          <a href="https://www.instagram.com/dancingfroghabitat/">
+          <a
+            href="https://www.instagram.com/dancingfroghabitat/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <S13Ig className="h-auto w-6" />
           </a>
-          <a href="https://www.youtube.com/playlist?list=PL5OpUZshh2nwKFOAtKzPEmrPGFLsCAldy">
+          <a
+            href="https://www.youtube.com/playlist?list=PL5OpUZshh2nwKFOAtKzPEmrPGFLsCAldy"
+            target="_blank"
+            rel="noreferrer"
+          >
             <S13Yt className="h-auto w-7" />
           </a>
         </div>
@@ -68,7 +96,11 @@ export default function Slide13() {
           veniam tempor incididunt ut labore et dolore magna aliqua.
         </p> */}
         <div className="mt-2 flex items-center gap-10">
-          <a href="https://coexist.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile">
+          <a
+            href="https://coexist.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Substack className="h-auto w-5" />
           </a>
         </div>
