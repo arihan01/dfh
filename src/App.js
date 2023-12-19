@@ -19,7 +19,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-getAnalytics(app);
+const analytics = getAnalytics(app);
 
 // Function to dynamically load slides
 function loadableSlide(slideNumber) {
