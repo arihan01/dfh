@@ -117,7 +117,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="relative mx-auto h-[100lvh] overflow-hidden md:w-3/4 lg:w-1/4">
+    <div className="relative mx-auto h-[100lvh] overflow-hidden md:w-3/4 lg:w-2/5 xl:w-1/4">
       <React.Fragment>
         {/* Render dot indicators */}
         <div className="absolute left-0 right-0 top-0 mt-5 flex justify-center">

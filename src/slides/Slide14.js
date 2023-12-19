@@ -17,16 +17,11 @@ export default function Slide1() {
         className="flex h-[90vh] w-4/5 flex-col items-center justify-center"
         {...animate.fadeIn}
       >
-        <div>
-          <p className="w-full text-right font-bvb text-lg text-[#2E663F] md:text-xl">
-            Ecology
-          </p>
-          <p className="font-bvb text-3xl md:text-5xl">
-            Explore <span className="text-[#E59617]">Mycelium</span>
-          </p>
-        </div>
+        <p className="font-bvb text-3xl md:text-5xl">
+          Explore <span className="text-[#E59617]">Mycelium</span>
+        </p>
         <Logo className="mx-auto mt-5 h-auto w-3/5 md:mt-10" />
-        <p className="mt-2 font-cf text-xs">
+        <p className="mt-2 font-cf text-xs text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim
           veniam tempor incididunt ut labore et dolore magna aliqua.
@@ -50,7 +45,7 @@ export default function Slide1() {
           <br />
           <span className="font-bvr text-4xl md:text-6xl">Habitat</span>
         </p>
-        <p className="mt-2 font-cf text-xs">
+        <p className="mt-2 font-cf text-xs text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim
           veniam tempor incididunt ut labore et dolore magna aliqua.
@@ -67,7 +62,7 @@ export default function Slide1() {
           </a>
         </div>
         <CTD className="mx-auto mt-5 h-auto w-3/5 md:w-4/5" />
-        <p className="mt-2 font-cf text-xs">
+        <p className="mt-2 font-cf text-xs text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim
           veniam tempor incididunt ut labore et dolore magna aliqua.
