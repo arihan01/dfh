@@ -5,7 +5,7 @@ import * as animate from "../animations";
 export default function Slide5() {
   return (
     <div className="white-bg bg-common flex h-screen flex-col items-center justify-start">
-      <div className="flex flex-col items-center justify-center mt-[12vh] lg:mt-[6vh]">
+      <div className="flex flex-col items-center justify-center mt-[7vh] lg:mt-[6vh]">
         <motion.div
           className="font-bvb text-3xl md:text-4xl lg:mt-5"
           {...animate.fadeIn}
@@ -48,7 +48,7 @@ export default function Slide5() {
         <img
           src={require("../img/s6-img.webp")} // bottom image
           alt="s6-img-4"
-          className="aspect-[16/9] w-full"
+          className="aspect-[17/9] w-full"
         />
       </div>
     </div>
