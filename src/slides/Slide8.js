@@ -6,7 +6,7 @@ export default function Slide8() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
       <motion.div
-        className="mt-8 font-bvb text-3xl md:text-4xl"
+        className="font-bvb text-3xl md:text-4xl"
         {...animate.fadeIn}
       >
         Collective
