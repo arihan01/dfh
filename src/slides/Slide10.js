@@ -127,10 +127,10 @@ export default function Slide10() {
 
       <div className="flex h-4/5 flex-col justify-center md:gap-10">
         <motion.div {...animate.fadeIn}>
-          <p className="text-center font-bvb text-4xl md:text-5xl">
+          <p className="text-center font-bvb text-3xl md:text-4xl">
             Collective
           </p>
-          <p className="-mt-2 text-center font-bvr text-4xl text-[#A83D35] md:text-5xl">
+          <p className="-mt-2 text-center font-bvr text-3xl text-[#A83D35] md:text-4xl">
             Testimonies
           </p>
         </motion.div>

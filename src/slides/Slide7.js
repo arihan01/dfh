@@ -5,10 +5,10 @@ import * as animate from "../animations";
 export default function Slide7() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <motion.div className="font-bvb text-4xl md:text-5xl" {...animate.fadeIn}>
+      <motion.div className="font-bvb text-3xl md:text-4xl" {...animate.fadeIn}>
         Habitat
       </motion.div>
-      <motion.div className="-mt-2 font-bvr text-4xl tracking-tight text-[#E59617] md:text-5xl">
+      <motion.div className="-mt-2 font-bvr text-3xl tracking-tight text-[#E59617] md:text-4xl">
         Residential Plan
       </motion.div>
       <motion.div className="mt-7 flex w-4/5">
