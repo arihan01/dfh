@@ -8,7 +8,7 @@ export default function Slide12() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
       <div className="flex h-[80vh] w-full flex-col items-center justify-center">
-        <motion.div className="mb-5 w-4/5" {...animate.rightToLeft}>
+        <motion.div className="mb-5 w-3/5" {...animate.rightToLeft}>
           <S13Q className="h-auto w-full" /> {/* quote at the top */}
         </motion.div>
         <motion.img
@@ -16,7 +16,7 @@ export default function Slide12() {
           className="w-1/2"
           {...animate.fadeIn}
         />
-        <motion.div className="mt-5 w-2/3" {...animate.fadeIn}>
+        <motion.div className="mt-5 w-1/2" {...animate.fadeIn}>
           <S13Text className="h-auto w-full" /> {/* join the collective */}
         </motion.div>
         <motion.div

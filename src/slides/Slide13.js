@@ -17,7 +17,7 @@ export default function Slide13() {
         className="flex h-[70vh] w-4/5 flex-col items-center justify-between "
         {...animate.fadeIn}
       >
-        <p className="font-bvb text-3xl md:text-5xl">
+        <p className="text-center font-bvb text-3xl md:text-5xl lg:text-4xl">
           Explore <span className="text-[#E59617]">Mycelium</span>
         </p>
         <Logo className="mx-auto mt-5 h-auto w-3/5 md:mt-10" />

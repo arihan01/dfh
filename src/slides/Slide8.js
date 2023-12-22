@@ -5,10 +5,7 @@ import * as animate from "../animations";
 export default function Slide8() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <motion.div
-        className="font-bvb text-3xl md:text-4xl"
-        {...animate.fadeIn}
-      >
+      <motion.div className="font-bvb text-3xl md:text-4xl" {...animate.fadeIn}>
         Collective
       </motion.div>
       <motion.div
@@ -24,12 +21,12 @@ export default function Slide8() {
         Harmonious Coexistence
       </motion.div> */}
       <motion.div className="mb-8 w-4/5" {...animate.rightToLeft}>
-        <div className="font-bvs text-xl md:text-3xl">
+        <div className="font-bvs text-xl md:text-3xl lg:text-2xl xl:text-3xl">
           CANOPY WALK AND
           <br />
           INTERPRETATION CENTRE
         </div>
-        <div className="font-cf text-sm leading-[2.25vh] lg:text-base">
+        <div className="font-cf text-sm leading-[2.25vh] md:text-base lg:text-sm xl:text-base">
           <span style={{ color: "#E59617" }}>Camera traps</span> in strategic
           locations,
           <br />
@@ -47,12 +44,12 @@ export default function Slide8() {
         className="right-align mb-8 ml-2 w-4/5"
         {...animate.leftToRight}
       >
-        <div className="text-right font-bvs text-xl md:text-3xl">
+        <div className="text-right font-bvs text-xl md:text-3xl lg:text-2xl xl:text-3xl">
           NATIVE FOREST
           <br />
           PRODUCE
         </div>
-        <div className="text-right font-cf text-sm leading-[2.25vh] lg:text-base">
+        <div className="text-right font-cf text-sm leading-[2.25vh] md:text-base lg:text-sm xl:text-base">
           Western Ghats hosts over{" "}
           <span style={{ color: "#E59617" }}>9000 species</span>
           <br />
@@ -64,8 +61,10 @@ export default function Slide8() {
         </div>
       </motion.div>
       <motion.div className="left-align mr-3 w-4/5" {...animate.rightToLeft}>
-        <div className="font-bvs text-xl md:text-3xl">EXPERIENCES</div>
-        <div className="font-cf text-sm leading-[2.25vh] lg:text-base">
+        <div className="font-bvs text-xl md:text-3xl lg:text-2xl xl:text-3xl">
+          EXPERIENCES
+        </div>
+        <div className="font-cf text-sm leading-[2.25vh] md:text-base lg:text-sm xl:text-base">
           Forest experiences or the viewing
           <br />
           of forest scenes contributes to

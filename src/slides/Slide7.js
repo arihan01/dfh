@@ -12,7 +12,7 @@ export default function Slide7() {
         Residential Plan
       </motion.div>
       <motion.div className="mt-7 flex w-4/5">
-        <p className="text-center font-cf text-sm md:text-base">
+        <p className="text-center font-cf text-xs md:text-base lg:text-sm xl:text-base">
           The architectural brilliance within dancing frog habitat is a perfect
           blend of vernacular design and contemporary elements. Each dwelling is
           built on stilts to keep the actual footprint on the ground, less than
@@ -20,7 +20,7 @@ export default function Slide7() {
         </p>
       </motion.div>
       <motion.div
-        className="mb-12 mt-5 text-center font-cf text-base font-bold md:text-lg"
+        className="mb-12 mt-5 text-center font-cf text-sm font-bold md:mb-24 md:text-lg lg:mb-12 lg:text-base xl:text-xl"
         {...animate.rightToLeft}
       >
         Functional

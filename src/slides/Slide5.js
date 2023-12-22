@@ -5,7 +5,7 @@ import * as animate from "../animations";
 export default function Slide5() {
   return (
     <div className="white-bg bg-common flex h-screen flex-col items-center justify-start">
-      <div className="flex flex-col items-center justify-center mt-[7vh] lg:mt-[6vh]">
+      <div className="mt-[7vh] flex flex-col items-center justify-center lg:mt-[6vh]">
         <motion.div
           className="font-bvb text-3xl md:text-4xl lg:mt-5"
           {...animate.fadeIn}
@@ -28,7 +28,7 @@ export default function Slide5() {
           <img src={require("../img/s6-img-3.png")} alt="s6-img-3" />
         </motion.div>
         <motion.div
-          className="w-4/5 text-center font-cf text-xs md:text-sm"
+          className="w-4/5 text-center font-cf text-xs md:w-3/5 md:text-sm lg:w-4/5 lg:text-xs xl:text-sm"
           {...animate.rightToLeft}
         >
           At Dancing Frog Habitat, experience the magic of our unique shola
