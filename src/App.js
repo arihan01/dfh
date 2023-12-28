@@ -31,7 +31,7 @@ const Slide9 = loadableSlide(9);
 const Slide10 = loadableSlide(10);
 const Slide11 = loadableSlide(11);
 const Slide12 = loadableSlide(12);
-const Slide13 = loadableSlide(13);
+// const Slide13 = loadableSlide(13);
 
 const App = () => {
   const slides = [
@@ -84,10 +84,10 @@ const App = () => {
       id: 12,
       content: <Slide12 />,
     },
-    {
-      id: 13,
-      content: <Slide13 />,
-    },
+    // {
+    //   id: 13,
+    //   content: <Slide13 />,
+    // },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

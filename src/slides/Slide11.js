@@ -1,90 +1,98 @@
 import React from "react";
 import { motion } from "framer-motion";
 import * as animate from "../animations";
-import { ReactComponent as S12Text1 } from "../img/s12-text-1.svg";
-import { ReactComponent as S12Text2 } from "../img/s12-text-2.svg";
-import { ReactComponent as S12Text3 } from "../img/s12-text-3.svg";
-import { ReactComponent as S12Text4 } from "../img/s12-text-4.svg";
-import { ReactComponent as S12Text5 } from "../img/s12-text-5.svg";
+import { ReactComponent as S13Q } from "../img/s13-quote.svg";
+import { ReactComponent as S13Text } from "../img/s13-text.svg";
 
 export default function Slide11() {
   return (
     <div className="white-bg bg-common flex h-full flex-col items-center justify-center">
-      <motion.div className="font-bvb text-3xl md:text-4xl" {...animate.fadeIn}>
-        Our
-      </motion.div>
-      <motion.div
-        className="-mt-3 mb-10 font-bvr text-3xl text-[#E59617] md:text-4xl"
-        {...animate.fadeIn}
-      >
-        Partners
-      </motion.div>
-      <motion.div
-        className="mb-5 w-4/5"
-        {...animate.leftToRight}
-        transition={{ ...animate.leftToRight.transition, delay: 0 }}
-      >
-        <S12Text1 className="h-auto w-full" /> {/* hundred hands text */}
-      </motion.div>
-      <motion.div
-        className="mb-5 w-4/5"
-        {...animate.leftToRight}
-        transition={{ ...animate.leftToRight.transition, delay: 0.6 }}
-      >
-        <S12Text2 className="h-auto w-full" /> {/* autopilot text */}
-      </motion.div>
-      <motion.div
-        className="mb-5 w-4/5"
-        {...animate.leftToRight}
-        transition={{ ...animate.leftToRight.transition, delay: 1.2 }}
-      >
-        <S12Text3 className="h-auto w-full" /> {/* chambers text */}
-      </motion.div>
-      <motion.div
-        className="mb-5 w-4/5"
-        {...animate.leftToRight}
-        transition={{ ...animate.leftToRight.transition, delay: 1.8 }}
-      >
-        <S12Text4 className="h-auto w-full" /> {/* Dr. Tarsh text */}
-      </motion.div>
-      <motion.div
-        className="mb-5 w-4/5"
-        {...animate.leftToRight}
-        transition={{ ...animate.leftToRight.transition, delay: 2.4 }}
-      >
-        <S12Text5 className="h-auto w-full" /> {/* Nachi text */}
-      </motion.div>
-      <div className="flex flex-col items-center space-y-2">
-        <div className="flex h-[10vh] w-[10vh] justify-center space-x-2">
-          <motion.img // the 5 images on the slide from left to right
-            src={require("../img/hh.png")}
-            {...animate.leftToRight}
-            transition={{ ...animate.leftToRight.transition, delay: 0 }}
-          />
-          <motion.img
-            src={require("../img/ap.png")}
-            {...animate.leftToRight}
-            transition={{ ...animate.leftToRight.transition, delay: 0.6 }}
-          />
-        </div>
-        <div className="flex h-[10vh] w-[10vh] justify-center space-x-2">
-          <motion.img
-            src={require("../img/mm.webp")}
-            {...animate.leftToRight}
-            transition={{ ...animate.leftToRight.transition, delay: 1.2 }}
-          />
-          <motion.img
-            src={require("../img/ke.webp")}
-            {...animate.leftToRight}
-            transition={{ ...animate.leftToRight.transition, delay: 1.8 }}
-          />
-          <motion.img
-            src={require("../img/mu.webp")}
-            {...animate.leftToRight}
-            transition={{ ...animate.leftToRight.transition, delay: 2.4 }}
-          />
-        </div>
+      <div className="flex h-[80vh] w-full flex-col items-center justify-center">
+        <motion.div className="mb-5 w-3/5" {...animate.rightToLeft}>
+          <S13Q className="h-auto w-full" /> {/* quote at the top */}
+        </motion.div>
+        <motion.img
+          src={require("../img/s13-img.png")} // circle image
+          className="w-1/2"
+          {...animate.fadeIn}
+        />
+        <motion.div className="mt-5 w-1/2" {...animate.fadeIn}>
+          <S13Text className="h-auto w-full" /> {/* join the collective */}
+        </motion.div>
+        <motion.div
+          className="mt-10 w-4/5 text-center text-base tracking-widest md:text-lg"
+          {...animate.downToUp}
+        >
+          {/* all contact information */}
+          {/* <S13C className="h-auto w-full" />  */}
+          <p className="font-bvb text-[#E59617]">
+            Nishanth Prasannan
+            <br />
+            <span className="font-cf text-black">
+              <a href="mailto:nishanth@mycelium.today">
+                nishanth@mycelium.today
+              </a>
+              <br />
+              +91 99002 63882
+            </span>
+          </p>
+          <p className="mt-3 font-bvb text-[#E59617]">
+            Vinod Chandramouli
+            <br />
+            <span className="font-cf text-black">
+              <a href="mailto:vcm@mycelium.today">vcm@mycelium.today</a>
+              <br />
+              +91 81058 00996
+            </span>
+          </p>
+          <p className="mt-3 font-cf text-black">
+            Reach Out To Us
+            <br />
+            <span className="font-bvb text-[#E59617]">
+              <a href="mailto:life@mycelium.today">life@mycelium.today</a>
+            </span>
+          </p>
+        </motion.div>
       </div>
+      {/* <div className="mt-auto flex items-center justify-center space-x-5 pb-10"> */}{" "}
+      {/* social media icons and links*/}
+      {/* <a
+          href="https://www.instagram.com/dancingfroghabitat/"
+          target="_blank"
+          rel="noopener noreferrer"
+        > */}
+      {/* <motion.div>
+            <S13Ig className="h-5 w-5" />
+          </motion.div>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/mycelium-ecology/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div>
+            <S13In className="h-5 w-5" />
+          </motion.div>
+        </a>
+        <a
+          href="https://www.youtube.com/playlist?list=PL5OpUZshh2nwKFOAtKzPEmrPGFLsCAldy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div>
+            <S13Yt className="h-7 w-7" />
+          </motion.div>
+        </a>
+        <a
+          href="https://www.mycelium.today/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div>
+            <img src={require('../img/s13-w.png')} alt="website icon" className="h-5 w-5"/>
+          </motion.div>
+        </a>
+      </div>*/}
     </div>
   );
 }
