@@ -125,25 +125,27 @@ export default function Slide10() {
         )}
       </motion.div> */}
 
-      <div className="flex h-4/5 flex-col justify-center md:gap-10">
+      <div className="flex h-4/5 flex-col justify-between md:gap-10 lg:gap-0 xl:gap-10">
         <motion.div {...animate.fadeIn}>
-          <p className="text-center font-bvb text-3xl md:text-4xl">
+          <p className="text-center font-bvb text-3xl md:text-4xl lg:text-3xl xl:text-4xl">
             Collective
           </p>
-          <p className="-mt-2 text-center font-bvr text-3xl text-[#A83D35] md:text-4xl">
-            Testimonies
+          <p className="-mt-2 text-center font-bvr text-3xl text-[#A83D35] md:text-4xl lg:text-3xl xl:text-4xl">
+            Testimonials
           </p>
         </motion.div>
 
         <motion.div {...animate.leftToRight}>
-          <div className="mx-auto mt-5 flex w-4/5 items-center justify-center gap-2">
+          <div className=" mx-auto flex w-4/5 items-center justify-center gap-2">
             <img
               src={require("../img/s11-img-1.webp")}
               alt="s11 img 1"
               className="h-2/5 w-2/5"
             />
             <div className="flex w-4/5 flex-col justify-center">
-              <p className="font-bvb text-xl md:text-3xl">Deepthi Tanikella</p>
+              <p className="font-bvb text-xl md:text-3xl lg:text-xl xl:text-2xl">
+                Deepthi Tanikella
+              </p>
               <p className="font-cf text-xs">
                 Hear Deepthi Tanikella share her reasons for joining our
                 collective and delve into its essence. See her whole story on
@@ -163,15 +165,15 @@ export default function Slide10() {
         </motion.div>
 
         <motion.div {...animate.rightToLeft}>
-          <div className="mx-auto mt-5 flex w-4/5 items-center justify-center gap-2">
+          <div className="mx-auto flex w-4/5 items-center justify-center gap-2">
             <div className="flex w-4/5 flex-col justify-center">
-              <p className="font-bvb text-xl md:text-3xl">Vinod Chandramouli</p>
+              <p className="font-bvb text-xl md:text-3xl lg:text-xl xl:text-2xl">
+                Vinod Chandramouli
+              </p>
               <p className="font-cf text-xs">
                 As the pioneering member of our collective, Vinod Chandramouli's
                 desire to find a natural sanctuary for his family has been our
-                guiding inspiration since the beginning. Listen to him share his
-                transformative journey from city life to embracing a lifestyle
-                where coexistence with nature is central.
+                guiding inspiration since the beginning.
               </p>
               <div className="mt-2 flex items-center gap-2">
                 <S11Arrow className="h-4 w-4" />
@@ -191,19 +193,21 @@ export default function Slide10() {
           </div>
         </motion.div>
 
-        {/* <motion.div {...animate.leftToRight}>
-          <div className="mx-auto mt-5 flex w-4/5 items-center justify-center gap-2">
+        <motion.div {...animate.leftToRight}>
+          <div className="mx-auto flex w-4/5 items-center justify-center gap-2">
             <img
-              src={require("../img/s11-img-1.png")}
+              src={require("../img/s11-img-3.webp")}
               alt="s11 img 1"
               className="h-2/5 w-2/5"
             />
             <div className="flex w-4/5 flex-col justify-center">
-              <p className="font-bvb text-xl md:text-3xl">Deepthi Tanikella</p>
+              <p className="font-bvb text-xl md:text-3xl lg:text-xl xl:text-2xl">
+                Bala Parthasarathy
+              </p>
               <p className="font-cf text-xs">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud
+                From the boardroom to the great outdoors, Bala Parthasarathy is
+                a testament to the balance between professional excellence and
+                environmental stewardship.
               </p>
               <div className="mt-2 flex items-center gap-2">
                 <S11Arrow className="h-4 w-4" />
@@ -216,7 +220,7 @@ export default function Slide10() {
               </div>
             </div>
           </div>
-        </motion.div> */}
+        </motion.div>
       </div>
     </div>
   );
