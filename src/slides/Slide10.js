@@ -212,7 +212,7 @@ export default function Slide10() {
               <div className="mt-2 flex items-center gap-2">
                 <S11Arrow className="h-4 w-4" />
                 <a
-                  href="https://www.youtube.com/watch?v=XbkA1gxE6Lk"
+                  href="https://youtu.be/tIa-gPe-dA8?feature=shared "
                   className="rounded-full bg-[#A83D35] p-2 px-5 text-center font-cf text-xs text-white"
                 >
                   Watch here
