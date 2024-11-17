@@ -1,0 +1,173 @@
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import * as animate from "../animations";
+import { ReactComponent as S11Arrow } from "../img/s11-arrow.svg";
+
+export default function Slide10() {
+  const scrollContainer = useRef(null);
+
+  const scroll = (direction) => {
+    if (scrollContainer.current) {
+      const scrollAmount = 200; // The amount to scroll, adjust as needed
+      const currentScroll = scrollContainer.current.scrollTop;
+      const newScrollPosition =
+        direction === "down"
+          ? currentScroll + scrollAmount
+          : currentScroll - scrollAmount;
+
+      scrollContainer.current.scrollTo({
+        top: newScrollPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+  return (
+    <div className="white-bg bg-common flex h-full items-center justify-center">
+      <div className="flex h-4/5 w-full flex-col items-center ">
+      <motion.div className="font-bvb text-3xl md:text-4xl" {...animate.fadeIn}>
+        Collective
+      </motion.div>
+      <motion.div
+        className="-mt-3 mb-5 font-bvr text-3xl text-[#E59617] md:text-4xl"
+        {...animate.fadeIn}
+      >
+        Testimonials
+      </motion.div>
+
+        {/* Arrow Button to Scroll Up */}
+        <button className="mt-0" onClick={() => scroll("up")}>
+          up
+        </button>
+
+        {/* Scrollable Content */}
+        <div
+          ref={scrollContainer}
+          className="my-5 flex flex-col gap-10 overflow-y-auto"
+        >
+          <motion.div {...animate.leftToRight}>
+            <div className="mx-auto flex w-4/5 items-center justify-center gap-2">
+              <img
+                src={require("../img/s11-img-1.webp")}
+                alt="s11 img 1"
+                className="h-2/5 w-2/5"
+              />
+              <div className="flex w-4/5 flex-col justify-center">
+                <p className="font-bvb text-xl md:text-3xl lg:text-xl xl:text-2xl">
+                  Deepthi Tanikella
+                </p>
+                <p className="font-cf text-xs">
+                  Hear Deepthi Tanikella share her reasons for joining our
+                  collective and delve into its essence. See her whole story on
+                  our youtube channel.
+                </p>
+                <div className="mt-2 flex items-center gap-2">
+                  <S11Arrow className="h-4 w-4" />
+                  <a
+                    href="https://www.youtube.com/watch?v=XbkA1gxE6Lk"
+                    className="rounded-full bg-[#A83D35] p-2 px-5 text-center font-cf text-xs text-white"
+                  >
+                    Watch here
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Example Item 2 */}
+          <motion.div {...animate.rightToLeft}>
+            <div className="mx-auto flex w-4/5 items-center justify-center gap-2">
+              <div className="flex w-4/5 flex-col justify-center">
+                <p className="font-bvb text-xl md:text-3xl lg:text-xl xl:text-2xl">
+                  Vinod Chandramouli
+                </p>
+                <p className="font-cf text-xs">
+                  As the pioneering member of our collective, Vinod
+                  Chandramouli's desire to find a natural sanctuary for his
+                  family has been our guiding inspiration since the beginning.
+                </p>
+                <div className="mt-2 flex items-center gap-2">
+                  <S11Arrow className="h-4 w-4" />
+                  <a
+                    href="https://www.youtube.com/watch?v=XbkA1gxE6Lk"
+                    className="rounded-full bg-[#A83D35] p-2 px-5 text-center font-cf text-xs text-white"
+                  >
+                    Watch here
+                  </a>
+                </div>
+              </div>
+              <img
+                src={require("../img/s11-img-2.webp")}
+                alt="s11 img 2"
+                className="h-2/5 w-2/5"
+              />
+            </div>
+          </motion.div>
+
+          {/* Example Item 3 */}
+          <motion.div {...animate.leftToRight}>
+            <div className="mx-auto flex w-4/5 items-center justify-center gap-2">
+              <img
+                src={require("../img/s11-img-3.webp")}
+                alt="s11 img 3"
+                className="h-2/5 w-2/5"
+              />
+              <div className="flex w-4/5 flex-col justify-center">
+                <p className="font-bvb text-xl md:text-3xl lg:text-xl xl:text-2xl">
+                  Bala Parthasarathy
+                </p>
+                <p className="font-cf text-xs">
+                  From the boardroom to the great outdoors, Bala Parthasarathy
+                  is a testament to the balance between professional excellence
+                  and environmental stewardship.
+                </p>
+                <div className="mt-2 flex items-center gap-2">
+                  <S11Arrow className="h-4 w-4" />
+                  <a
+                    href="https://youtu.be/tIa-gPe-dA8?feature=shared"
+                    className="rounded-full bg-[#A83D35] p-2 px-5 text-center font-cf text-xs text-white"
+                  >
+                    Watch here
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div {...animate.leftToRight}>
+            <div className="mx-auto flex w-4/5 items-center justify-center gap-2">
+              <img
+                src={require("../img/s11-img-3.webp")}
+                alt="s11 img 3"
+                className="h-2/5 w-2/5"
+              />
+              <div className="flex w-4/5 flex-col justify-center">
+                <p className="font-bvb text-xl md:text-3xl lg:text-xl xl:text-2xl">
+                  Bala Parthasarathy
+                </p>
+                <p className="font-cf text-xs">
+                  From the boardroom to the great outdoors, Bala Parthasarathy
+                  is a testament to the balance between professional excellence
+                  and environmental stewardship.
+                </p>
+                <div className="mt-2 flex items-center gap-2">
+                  <S11Arrow className="h-4 w-4" />
+                  <a
+                    href="https://youtu.be/tIa-gPe-dA8?feature=shared"
+                    className="rounded-full bg-[#A83D35] p-2 px-5 text-center font-cf text-xs text-white"
+                  >
+                    Watch here
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Arrow Button to Scroll Down */}
+        <button className="" onClick={() => scroll("down")}>
+          down
+        </button>
+      </div>
+    </div>
+  );
+}
